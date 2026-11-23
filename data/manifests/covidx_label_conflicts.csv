@@ -1,0 +1,5 @@
+path_a,path_b,kind,phash_dist,dhash_dist,split_a,split_b,src_a,src_b,pid_a,pid_b,lab_a,lab_b,corr
+data/dataset/sub-S09331_ses-E20067_run-1_bp-chest_vp-pa_dx-corrected.png,data/dataset/sub-S06833_ses-E13728_run-2_bp-chest_vp-pa_dx-corrected.png,md5,0,0,test,test,bimcv,bimcv,S09331,S06833,1,0,0.9999999716305672
+data/dataset/sub-S322642_ses-E45761_run-1_bp-chest_vp-pa_cr-corrected.png,data/dataset/sub-S06286_ses-E11310_run-1_bp-chest_vp-pa_cr-corrected.png,phash,2,1,train,test,bimcv,bimcv,S322642,S06286,1,0,0.9765210229198984
+data/dataset/COVID(267).png,data/dataset/F051E018-DAD1-4506-AD43-BE4CA29E960B.jpeg,phash,0,1,train,val,sirm,cohen,COVID_267,38,1,0,0.999898745306812
+data/dataset/covid-19-pneumonia-58-prior.jpg,data/dataset/COVID(673).png,phash,0,0,train,train,cohen,sirm,173,COVID_673,0,1,0.999976498032937

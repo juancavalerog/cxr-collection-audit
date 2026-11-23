@@ -1,0 +1,12 @@
+{
+  "method": "lisa",
+  "params": {},
+  "lr_B": 5e-05,
+  "trial": 0,
+  "config": "configs/b3c_lisa.yaml",
+  "parametros_completos": {
+    "mix_alpha": 2.0,
+    "mix_ratio": 0.5
+  },
+  "uso": "S-E, enmienda E8 punto 4: valores por defecto"
+}

@@ -1,0 +1,8 @@
+{
+  "method": "erm",
+  "params": {},
+  "lr_B": 6.84573082154071e-05,
+  "trial": 5,
+  "metrica_seleccion": 0.9341906249999999,
+  "corrida_busqueda": "results/train/b3a_A_erm_rho050_t5/seed0"
+}

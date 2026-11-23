@@ -1,0 +1,20 @@
+{
+ "nombre": "sens_cadena",
+ "pasos": {
+  "sens_e3_predecir_sin_espejo": {
+   "codigo": 0,
+   "segundos": 502.5,
+   "fin": "2026-11-20T16:33:08"
+  },
+  "sens_v28_tablas": {
+   "codigo": 0,
+   "segundos": 1000.3,
+   "fin": "2026-11-20T16:49:48"
+  },
+  "sens_03_verificar": {
+   "codigo": 0,
+   "segundos": 16.1,
+   "fin": "2026-11-20T16:50:04"
+  }
+ }
+}

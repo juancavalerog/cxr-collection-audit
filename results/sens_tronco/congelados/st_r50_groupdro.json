@@ -1,0 +1,11 @@
+{
+  "method": "groupdro",
+  "params": {},
+  "lr_B": 5e-05,
+  "trial": 0,
+  "config": "configs/b3a_tronco_resnet50_groupdro.yaml",
+  "parametros_completos": {
+    "eta": 0.01
+  },
+  "uso": "S-T, enmienda E8 punto 3: valores por defecto"
+}

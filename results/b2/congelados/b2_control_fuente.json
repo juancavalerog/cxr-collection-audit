@@ -1,0 +1,8 @@
+{
+  "method": "control_fuente",
+  "params": {},
+  "lr_B": 0.0001602873746149289,
+  "trial": 1,
+  "metrica_seleccion": 0.9892546307640646,
+  "corrida_busqueda": "results/train/b2_control_fuente_t1/seed0"
+}

@@ -1,0 +1,25 @@
+{
+ "nombre": "e_cadena_b3a_s5_9",
+ "pasos": {
+  "e_01_mascaras_b3a_s5_9": {
+   "codigo": 0,
+   "segundos": 13.1,
+   "fin": "2026-11-17T06:24:30"
+  },
+  "e_02_cache_m_b3a_s5_9": {
+   "codigo": 0,
+   "segundos": 2.9,
+   "fin": "2026-11-17T06:24:32"
+  },
+  "e_03_mascaras_alineadas_b3a_s5_9": {
+   "codigo": 0,
+   "segundos": 4.1,
+   "fin": "2026-11-17T06:24:37"
+  },
+  "e_07_fusion_cache_b3a_s5_9": {
+   "codigo": 0,
+   "segundos": 2.0,
+   "fin": "2026-11-17T06:24:39"
+  }
+ }
+}

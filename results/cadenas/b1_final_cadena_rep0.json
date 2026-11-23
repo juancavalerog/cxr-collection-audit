@@ -1,0 +1,30 @@
+{
+ "nombre": "b1_final_cadena_rep0",
+ "pasos": {
+  "b1_final_erm_s42_rep": {
+   "codigo": 0,
+   "segundos": 1387.7,
+   "fin": "2026-11-17T16:49:05"
+  },
+  "b1_final_erm_cuotas_s42_rep": {
+   "codigo": 0,
+   "segundos": 1568.2,
+   "fin": "2026-11-17T17:15:13"
+  },
+  "b1_final_erm_mascara_s42_rep": {
+   "codigo": 0,
+   "segundos": 1440.1,
+   "fin": "2026-11-17T17:39:13"
+  },
+  "b1_final_control_fuente_s42_rep": {
+   "codigo": 0,
+   "segundos": 782.1,
+   "fin": "2026-11-17T17:52:16"
+  },
+  "b1_final_groupdro_s42_rep": {
+   "codigo": 0,
+   "segundos": 1291.2,
+   "fin": "2026-11-17T18:13:47"
+  }
+ }
+}

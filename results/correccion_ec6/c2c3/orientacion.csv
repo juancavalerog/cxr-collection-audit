@@ -1,0 +1,2 @@
+metodo,caida_A,caida_B,diferencia_A_menos_B,ic95,umbral,limitar_a_orientacion_A,semillas_A,semillas_B,B,veredicto
+erm,0.4005603999999999,0.3620827499999999,0.03847765000000003,-0.011928437715047799 0.09047700165712004,0.05,False,0 1 2 3 4,0 1,2000,sin asimetría apreciable

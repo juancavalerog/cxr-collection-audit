@@ -1,0 +1,6 @@
+# Réplica del artículo 1: ConvNeXt-Tiny, preentreno chexpert, régimen controlado.
+base: replica_p1_base.yaml
+experiment: replica_cnx_chexpert_controlado
+data: {train_sources: [bimcv]}
+model:
+  init: {type: keras_h5, path: CheXpert/saved/chexpert_convnext_tiny_weights.h5}   # relativo a la raíz de datos (/data/covid en el contenedor)

@@ -1,0 +1,30 @@
+{
+ "nombre": "b1_final_cadena_07",
+ "pasos": {
+  "b1_final_dfr_s2024": {
+   "codigo": 0,
+   "segundos": 1267.6,
+   "fin": "2026-11-17T11:03:58"
+  },
+  "b1_final_erm_s7": {
+   "codigo": 0,
+   "segundos": 1168.3,
+   "fin": "2026-11-17T11:23:27"
+  },
+  "b1_final_erm_cuotas_s7": {
+   "codigo": 0,
+   "segundos": 1393.4,
+   "fin": "2026-11-17T11:46:40"
+  },
+  "b1_final_erm_mascara_s7": {
+   "codigo": 0,
+   "segundos": 1132.7,
+   "fin": "2026-11-17T12:05:33"
+  },
+  "b1_final_control_fuente_s7": {
+   "codigo": 0,
+   "segundos": 681.4,
+   "fin": "2026-11-17T12:16:54"
+  }
+ }
+}

@@ -1,0 +1,6 @@
+tabla,columna,filas,max_abs_dif,reproduce
+f_c1b.csv,delta,12,8.326672684688674e-17,True
+f_c1b.csv,ic95_inf,12,8.326672684688674e-17,True
+f_c1b.csv,ic95_sup,12,9.71445146547012e-17,True
+f_c1b.csv,auc_referencia,12,0.0,True
+f_c1b.csv,auc_metodo,12,0.0,True

@@ -1,0 +1,18 @@
+{
+ "orden": "python scripts/sensibilidad/v28.py s1",
+ "fecha_utc": "2026-11-20T16:39:24Z",
+ "B": 2000,
+ "semilla_bootstrap": 2026,
+ "congelacion": "db617b620c2b9a6c7ef588898982006f0d4731457bd63ae0f6d367c10f6e24dc",
+ "tablas": {
+  "s1_detectores": 60,
+  "s1_detectores_resumen": 15,
+  "s1_familias": 60
+ },
+ "notas": [
+  "Variantes: C = 0.01 y C = 0.3 sobre las características agrupadas (768), y C = 0.05 sobre la penúltima capa (128); en todas, el mismo ajuste (6 000 positivos de bimcv de entrenamiento) y promediado de espejo.",
+  "D_IN no tiene penúltima capa entrenada (tronco de ImageNet sin cabeza): la variante penúltima se aplica a D_ERM, D_MASK y D_RES, y la familia de esa variante es F-C1b (D_ERM).",
+  "La variante base reproduce results/c1/test/detectores.csv, f_c1.csv y f_c1b.csv (orden s0)."
+ ],
+ "segundos": 375.3
+}

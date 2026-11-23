@@ -1,0 +1,20 @@
+{
+ "orden": "python scripts/sensibilidad/intervalos.py c1b-jerarquico",
+ "fecha_utc": "2026-11-20T18:22:46Z",
+ "B": 2000,
+ "semilla_bootstrap": 2026,
+ "semilla_semillas": 20261117,
+ "congelacion": "db617b620c2b9a6c7ef588898982006f0d4731457bd63ae0f6d367c10f6e24dc",
+ "tablas": {
+  "c1b_jerarquico": 12,
+  "c1b_jerarquico_control": 5,
+  "c1b_jerarquico_resumen": 2
+ },
+ "notas": [
+  "Control: delta e IC95 de pacientes frente a results/c1/test/f_c1b.csv; diferencia máxima 9.71e-17.",
+  "Las columnas li_jerarquico_sobre_menos_* son solo una lectura de sensibilidad: la prueba registrada es la de f_c1b.csv (no inferioridad con Holm sobre doce comparaciones)."
+ ],
+ "segundos": 73.3,
+ "python": "3.10.12",
+ "numpy": "2.2.6"
+}

@@ -1,0 +1,11 @@
+{
+  "method": "lisa",
+  "params": {
+    "mix_alpha": 2.0,
+    "mix_ratio": 0.5
+  },
+  "lr_B": 4.751689266899079e-05,
+  "trial": 4,
+  "metrica_seleccion": 0.954296875,
+  "corrida_busqueda": "results/train/b3a_A_lisa_rho070_t4/seed0"
+}

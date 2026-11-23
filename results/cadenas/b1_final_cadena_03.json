@@ -1,0 +1,30 @@
+{
+ "nombre": "b1_final_cadena_03",
+ "pasos": {
+  "b1_final_control_fuente_s123": {
+   "codigo": 0,
+   "segundos": 1022.8,
+   "fin": "2026-11-17T06:42:40"
+  },
+  "b1_final_groupdro_s123": {
+   "codigo": 0,
+   "segundos": 1652.2,
+   "fin": "2026-11-17T07:10:12"
+  },
+  "b1_final_dann_s123": {
+   "codigo": 0,
+   "segundos": 1511.1,
+   "fin": "2026-11-17T07:35:23"
+  },
+  "b1_final_coral_s123": {
+   "codigo": 0,
+   "segundos": 1227.6,
+   "fin": "2026-11-17T07:55:51"
+  },
+  "b1_final_mixstyle_s123": {
+   "codigo": 0,
+   "segundos": 2047.1,
+   "fin": "2026-11-17T08:29:58"
+  }
+ }
+}

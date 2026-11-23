@@ -1,0 +1,340 @@
+{
+  "seed": 0,
+  "experiment": "b3a_A_erm_cuotas_rho099_t6",
+  "history": [
+    {
+      "phase": "A",
+      "epoch": 0,
+      "loss": 0.07887077513574199,
+      "seconds": 9.1
+    },
+    {
+      "phase": "A",
+      "epoch": 1,
+      "loss": 0.04292778658087958,
+      "seconds": 2.7
+    },
+    {
+      "phase": "A",
+      "epoch": 2,
+      "loss": 0.038273537827825006,
+      "seconds": 2.7
+    },
+    {
+      "phase": "B",
+      "epoch": 0,
+      "loss": 0.040949232198975304,
+      "seconds": 11.8,
+      "val_auc_roc": 0.9970687500000001,
+      "val_auc_pr": 0.9970099183919763,
+      "val_n": 800,
+      "selection": 0.9970687500000001,
+      "improved": true,
+      "wait": 0,
+      "selection_dc": 0.7223656249999999,
+      "dc_auc_roc": 0.7223656249999999,
+      "dc_n": 800,
+      "improved_dc": true,
+      "ema_t": 88,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 1,
+      "loss": 0.028517172782978214,
+      "seconds": 6.6,
+      "val_auc_roc": 0.99843125,
+      "val_auc_pr": 0.9984010465096501,
+      "val_n": 800,
+      "selection": 0.99843125,
+      "improved": true,
+      "wait": 0,
+      "selection_dc": 0.693040625,
+      "dc_auc_roc": 0.693040625,
+      "dc_n": 800,
+      "ema_t": 176,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 2,
+      "loss": 0.030262222947468134,
+      "seconds": 6.8,
+      "val_auc_roc": 0.99866875,
+      "val_auc_pr": 0.9986320960060603,
+      "val_n": 800,
+      "selection": 0.99866875,
+      "improved": true,
+      "wait": 0,
+      "selection_dc": 0.6913499999999999,
+      "dc_auc_roc": 0.6913499999999999,
+      "dc_n": 800,
+      "ema_t": 264,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 3,
+      "loss": 0.017861772421218284,
+      "seconds": 6.5,
+      "val_auc_roc": 0.996615625,
+      "val_auc_pr": 0.9967609236573706,
+      "val_n": 800,
+      "selection": 0.996615625,
+      "wait": 1,
+      "selection_dc": 0.6635499999999999,
+      "dc_auc_roc": 0.6635499999999999,
+      "dc_n": 800,
+      "ema_t": 352,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 4,
+      "loss": 0.011237534398705147,
+      "seconds": 6.5,
+      "val_auc_roc": 0.99755625,
+      "val_auc_pr": 0.9972499211643413,
+      "val_n": 800,
+      "selection": 0.99755625,
+      "wait": 2,
+      "selection_dc": 0.659825,
+      "dc_auc_roc": 0.659825,
+      "dc_n": 800,
+      "ema_t": 440,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 5,
+      "loss": 0.007328022901922602,
+      "seconds": 6.6,
+      "val_auc_roc": 0.9973124999999999,
+      "val_auc_pr": 0.9971060866475127,
+      "val_n": 800,
+      "selection": 0.9973124999999999,
+      "wait": 3,
+      "selection_dc": 0.670159375,
+      "dc_auc_roc": 0.670159375,
+      "dc_n": 800,
+      "ema_t": 528,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 6,
+      "loss": 0.0077038940332634165,
+      "seconds": 6.5,
+      "val_auc_roc": 0.99604375,
+      "val_auc_pr": 0.9958578307074104,
+      "val_n": 800,
+      "selection": 0.99604375,
+      "wait": 4,
+      "selection_dc": 0.665925,
+      "dc_auc_roc": 0.665925,
+      "dc_n": 800,
+      "ema_t": 616,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 7,
+      "loss": 0.005602216116179968,
+      "seconds": 6.5,
+      "val_auc_roc": 0.9967812500000001,
+      "val_auc_pr": 0.9964573239507024,
+      "val_n": 800,
+      "selection": 0.9967812500000001,
+      "wait": 5,
+      "selection_dc": 0.70065625,
+      "dc_auc_roc": 0.70065625,
+      "dc_n": 800,
+      "ema_t": 704,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 8,
+      "loss": 0.004302596938177058,
+      "seconds": 6.5,
+      "val_auc_roc": 0.99743125,
+      "val_auc_pr": 0.9971097652003318,
+      "val_n": 800,
+      "selection": 0.99743125,
+      "wait": 6,
+      "selection_dc": 0.65699375,
+      "dc_auc_roc": 0.65699375,
+      "dc_n": 800,
+      "ema_t": 792,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 9,
+      "loss": 0.004381192257617592,
+      "seconds": 6.5,
+      "val_auc_roc": 0.997640625,
+      "val_auc_pr": 0.9974278970461727,
+      "val_n": 800,
+      "selection": 0.997640625,
+      "wait": 7,
+      "selection_dc": 0.67600625,
+      "dc_auc_roc": 0.67600625,
+      "dc_n": 800,
+      "ema_t": 880,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 10,
+      "loss": 0.0035626465429769187,
+      "seconds": 6.5,
+      "val_auc_roc": 0.9920750000000002,
+      "val_auc_pr": 0.9933341991655905,
+      "val_n": 800,
+      "selection": 0.9920750000000002,
+      "wait": 8,
+      "selection_dc": 0.6341781249999999,
+      "dc_auc_roc": 0.6341781249999999,
+      "dc_n": 800,
+      "ema_t": 968,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 11,
+      "loss": 0.0025461135835691743,
+      "seconds": 6.6,
+      "val_auc_roc": 0.997328125,
+      "val_auc_pr": 0.9975688292686676,
+      "val_n": 800,
+      "selection": 0.997328125,
+      "wait": 9,
+      "selection_dc": 0.6567750000000001,
+      "dc_auc_roc": 0.6567750000000001,
+      "dc_n": 800,
+      "ema_t": 1056,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 12,
+      "loss": 0.0036196072079312876,
+      "seconds": 6.6,
+      "val_auc_roc": 0.997190625,
+      "val_auc_pr": 0.996565495761884,
+      "val_n": 800,
+      "selection": 0.997190625,
+      "wait": 10,
+      "selection_dc": 0.6654125,
+      "dc_auc_roc": 0.6654125,
+      "dc_n": 800,
+      "ema_t": 1144,
+      "ema_init_weight": null
+    }
+  ],
+  "early_stopping": {
+    "best": 0.99866875,
+    "wait": 10,
+    "best_epoch": 2,
+    "stopped": true
+  },
+  "ema": {
+    "mode": "estandar",
+    "t": 1144,
+    "momentum": 0.9999
+  },
+  "results": {
+    "best/val": {
+      "n": 800,
+      "auc_roc": 0.99878125,
+      "auc_pr": 0.9987614314556299
+    },
+    "best/val_desconf": {
+      "n": 800,
+      "auc_roc": 0.6911156249999999,
+      "auc_pr": 0.6953324572619649
+    },
+    "bestdc/val": {
+      "n": 800,
+      "auc_roc": 0.99745,
+      "auc_pr": 0.9973959917533947
+    },
+    "bestdc/val_desconf": {
+      "n": 800,
+      "auc_roc": 0.724375,
+      "auc_pr": 0.7245351802954152
+    }
+  },
+  "bench": {
+    "id": "b3a",
+    "manifiesto": "data/manifests/bench/b3a/apos/rho0.99_s0.csv",
+    "sha256_manifiesto": "2f661718edcd1940b89e55c862a5397fb4049ff323f3075fa86f7468f8a1bb5b",
+    "sha256_json": "f78da509e46d645421f4362ec263a0c8d99f7f038c03cd6454e7d5d546682005",
+    "rho": 0.99,
+    "semilla": 0,
+    "orientacion": "apos",
+    "fuentes": [
+      "nih",
+      "chexpert"
+    ],
+    "fuentes_mixtas": [
+      "nih",
+      "chexpert"
+    ],
+    "fuentes_train": [
+      "chexpert",
+      "nih"
+    ],
+    "train_sources": null,
+    "subconjuntos": [
+      "val_desconf",
+      "test_desconf",
+      "test_invertido"
+    ],
+    "seleccion_json": "val",
+    "test_bloqueado": true,
+    "n": {
+      "train": 5600,
+      "val": 800,
+      "val_desconf": 800,
+      "val_desconf_fit": 400,
+      "val_desconf_sel": 400,
+      "val_fit": 400,
+      "val_sel": 400
+    }
+  },
+  "early_stopping_dc": {
+    "best": 0.7223656249999999,
+    "best_epoch": 0
+  },
+  "seleccion_dc": "val_desconf",
+  "estado": "terminado",
+  "metodo": "erm_cuotas",
+  "seleccion": "val",
+  "aplicabilidad": {
+    "estado": "aplicable",
+    "motivo": null
+  },
+  "no_aplicable": {},
+  "comparacion_entre_metodos": [
+    "val_desconf",
+    "test_desconf",
+    "test_invertido"
+  ],
+  "no_comparables": {},
+  "almacenamiento": {
+    "estados_conservados": [],
+    "borrados": [
+      "best.pt",
+      "bestdc.pt",
+      "ema.pt",
+      "last.pt",
+      "checkpoint.pt"
+    ],
+    "politica": {
+      "states": [],
+      "keep_checkpoint": false
+    }
+  }
+}

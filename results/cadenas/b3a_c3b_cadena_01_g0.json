@@ -1,0 +1,125 @@
+{
+ "nombre": "b3a_c3b_cadena_01_g0",
+ "pasos": {
+  "b3a_c3b_erm_rho090_s0_t2": {
+   "codigo": 0,
+   "segundos": 293.7,
+   "fin": "2026-11-19T22:39:07"
+  },
+  "b3a_c3b_lisa_rho090_s0_t2": {
+   "codigo": 0,
+   "segundos": 499.8,
+   "fin": "2026-11-19T22:47:27"
+  },
+  "b3a_c3b_groupdro_rho090_s0_t2": {
+   "codigo": 0,
+   "segundos": 545.6,
+   "fin": "2026-11-19T22:56:33"
+  },
+  "b3a_c3b_dfr_rho090_s0_t2": {
+   "codigo": 0,
+   "segundos": 358.7,
+   "fin": "2026-11-19T23:02:32"
+  },
+  "b3a_c3b_erm_rho095_s0_t2": {
+   "codigo": 0,
+   "segundos": 365.1,
+   "fin": "2026-11-19T23:08:37"
+  },
+  "b3a_c3b_lisa_rho095_s0_t2": {
+   "codigo": 0,
+   "segundos": 514.9,
+   "fin": "2026-11-19T23:17:12"
+  },
+  "b3a_c3b_groupdro_rho095_s0_t2": {
+   "codigo": 0,
+   "segundos": 364.0,
+   "fin": "2026-11-19T23:23:16"
+  },
+  "b3a_c3b_dfr_rho095_s0_t2": {
+   "codigo": 0,
+   "segundos": 288.0,
+   "fin": "2026-11-19T23:28:04"
+  },
+  "b3a_c3b_erm_rho099_s0_t2": {
+   "codigo": 0,
+   "segundos": 292.0,
+   "fin": "2026-11-19T23:32:56"
+  },
+  "b3a_c3b_lisa_rho099_s0_t2": {
+   "codigo": 0,
+   "segundos": 201.9,
+   "fin": "2026-11-19T23:36:18"
+  },
+  "b3a_c3b_groupdro_rho099_s0_t2": {
+   "codigo": 0,
+   "segundos": 268.7,
+   "fin": "2026-11-19T23:40:46"
+  },
+  "b3a_c3b_dfr_rho099_s0_t2": {
+   "codigo": 0,
+   "segundos": 292.8,
+   "fin": "2026-11-19T23:45:39"
+  },
+  "b3a_c3b_erm_rho090_s0_t6": {
+   "codigo": 0,
+   "segundos": 407.9,
+   "fin": "2026-11-19T23:52:27"
+  },
+  "b3a_c3b_lisa_rho090_s0_t6": {
+   "codigo": 0,
+   "segundos": 467.3,
+   "fin": "2026-11-20T00:00:14"
+  },
+  "b3a_c3b_groupdro_rho090_s0_t6": {
+   "codigo": 0,
+   "segundos": 410.7,
+   "fin": "2026-11-20T00:07:05"
+  },
+  "b3a_c3b_dfr_rho090_s0_t6": {
+   "codigo": 0,
+   "segundos": 366.9,
+   "fin": "2026-11-20T00:13:12"
+  },
+  "b3a_c3b_erm_rho095_s0_t6": {
+   "codigo": 0,
+   "segundos": 311.2,
+   "fin": "2026-11-20T00:18:23"
+  },
+  "b3a_c3b_lisa_rho095_s0_t6": {
+   "codigo": 0,
+   "segundos": 476.7,
+   "fin": "2026-11-20T00:26:20"
+  },
+  "b3a_c3b_groupdro_rho095_s0_t6": {
+   "codigo": 0,
+   "segundos": 574.7,
+   "fin": "2026-11-20T00:35:55"
+  },
+  "b3a_c3b_dfr_rho095_s0_t6": {
+   "codigo": 0,
+   "segundos": 303.3,
+   "fin": "2026-11-20T00:40:58"
+  },
+  "b3a_c3b_erm_rho099_s0_t6": {
+   "codigo": 0,
+   "segundos": 251.0,
+   "fin": "2026-11-20T00:45:09"
+  },
+  "b3a_c3b_lisa_rho099_s0_t6": {
+   "codigo": 0,
+   "segundos": 264.2,
+   "fin": "2026-11-20T00:49:33"
+  },
+  "b3a_c3b_groupdro_rho099_s0_t6": {
+   "codigo": 0,
+   "segundos": 320.8,
+   "fin": "2026-11-20T00:54:54"
+  },
+  "b3a_c3b_dfr_rho099_s0_t6": {
+   "codigo": 0,
+   "segundos": 279.9,
+   "fin": "2026-11-20T00:59:34"
+  }
+ }
+}

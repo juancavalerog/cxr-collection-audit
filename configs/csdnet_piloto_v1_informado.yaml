@@ -1,0 +1,13 @@
+# Segundo intento del piloto de CSD-Net, PENDIENTE DE LA CONFORMIDAD DEL AUTOR (no lanzar sin ella): valores por
+# defecto tras el diagnóstico de la firma del 13-11-2026 (penalización de independencia mmd_banco_tope), semillas 42 y 123, solo validación.
+# Diferencia con configs/csdnet_piloto.yaml: si V1 falla al final de A2 con una firma válida, la corrida NO se
+# detiene; el intercambio sigue activo y V1 se informa como no aprobada (csdnet.v1_fail_action: continue_swap).
+# Eso cambia la regla de parada del Algoritmo 1 y exige la enmienda 8 de docs/07_piloto.md, cuyo borrador está en
+# docs/borradores/enmienda8_v1_informado.md. Con una firma sin información de fuente la corrida se detiene igual.
+# TEST BLOQUEADO.
+base: csdnet_base.yaml
+experiment: csdnet_piloto_v1_informado
+protocol: {fase: piloto, test_bloqueado: true, congelado: null}
+csdnet:
+  v1_fail_action: continue_swap
+  v1_fail_enmienda: "docs/07_piloto.md, enmienda 8"

@@ -1,0 +1,5 @@
+Tronco,Validación cruzada: negativos frente a positivos de cinco cifras,Validación cruzada: negativos frente a positivos de seis cifras,Validación cruzada: positivos de cinco cifras frente a seis cifras,Lectura de cinco cifras aplicada a seis cifras (IC95),Lectura de seis cifras aplicada a cinco cifras (IC95),Test: lectura de cinco cifras,Test: lectura de seis cifras (IC95),Reservadas: negativas / cinco cifras / seis cifras
+"Todos los negativos reservados, semilla 42",0.937,0.736,0.930,0.620 (0.585 a 0.657),0.629 (0.594 a 0.665),0.856,0.542 (0.523 a 0.561),647 / 1 301 / 1 300
+"Todos los negativos reservados, semilla 123",0.937,0.751,0.931,0.634 (0.597 a 0.671),0.719 (0.684 a 0.755),0.855,0.621 (0.602 a 0.639),647 / 1 301 / 1 300
+"20 % de los pacientes negativos reservados, semilla 42",0.921,0.732,0.932,0.662 (0.588 a 0.731),0.763 (0.710 a 0.814),0.857,0.718 (0.700 a 0.734),132 / 1 301 / 1 300
+"20 % de los pacientes negativos reservados, semilla 123",0.935,0.726,0.932,0.632 (0.556 a 0.701),0.694 (0.635 a 0.751),0.847,0.611 (0.590 a 0.630),132 / 1 301 / 1 300

@@ -1,0 +1,13 @@
+Método,COVIDx: ensayo,COVIDx: tasa,COVIDx: parámetros,COVIDx: AUC de selección,Tuberculosis: ensayo,Tuberculosis: tasa,Tuberculosis: parámetros,Tuberculosis: AUC de selección
+ERM,3,$1.42 \times 10^{-4}$,solo la tasa,0.881,1,$4.27 \times 10^{-5}$,solo la tasa,0.998
+Control de fuente,4,$9.88 \times 10^{-5}$,solo la tasa,0.862,1,$1.60 \times 10^{-4}$,solo la tasa,0.989
+GroupDRO,3,$4.84 \times 10^{-5}$,η 0.0395,0.861,3,$4.84 \times 10^{-5}$,η 0.0395,0.997
+DANN,5,$3.32 \times 10^{-5}$,λ 0.276; anchura 64; capas 3; abandono 0; tasa del discriminador 3; penalización 0.0807,0.881,6,$1.12 \times 10^{-4}$,λ 0.0673; anchura 1024; capas 5; abandono 0; tasa del discriminador 3; penalización 0.166,0.997
+CORAL,0,$5 \times 10^{-5}$,valores por defecto,0.890,6,$1.63 \times 10^{-5}$,peso 2.01,0.997
+MixStyle,4,$6.67 \times 10^{-5}$,p 0.3; α 0.2,0.879,2,$2.77 \times 10^{-5}$,p 0.7; α 0.1,0.997
+Mezcla de amplitud de Fourier,1,$1.02 \times 10^{-5}$,η 1; lado 0.5; consistencia 1,0.878,6,$6.45 \times 10^{-5}$,η 1; lado 1; consistencia 4,0.997
+LISA,5,$9.56 \times 10^{-5}$,α 4; dentro de la clase 0.25,0.875,3,$6.99 \times 10^{-5}$,α 1; dentro de la clase 0.5,0.996
+DFA con fuente,1,$2.44 \times 10^{-5}$,sesgo 10; sesgo tras intercambio 5; intercambio 0.1; época de inicio 1; pesos 1/P(y | s),0.899,0,$5 \times 10^{-5}$,valores por defecto,0.997
+DFR,0,$5 \times 10^{-5}$,valores por defecto,0.875,0,$5 \times 10^{-5}$,valores por defecto,0.996
+ERM con máscara,2,$5.68 \times 10^{-5}$,solo la tasa,0.866,5,$1.12 \times 10^{-4}$,solo la tasa,0.990
+ERM con cuotas,3,$1.44 \times 10^{-5}$,solo la tasa,0.881,1,$1.76 \times 10^{-5}$,solo la tasa,0.997

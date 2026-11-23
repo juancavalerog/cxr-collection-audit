@@ -1,0 +1,20 @@
+{
+ "nombre": "b_cadena_covidgr",
+ "pasos": {
+  "b_07_mascaras_covidgr": {
+   "codigo": 0,
+   "segundos": 58.7,
+   "fin": "2026-11-14T03:45:11"
+  },
+  "b_08_cache_m_covidgr": {
+   "codigo": 0,
+   "segundos": 25.7,
+   "fin": "2026-11-14T03:45:37"
+  },
+  "b_09_mascaras_alineadas_covidgr": {
+   "codigo": 0,
+   "segundos": 9.6,
+   "fin": "2026-11-14T03:45:46"
+  }
+ }
+}

@@ -1,0 +1,8 @@
+{
+  "method": "coral",
+  "params": {},
+  "lr_B": 5e-05,
+  "trial": 0,
+  "metrica_seleccion": 0.9989656250000001,
+  "corrida_busqueda": "results/train/b3a_A_coral_rho099_t0/seed0"
+}

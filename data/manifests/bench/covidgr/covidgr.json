@@ -1,0 +1,31 @@
+{
+  "benchmark": "covidgr",
+  "variante": "1.0",
+  "rho": null,
+  "semilla": null,
+  "fuentes": [
+    "covidgr"
+  ],
+  "fuentes_mixtas": [
+    "covidgr"
+  ],
+  "subconjuntos": [
+    "test_covidgr"
+  ],
+  "seleccion": "test_covidgr",
+  "notas": "solo evaluación externa (split = test); seleccion no aplica: ningún modelo se selecciona en COVIDGR. Sin identificador de paciente publicado.",
+  "recuentos_por_fuente_neg_pos": {
+    "test": {
+      "covidgr": [
+        426,
+        426
+      ]
+    }
+  },
+  "duplicados": {
+    "dentro": 0,
+    "frente_a_covidx": 0
+  },
+  "test_bloqueado": true,
+  "generador": "scripts/data/build_covidgr.py"
+}

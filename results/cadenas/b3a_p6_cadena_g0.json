@@ -1,0 +1,50 @@
+{
+ "nombre": "b3a_p6_cadena_g0",
+ "pasos": {
+  "b3a_p6_erm_rho050_s0": {
+   "codigo": 0,
+   "segundos": 211.3,
+   "fin": "2026-11-14T05:08:58"
+  },
+  "b3a_p6_dfr_rho050_s0": {
+   "codigo": 0,
+   "segundos": 357.8,
+   "fin": "2026-11-14T05:14:56"
+  },
+  "b3a_p6_groupdro_rho050_s0": {
+   "codigo": 0,
+   "segundos": 226.8,
+   "fin": "2026-11-14T05:18:42"
+  },
+  "b3a_p6_erm_rho090_s0": {
+   "codigo": 0,
+   "segundos": 218.8,
+   "fin": "2026-11-14T05:22:21"
+  },
+  "b3a_p6_dfr_rho090_s0": {
+   "codigo": 0,
+   "segundos": 286.8,
+   "fin": "2026-11-14T05:27:08"
+  },
+  "b3a_p6_groupdro_rho090_s0": {
+   "codigo": 0,
+   "segundos": 486.8,
+   "fin": "2026-11-14T05:35:15"
+  },
+  "b3a_p6_erm_rho100_s0": {
+   "codigo": 0,
+   "segundos": 150.2,
+   "fin": "2026-11-14T05:37:45"
+  },
+  "b3a_p6_dfr_rho100_s0": {
+   "codigo": 0,
+   "segundos": 177.4,
+   "fin": "2026-11-14T05:40:43"
+  },
+  "b3a_p6_groupdro_rho100_s0": {
+   "codigo": 0,
+   "segundos": 153.4,
+   "fin": "2026-11-14T05:43:16"
+  }
+ }
+}

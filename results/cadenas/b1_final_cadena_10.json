@@ -1,0 +1,30 @@
+{
+ "nombre": "b1_final_cadena_10",
+ "pasos": {
+  "b1_final_erm_mascara_s999": {
+   "codigo": 0,
+   "segundos": 1278.8,
+   "fin": "2026-11-17T14:54:07"
+  },
+  "b1_final_control_fuente_s999": {
+   "codigo": 0,
+   "segundos": 730.0,
+   "fin": "2026-11-17T15:06:17"
+  },
+  "b1_final_groupdro_s999": {
+   "codigo": 0,
+   "segundos": 1126.7,
+   "fin": "2026-11-17T15:25:04"
+  },
+  "b1_final_dann_s999": {
+   "codigo": 0,
+   "segundos": 2497.1,
+   "fin": "2026-11-17T16:06:41"
+  },
+  "b1_final_coral_s999": {
+   "codigo": 0,
+   "segundos": 1154.2,
+   "fin": "2026-11-17T16:25:55"
+  }
+ }
+}

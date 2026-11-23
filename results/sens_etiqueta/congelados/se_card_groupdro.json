@@ -1,0 +1,11 @@
+{
+  "method": "groupdro",
+  "params": {},
+  "lr_B": 5e-05,
+  "trial": 0,
+  "config": "configs/b3c_groupdro.yaml",
+  "parametros_completos": {
+    "eta": 0.01
+  },
+  "uso": "S-E, enmienda E8 punto 4: valores por defecto"
+}

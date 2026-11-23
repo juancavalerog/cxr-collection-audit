@@ -1,0 +1,275 @@
+{
+  "seed": 999,
+  "experiment": "baseline_groupdro_final",
+  "history": [
+    {
+      "phase": "A",
+      "epoch": 0,
+      "loss": 0.08328521141533349,
+      "seconds": 37.4
+    },
+    {
+      "phase": "A",
+      "epoch": 1,
+      "loss": 0.07830568306891707,
+      "seconds": 31.6
+    },
+    {
+      "phase": "A",
+      "epoch": 2,
+      "loss": 0.07820910264487096,
+      "seconds": 32.1
+    },
+    {
+      "phase": "B",
+      "epoch": 0,
+      "loss": 0.07835870126714814,
+      "seconds": 75.2,
+      "val_auc_roc": 0.6045376845376845,
+      "val_auc_pr": 0.9459665918619473,
+      "val_n": 1615,
+      "selection": 0.6045376845376845,
+      "improved": true,
+      "wait": 0,
+      "ema_t": 531,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 1,
+      "loss": 0.07475739307771744,
+      "seconds": 70.9,
+      "val_auc_roc": 0.7552706552706552,
+      "val_auc_pr": 0.9702724775726226,
+      "val_n": 1615,
+      "selection": 0.7552706552706552,
+      "improved": true,
+      "wait": 0,
+      "ema_t": 1062,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 2,
+      "loss": 0.07036921880058875,
+      "seconds": 70.4,
+      "val_auc_roc": 0.8653043253043252,
+      "val_auc_pr": 0.9849583575289712,
+      "val_n": 1615,
+      "selection": 0.8653043253043252,
+      "improved": true,
+      "wait": 0,
+      "ema_t": 1593,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 3,
+      "loss": 0.06000769081158939,
+      "seconds": 70.9,
+      "val_auc_roc": 0.6843874643874643,
+      "val_auc_pr": 0.960243708649335,
+      "val_n": 1615,
+      "selection": 0.6843874643874643,
+      "wait": 1,
+      "ema_t": 2124,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 4,
+      "loss": 0.048212702000222526,
+      "seconds": 70.9,
+      "val_auc_roc": 0.8027635327635327,
+      "val_auc_pr": 0.97774327574909,
+      "val_n": 1615,
+      "selection": 0.8027635327635327,
+      "wait": 2,
+      "ema_t": 2655,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 5,
+      "loss": 0.037848011134525586,
+      "seconds": 70.9,
+      "val_auc_roc": 0.7916886816886817,
+      "val_auc_pr": 0.9756931414640041,
+      "val_n": 1615,
+      "selection": 0.7916886816886817,
+      "wait": 3,
+      "ema_t": 3186,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 6,
+      "loss": 0.03594667457128312,
+      "seconds": 71.1,
+      "val_auc_roc": 0.7016472416472417,
+      "val_auc_pr": 0.9645999212476516,
+      "val_n": 1615,
+      "selection": 0.7016472416472417,
+      "wait": 4,
+      "ema_t": 3717,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 7,
+      "loss": 0.025720009153179138,
+      "seconds": 70.7,
+      "val_auc_roc": 0.7913856513856514,
+      "val_auc_pr": 0.9765868795956267,
+      "val_n": 1615,
+      "selection": 0.7913856513856514,
+      "wait": 5,
+      "ema_t": 4248,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 8,
+      "loss": 0.02159198737227956,
+      "seconds": 70.5,
+      "val_auc_roc": 0.785861175861176,
+      "val_auc_pr": 0.9753286441503091,
+      "val_n": 1615,
+      "selection": 0.785861175861176,
+      "wait": 6,
+      "ema_t": 4779,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 9,
+      "loss": 0.01744145646572057,
+      "seconds": 70.6,
+      "val_auc_roc": 0.7265319865319865,
+      "val_auc_pr": 0.9680848230408081,
+      "val_n": 1615,
+      "selection": 0.7265319865319865,
+      "wait": 7,
+      "ema_t": 5310,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 10,
+      "loss": 0.015137211787084682,
+      "seconds": 70.6,
+      "val_auc_roc": 0.8265190365190366,
+      "val_auc_pr": 0.9811624657566959,
+      "val_n": 1615,
+      "selection": 0.8265190365190366,
+      "wait": 8,
+      "ema_t": 5841,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 11,
+      "loss": 0.013191825737751382,
+      "seconds": 71.0,
+      "val_auc_roc": 0.7239652939652939,
+      "val_auc_pr": 0.9652889922777241,
+      "val_n": 1615,
+      "selection": 0.7239652939652939,
+      "wait": 9,
+      "ema_t": 6372,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 12,
+      "loss": 0.012223712447285302,
+      "seconds": 71.2,
+      "val_auc_roc": 0.7657005957005956,
+      "val_auc_pr": 0.9723677195291335,
+      "val_n": 1615,
+      "selection": 0.7657005957005956,
+      "wait": 10,
+      "ema_t": 6903,
+      "ema_init_weight": null
+    }
+  ],
+  "early_stopping": {
+    "best": 0.8653043253043252,
+    "wait": 10,
+    "best_epoch": 2,
+    "stopped": true
+  },
+  "ema": {
+    "mode": "estandar",
+    "t": 6903,
+    "momentum": 0.9999
+  },
+  "results": {
+    "last/val": {
+      "n": 7664,
+      "auc_roc": 0.9708360311783636,
+      "auc_pr": 0.969836849876894
+    },
+    "last/val_robust": {
+      "n": 3407,
+      "auc_roc": 0.7598307701809648,
+      "auc_pr": 0.9723395033084538
+    },
+    "last/val_robust_sel": {
+      "n": 1615,
+      "auc_roc": 0.7610619010619011,
+      "auc_pr": 0.9722434878243122
+    },
+    "best/val": {
+      "n": 7664,
+      "auc_roc": 0.8919315720882561,
+      "auc_pr": 0.9241976475003275
+    },
+    "best/val_robust": {
+      "n": 3407,
+      "auc_roc": 0.8649508986473967,
+      "auc_pr": 0.985831004720729
+    },
+    "best/val_robust_sel": {
+      "n": 1615,
+      "auc_roc": 0.8654752654752653,
+      "auc_pr": 0.9848808131235762
+    },
+    "ema/val": {
+      "n": 7664,
+      "auc_roc": 0.9725363279183566,
+      "auc_pr": 0.9716643408332177
+    },
+    "ema/val_robust": {
+      "n": 3407,
+      "auc_roc": 0.7682230869001296,
+      "auc_pr": 0.9732225678186229
+    },
+    "ema/val_robust_sel": {
+      "n": 1615,
+      "auc_roc": 0.7695596995596996,
+      "auc_pr": 0.9735487373920342
+    }
+  },
+  "seleccion": "val_robust_sel",
+  "comparacion_entre_metodos": "val_robust_sel",
+  "no_comparables": {},
+  "almacenamiento": {
+    "estados_conservados": [
+      "best.pt",
+      "ema.pt",
+      "last.pt"
+    ],
+    "borrados": [
+      "checkpoint.pt"
+    ],
+    "politica": {
+      "states": [
+        "best",
+        "last",
+        "ema"
+      ],
+      "keep_checkpoint": false
+    }
+  }
+}

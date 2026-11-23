@@ -1,0 +1,16 @@
+variante,detector,tag,C,caracteristicas,tta,conjunto,unidad,auc,ic95_inf,ic95_sup,n,n_neg,n_unidades,B_validos
+base,D_IN,din_imagenet,0.05,pooled,espejo,test,paciente,0.8184222649521291,0.8053907955306323,0.8313150560347599,8479,4239,4721,2000
+base,D_ERM,baseline_erm_final_seed42_best,0.05,pooled,espejo,test,paciente,0.8467129685267529,0.8344848570959001,0.8585665172438818,8479,4239,4721,2000
+base,D_ERM,baseline_erm_final_seed123_best,0.05,pooled,espejo,test,paciente,0.8308598948666248,0.8174293083987063,0.844105902773168,8479,4239,4721,2000
+base,D_ERM,baseline_erm_final_seed2024_best,0.05,pooled,espejo,test,paciente,0.8526895360689376,0.8404776026708646,0.8653036451029534,8479,4239,4721,2000
+base,D_ERM,baseline_erm_final_seed7_best,0.05,pooled,espejo,test,paciente,0.8501555079295134,0.8364548294646337,0.8625607940126514,8479,4239,4721,2000
+base,D_ERM,baseline_erm_final_seed999_best,0.05,pooled,espejo,test,paciente,0.8400308011412446,0.8277330331037888,0.8514613804476182,8479,4239,4721,2000
+base,D_MASK,baseline_erm_mascara_final_seed42_best,0.05,pooled,espejo,test,paciente,0.8261901503113497,0.8139661117017226,0.8384028567912332,8479,4239,4721,2000
+base,D_MASK,baseline_erm_mascara_final_seed123_best,0.05,pooled,espejo,test,paciente,0.827096936799797,0.8151823861751815,0.8386706707624185,8479,4239,4721,2000
+base,D_MASK,baseline_erm_mascara_final_seed2024_best,0.05,pooled,espejo,test,paciente,0.8172661650353634,0.804690358963007,0.8293130883929538,8479,4239,4721,2000
+base,D_MASK,baseline_erm_mascara_final_seed7_best,0.05,pooled,espejo,test,paciente,0.8233143385543938,0.8105293321824051,0.8358022313583325,8479,4239,4721,2000
+base,D_MASK,baseline_erm_mascara_final_seed999_best,0.05,pooled,espejo,test,paciente,0.8275246809722834,0.8152890703118687,0.8396012968020807,8479,4239,4721,2000
+base,D_RES,expl_erm_reserva_seed42_best,0.05,pooled,espejo,test,paciente,0.8456136749055269,0.833832513509459,0.8567719825431274,8479,4239,4721,2000
+base,D_RES,expl_erm_reserva_seed123_best,0.05,pooled,espejo,test,paciente,0.8419014586031771,0.8299378502687667,0.853327327416901,8479,4239,4721,2000
+base,D_RES,expl_erm_reserva20_seed42_best,0.05,pooled,espejo,test,paciente,0.8412606212750426,0.8298355406597643,0.8522836145036515,8479,4239,4721,2000
+base,D_RES,expl_erm_reserva20_seed123_best,0.05,pooled,espejo,test,paciente,0.8481655628107376,0.8367847163785646,0.8586553884068121,8479,4239,4721,2000

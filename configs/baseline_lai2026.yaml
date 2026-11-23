@@ -1,0 +1,11 @@
+# Línea base lai2026: Lai et al. 2026 reimplementado (fuente como atributo de sesgo). Referencia: lai2026mitigating. Estado: aproximacion.
+# Deriva de configs/baseline_base.yaml (y esta de configs/nuevo_base.yaml): partición limpia, canal homogeneo con la
+# caché común con máscaras (data/cache_m), ConvNeXt-Tiny ImageNet con la cabeza del artículo 1, selección y
+# comparación en val_robust_sel, mismo presupuesto. Test BLOQUEADO en piloto y búsqueda; para los experimentos
+# finales, ver docs/06_lineas_base.md, Section 4 (protocol.congelado).
+# Lanzar: python -m src.baselines.run --config configs/baseline_lai2026.yaml --seed 42 [--trial T]
+base: baseline_base.yaml
+experiment: baseline_lai2026
+baseline:
+  method: lai2026
+  params: {}            # valores por defecto del registro: {'lambda_dis_align': 2.0, 'lambda_swap_align': 2.0, 'lambda_swap': 0.1, 'swap_start_epoch': 3, 'peso': 'ninguno', 'peso_max': 10.0, 'bias_loss': 'gce', 'gce_q': 0.7, 'swap': 'random'}

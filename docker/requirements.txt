@@ -1,0 +1,22 @@
+# Imagen paper-new:cu126. Driver del servidor 560.35.03 (CUDA 12.6 como máximo): ruedas cu126.
+# torch, torchvision y timm con las mismas versiones verificadas en el servidor para el proyecto cacao.
+# El resto se resolvió sin conflictos con pip (Python 3.10, numpy<2) el 2026-11-12.
+torch==2.14.0+cu126
+torchvision==0.29.0+cu126
+timm==1.0.30
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+pillow==12.3.0
+opencv-python-headless==4.10.0.84
+PyWavelets==1.8.0
+h5py==3.16.0
+PyYAML==6.0.3
+tqdm==4.70.1
+matplotlib==3.10.9
+pytest==9.2.0
+nvidia-ml-py==13.615.71
+fvcore==0.1.5.post20221221
+# Sonda lineal sobre RAD-DINO (microsoft/rad-dino), línea base del nivel 2. Resuelto sin conflictos con pip el 2026-11-12.
+transformers==5.20.2

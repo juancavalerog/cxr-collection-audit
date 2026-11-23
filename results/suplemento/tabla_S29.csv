@@ -1,0 +1,5 @@
+Método,$\rho$,"Ensayo elegido, semilla 0","Ensayo elegido, semilla 1",Coinciden,Spearman entre las métricas de selección,"Cambio de AUC, corridas de la semilla 0 (IC95)","Cambio de AUC, corridas de la semilla 1 (IC95)"
+ERM,0.9,5,3,no,−0.071,−0.029 (−0.040 a −0.018),0.018 (0.007 a 0.030)
+ERM,0.99,6,3,no,0.119,0.020 (0.010 a 0.031),−0.012 (−0.021 a −0.002)
+LISA,0.9,3,7,no,0.810,0.029 (0.018 a 0.040),0.021 (0.010 a 0.033)
+LISA,0.99,0,1,no,−0.690,−0.049 (−0.061 a −0.037),−0.021 (−0.033 a −0.009)

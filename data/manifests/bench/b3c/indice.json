@@ -1,0 +1,25 @@
+{
+  "manifiestos": [
+    "data/manifests/bench/b3c/apos/rho0.50_s0.csv",
+    "data/manifests/bench/b3c/apos/rho0.50_s1.csv",
+    "data/manifests/bench/b3c/apos/rho0.50_s2.csv",
+    "data/manifests/bench/b3c/apos/rho0.90_s0.csv",
+    "data/manifests/bench/b3c/apos/rho0.90_s1.csv",
+    "data/manifests/bench/b3c/apos/rho0.90_s2.csv",
+    "data/manifests/bench/b3c/apos/rho0.99_s0.csv",
+    "data/manifests/bench/b3c/apos/rho0.99_s1.csv",
+    "data/manifests/bench/b3c/apos/rho0.99_s2.csv",
+    "data/manifests/bench/b3c/apos/rho1.00_s0.csv",
+    "data/manifests/bench/b3c/apos/rho1.00_s1.csv",
+    "data/manifests/bench/b3c/apos/rho1.00_s2.csv"
+  ],
+  "imagenes_unicas": 6464,
+  "factor_k": 0.25,
+  "tamanos": {
+    "train": 700,
+    "val": 100,
+    "val_desconf": 50,
+    "test_desconf": 125,
+    "test_invertido": 250
+  }
+}

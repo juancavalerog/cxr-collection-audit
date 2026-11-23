@@ -1,0 +1,30 @@
+{
+ "nombre": "corr_cadena",
+ "pasos": {
+  "corr_01_tablas": {
+   "codigo": 0,
+   "segundos": 830.0,
+   "fin": "2026-11-21T23:43:09"
+  },
+  "corr_02_complementos": {
+   "codigo": 0,
+   "segundos": 180.5,
+   "fin": "2026-11-21T23:46:09"
+  },
+  "corr_03_impacto": {
+   "codigo": 0,
+   "segundos": 0.8,
+   "fin": "2026-11-21T23:46:10"
+  },
+  "corr_04_simulacion": {
+   "codigo": 0,
+   "segundos": 1620.9,
+   "fin": "2026-11-22T00:13:11"
+  },
+  "corr_05_verificar": {
+   "codigo": 0,
+   "segundos": 16.7,
+   "fin": "2026-11-22T00:13:28"
+  }
+ }
+}

@@ -1,0 +1,5 @@
+# Piloto de la Puerta 3 (docs/07_piloto.md): CSD-Net con los valores por defecto (ensayo 0), semillas 42 y 123,
+# solo validación. TEST BLOQUEADO.
+base: csdnet_base.yaml
+experiment: csdnet_piloto
+protocol: {fase: piloto, test_bloqueado: true, congelado: null}

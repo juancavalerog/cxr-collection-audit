@@ -1,0 +1,17 @@
+{
+ "orden": "python scripts/sensibilidad/v28.py s4",
+ "fecha_utc": "2026-11-20T16:41:36Z",
+ "B": 2000,
+ "semilla_bootstrap": 2026,
+ "congelacion": "db617b620c2b9a6c7ef588898982006f0d4731457bd63ae0f6d367c10f6e24dc",
+ "tablas": {
+  "s4_auc_por_estado": 36,
+  "s4_auc_resumen": 12,
+  "s4_familias": 48
+ },
+ "notas": [
+  "Predicciones del test escritas por evaluar_test_b1.py --modo test (results/b1/test/), estados ema y last; en DFR, dfr_ema y dfr_last, que las corridas conservan, de modo que DFR entra en esta sensibilidad.",
+  "Las referencias no cambian: D_IN no tiene estados y D_ERM usa los troncos best de ERM (las características solo se extrajeron de ese estado). F-C1 y F-C1b se recalculan como sensibilidad, sin familia propia (enmienda E4)."
+ ],
+ "segundos": 507.9
+}

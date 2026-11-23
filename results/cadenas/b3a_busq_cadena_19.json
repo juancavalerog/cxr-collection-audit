@@ -1,0 +1,25 @@
+{
+ "nombre": "b3a_busq_cadena_19",
+ "pasos": {
+  "b3a_busq_dfa_fuente_rho100_s0_t7": {
+   "codigo": 0,
+   "segundos": 255.2,
+   "fin": "2026-11-15T15:54:10"
+  },
+  "b3a_busq_dfr_rho100_s0_t7": {
+   "codigo": 0,
+   "segundos": 163.0,
+   "fin": "2026-11-15T15:56:53"
+  },
+  "b3a_busq_erm_mascara_rho100_s0_t7": {
+   "codigo": 0,
+   "segundos": 195.8,
+   "fin": "2026-11-15T16:00:08"
+  },
+  "b3a_busq_erm_cuotas_rho100_s0_t7": {
+   "codigo": 0,
+   "segundos": 156.6,
+   "fin": "2026-11-15T16:02:45"
+  }
+ }
+}

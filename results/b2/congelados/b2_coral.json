@@ -1,0 +1,10 @@
+{
+  "method": "coral",
+  "params": {
+    "mmd_gamma": 2.0095772827832175
+  },
+  "lr_B": 1.6288263414697038e-05,
+  "trial": 6,
+  "metrica_seleccion": 0.9972002141813462,
+  "corrida_busqueda": "results/train/b2_coral_t6/seed0"
+}

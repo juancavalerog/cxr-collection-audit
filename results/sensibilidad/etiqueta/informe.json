@@ -1,0 +1,303 @@
+{
+ "metodos": [
+  "erm",
+  "groupdro",
+  "lisa",
+  "dfr"
+ ],
+ "referencia": "erm",
+ "niveles_por_metodo": {
+  "erm": [
+   0.5,
+   0.9,
+   0.99,
+   1.0
+  ],
+  "groupdro": [
+   0.5,
+   0.9,
+   0.99,
+   1.0
+  ],
+  "lisa": [
+   0.5,
+   0.9,
+   0.99,
+   1.0
+  ],
+  "dfr": [
+   0.5,
+   0.9,
+   0.99
+  ]
+ },
+ "semillas_por_nivel": {
+  "erm": {
+   "0.5": [
+    0,
+    1,
+    2
+   ],
+   "0.9": [
+    0,
+    1,
+    2
+   ],
+   "0.99": [
+    0,
+    1,
+    2
+   ],
+   "1.0": [
+    0,
+    1,
+    2
+   ]
+  },
+  "groupdro": {
+   "0.5": [
+    0,
+    1,
+    2
+   ],
+   "0.9": [
+    0,
+    1,
+    2
+   ],
+   "0.99": [
+    0,
+    1,
+    2
+   ],
+   "1.0": [
+    0,
+    1,
+    2
+   ]
+  },
+  "lisa": {
+   "0.5": [
+    0,
+    1,
+    2
+   ],
+   "0.9": [
+    0,
+    1,
+    2
+   ],
+   "0.99": [
+    0,
+    1,
+    2
+   ],
+   "1.0": [
+    0,
+    1,
+    2
+   ]
+  },
+  "dfr": {
+   "0.5": [
+    0,
+    1,
+    2
+   ],
+   "0.9": [
+    0,
+    1,
+    2
+   ],
+   "0.99": [
+    0,
+    1,
+    2
+   ]
+  }
+ },
+ "diseno_rho": [
+  0.5,
+  0.6,
+  0.7,
+  0.8,
+  0.9,
+  0.95,
+  0.99
+ ],
+ "B": 2000,
+ "semilla_bootstrap": 2026,
+ "semilla_remuestreo_semillas": 20261117,
+ "remuestreo": "jerárquico corregido (ecuación (15)): pacientes más efectos de semilla reducidos (estratos por patrón de presencia, pareados entre métodos y niveles); sensibilidades: pacientes con modelos fijos, doble sin corrección y t pareada",
+ "n_imagenes": 500,
+ "n_pacientes": 500,
+ "n_pos": 250,
+ "n_neg": 250,
+ "semillas_principal": {
+  "erm": {
+   "0.5": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "0.9": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "0.99": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "1.0": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "groupdro": {
+   "0.5": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "0.9": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "0.99": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "1.0": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "lisa": {
+   "0.5": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "0.9": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "0.99": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "1.0": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "dfr": {
+   "0.5": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "0.9": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "0.99": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  }
+ },
+ "apartado": "etiqueta",
+ "titulo": "S-E, segunda etiqueta (cardiomegalia, B3c), ConvNeXt-Tiny",
+ "conjunto": "test_desconf",
+ "corridas": 45,
+ "faltan": [],
+ "sha256_congelacion": "db617b620c2b9a6c7ef588898982006f0d4731457bd63ae0f6d367c10f6e24dc",
+ "troncos": [
+  "{\"etiqueta_pesos\": \"convnext_tiny.in12k_ft_in1k\", \"etiqueta_por_defecto_timm\": \"convnext_tiny.in12k_ft_in1k\", \"hf_hub_id\": \"timm/convnext_tiny.in12k_ft_in1k\", \"n_batchnorm\": 0, \"num_features\": 768, \"preentrenado\": true, \"timm\": \"1.0.30\", \"tronco\": \"convnext_tiny\"}"
+ ],
+ "corridas_principal": 115,
+ "prueba_de_hipotesis": false,
+ "segundos": 26.8
+}

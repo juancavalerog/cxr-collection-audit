@@ -1,0 +1,13 @@
+# Método dfr en el benchmark B3A. Protocolo común de configs/baseline_dfr.yaml más la capa configs/b3a_base.yaml.
+# Lanzar (lo hacen scripts/jobs/make_jobs_b3a.py): python -m src.baselines.run --config configs/b3a_dfr.yaml --seed <S>
+#   [--trial T] --experimento <nombre> --set data.bench=<manifiesto de la semilla S>
+base: [baseline_dfr.yaml, b3a_base.yaml]
+experiment: b3a_dfr
+# DFR: etapa 1 seleccionada en val_sel (no selecciona con val_fit, que usa para reajustar); dfr_best ajusta en
+# val_fit y dfr_bestdc en val_desconf_fit (docs/08 versión 2, V2.4.6). dfr_best no es aplicable si val_fit no tiene
+# ninguna fuente con las dos clases (B3a, rho = 1.0).
+data: {eval_sets: [val, val_desconf, val_sel]}
+selection: {subset: val_sel, subset_dc: val_desconf_sel}
+baseline:
+  method: dfr
+  params: {states: [best, bestdc]}

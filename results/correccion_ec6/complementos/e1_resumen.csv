@@ -1,0 +1,11 @@
+lectura,metodos
+IC95 jerárquico con extremo inferior > -0.02,11
+IC95 jerárquico con extremo inferior > -0.01,11
+IC95 jerárquico que excluye el cero,11
+IC95 jerárquico entero por encima de cero (referencia mejor),10
+IC95 jerárquico entero por debajo de cero (método mejor),1
+IC95 de pacientes (publicado) que excluye el cero,11
+"no inferior 0.02 con Holm, jerárquico (sensibilidad)",11
+"no inferior 0.01 con Holm, jerárquico (sensibilidad)",11
+"no inferior 0.02 con Holm, publicado",11
+"no inferior 0.01 con Holm, publicado",11

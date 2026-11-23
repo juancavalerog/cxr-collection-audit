@@ -1,0 +1,8 @@
+# Método erm en el benchmark B2. Protocolo común de configs/baseline_erm.yaml más la capa configs/b2_base.yaml.
+# Lanzar (lo hacen scripts/jobs/make_jobs_b2.py): python -m src.baselines.run --config configs/b2_erm.yaml --seed <S>
+#   [--trial T] --experimento <nombre> --set data.bench=<manifiesto de la semilla S>
+base: [baseline_erm.yaml, b2_base.yaml]
+experiment: b2_erm
+baseline:
+  method: erm
+  params: {}

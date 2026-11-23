@@ -1,0 +1,16 @@
+numero,fichero_ingles,guion_ingles,funcion,fichero_espanol_de_origen,guion_espanol
+Fig. 1,Fig1,scripts/figs/en/figs_principales_en.py,fig1,figB1_colecciones,scripts/figs/figB1_colecciones.py
+Fig. 2,Fig2,scripts/figs/en/figs_principales_en.py,fig2,figB2_bosque_c1,scripts/figs/figB2_bosque_c1.py
+Fig. 3,Fig3,scripts/figs/en/figs_principales_en.py,fig3,figB3_colecciones_senal,scripts/figs/figB3_colecciones_senal.py
+Fig. 4,Fig4,scripts/figs/en/figs_principales_en.py,fig4,figB4_covidgr,scripts/figs/figB4_covidgr.py
+Fig. 5,Fig5,scripts/figs/en/figs_principales_en.py,fig5,figB5_dosis_respuesta,scripts/figs/figB5_dosis_respuesta.py
+Fig. 6,Fig6,scripts/figs/en/figs_principales_en.py,fig6,figB6_area_coste,scripts/figs/figB6_area_coste.py
+Fig. 7,Fig7,scripts/figs/en/figs_principales_en.py,fig7,figB7_seleccion,scripts/figs/figB7_seleccion.py
+Fig. S1,FigS1,scripts/figs/en/figs_suplementarias_en.py,s1,figSB7_piloto,scripts/figs/figSB_lote2.py (sb7)
+Fig. S2,FigS2,scripts/figs/en/figs_suplementarias_en.py,s2,figSB1_estratos,scripts/figs/figSB_lote1.py (sb1)
+Fig. S3,FigS3,scripts/figs/en/figs_suplementarias_en.py,s3,figSB2_adquisicion_mascara,scripts/figs/figSB_lote1.py (sb2)
+Fig. S4,FigS4,scripts/figs/en/figs_suplementarias_en.py,s4,figSB3_test_invertido,scripts/figs/figSB_lote1.py (sb3)
+Fig. S5,FigS5,scripts/figs/en/figs_suplementarias_en.py,s5,figSB4_orientacion,scripts/figs/figSB_lote1.py (sb4)
+Fig. S6,FigS6,scripts/figs/en/figs_suplementarias_en.py,s6,figSB6_tuberculosis,scripts/figs/figSB_lote2.py (sb6)
+Fig. S7,FigS7,scripts/figs/en/figs_suplementarias_en.py,s7,figSB5_seleccion_por_metodo,scripts/figs/figSB_lote2.py (sb5)
+Fig. S8,FigS8,scripts/figs/en/figs_suplementarias_en.py,s8,figSB8_hiperparametros,scripts/figs/figSB_lote2.py (sb8)

@@ -1,0 +1,15 @@
+{
+  "method": "groupdro",
+  "params": {
+    "eta": 0.054895307744437224
+  },
+  "lr_B": 1.2692603306821225e-05,
+  "trial": 1,
+  "config": "configs/b3a_groupdro.yaml",
+  "parametros_completos": {
+    "eta": 0.054895307744437224
+  },
+  "corrida_busqueda": "results/train/b3a_A_groupdro_rho090_t1/seed0",
+  "uso": "C3 parte (b), enmienda E2: repetición del ensayo 1",
+  "comprobado_con": "results/train/b3a_A_groupdro_rho090_t1/seed0/config_resolved.json"
+}

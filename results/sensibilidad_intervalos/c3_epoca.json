@@ -1,0 +1,19 @@
+{
+ "orden": "python scripts/sensibilidad/intervalos.py c3-epoca",
+ "fecha_utc": "2026-11-20T18:14:37Z",
+ "B": 2000,
+ "semilla_bootstrap": 2026,
+ "semilla_semillas": 20261117,
+ "congelacion": "db617b620c2b9a6c7ef588898982006f0d4731457bd63ae0f6d367c10f6e24dc",
+ "tablas": {
+  "c3_epoca_control": 14,
+  "c3_epoca_media_alternativos": 8,
+  "c3_epoca_por_metodo_alternativos": 88
+ },
+ "notas": [
+  "Control: el principal recalculado con los mismos cubos y multiplicidades frente a results/c2c3/; diferencia máxima 9.99e-17."
+ ],
+ "segundos": 90.7,
+ "python": "3.10.12",
+ "numpy": "2.2.6"
+}

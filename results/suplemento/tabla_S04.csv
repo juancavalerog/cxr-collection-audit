@@ -1,0 +1,89 @@
+Método,$\rho$,Ensayo,Tasa,Parámetros,AUC de selección
+ERM,0.5,5,$6.85 \times 10^{-5}$,solo la tasa,0.934
+ERM,0.6,1,$4.27 \times 10^{-5}$,solo la tasa,0.943
+ERM,0.7,4,$1.99 \times 10^{-5}$,solo la tasa,0.956
+ERM,0.8,7,$2.03 \times 10^{-4}$,solo la tasa,0.964
+ERM,0.9,5,$6.85 \times 10^{-5}$,solo la tasa,0.983
+ERM,0.95,6,$6.87 \times 10^{-5}$,solo la tasa,0.993
+ERM,0.99,6,$6.87 \times 10^{-5}$,solo la tasa,0.999
+ERM,1.0,0,$5 \times 10^{-5}$,valores por defecto,1.000
+GroupDRO,0.5,0,$5 \times 10^{-5}$,valores por defecto,0.934
+GroupDRO,0.6,0,$5 \times 10^{-5}$,valores por defecto,0.942
+GroupDRO,0.7,4,$1.83 \times 10^{-5}$,η 0.0103,0.956
+GroupDRO,0.8,6,$2.26 \times 10^{-5}$,η 0.00494,0.960
+GroupDRO,0.9,3,$4.84 \times 10^{-5}$,η 0.0395,0.981
+GroupDRO,0.95,5,$4.04 \times 10^{-5}$,η 0.0121,0.992
+GroupDRO,0.99,0,$5 \times 10^{-5}$,valores por defecto,0.999
+GroupDRO,1.0,0,$5 \times 10^{-5}$,valores por defecto,1.000
+DANN,0.5,1,$2.36 \times 10^{-5}$,λ 0.0336; anchura 256; capas 3; abandono 0; tasa del discriminador 30; penalización 3.49,0.933
+DANN,0.6,6,$1.12 \times 10^{-4}$,λ 0.0673; anchura 1024; capas 5; abandono 0; tasa del discriminador 3; penalización 0.166,0.943
+DANN,0.7,4,$1.08 \times 10^{-5}$,λ 0.0704; anchura 256; capas 5; abandono 0; tasa del discriminador 10; penalización 0.0193,0.957
+DANN,0.8,0,$5 \times 10^{-5}$,valores por defecto,0.962
+DANN,0.9,0,$5 \times 10^{-5}$,valores por defecto,0.984
+DANN,0.95,5,$3.32 \times 10^{-5}$,λ 0.276; anchura 64; capas 3; abandono 0; tasa del discriminador 3; penalización 0.0807,0.993
+DANN,0.99,2,$1.17 \times 10^{-5}$,λ 0.38; anchura 1024; capas 5; abandono 0; tasa del discriminador 30; penalización 0.686,0.999
+DANN,1.0,0,$5 \times 10^{-5}$,valores por defecto,1.000
+CORAL,0.5,7,$4.13 \times 10^{-5}$,peso 2.16,0.933
+CORAL,0.6,2,$4.73 \times 10^{-5}$,peso 2.74,0.942
+CORAL,0.7,2,$4.73 \times 10^{-5}$,peso 2.74,0.958
+CORAL,0.8,2,$4.73 \times 10^{-5}$,peso 2.74,0.961
+CORAL,0.9,3,$1.95 \times 10^{-5}$,peso 2.89,0.982
+CORAL,0.95,3,$1.95 \times 10^{-5}$,peso 2.89,0.993
+CORAL,0.99,0,$5 \times 10^{-5}$,valores por defecto,0.999
+CORAL,1.0,0,$5 \times 10^{-5}$,valores por defecto,1.000
+MixStyle,0.5,0,$5 \times 10^{-5}$,valores por defecto,0.933
+MixStyle,0.6,0,$5 \times 10^{-5}$,valores por defecto,0.943
+MixStyle,0.7,6,$4.43 \times 10^{-5}$,p 0.5; α 0.2,0.956
+MixStyle,0.8,6,$4.43 \times 10^{-5}$,p 0.5; α 0.2,0.963
+MixStyle,0.9,6,$4.43 \times 10^{-5}$,p 0.5; α 0.2,0.982
+MixStyle,0.95,0,$5 \times 10^{-5}$,valores por defecto,0.993
+MixStyle,0.99,5,$3.38 \times 10^{-5}$,p 0.7; α 0.2,0.999
+MixStyle,1.0,0,$5 \times 10^{-5}$,valores por defecto,1.000
+Mezcla de amplitud de Fourier,0.5,2,$4.76 \times 10^{-5}$,η 0.5; lado 1; consistencia 1,0.931
+Mezcla de amplitud de Fourier,0.6,2,$4.76 \times 10^{-5}$,η 0.5; lado 1; consistencia 1,0.941
+Mezcla de amplitud de Fourier,0.7,7,$1.79 \times 10^{-5}$,η 0.5; lado 1; consistencia 4,0.954
+Mezcla de amplitud de Fourier,0.8,7,$1.79 \times 10^{-5}$,η 0.5; lado 1; consistencia 4,0.962
+Mezcla de amplitud de Fourier,0.9,4,$2.96 \times 10^{-5}$,η 0.5; lado 1; consistencia 4,0.983
+Mezcla de amplitud de Fourier,0.95,2,$4.76 \times 10^{-5}$,η 0.5; lado 1; consistencia 1,0.993
+Mezcla de amplitud de Fourier,0.99,3,$1.32 \times 10^{-4}$,η 1; lado 1; consistencia 0.5,0.999
+Mezcla de amplitud de Fourier,1.0,0,$5 \times 10^{-5}$,valores por defecto,1.000
+LISA,0.5,6,$5.68 \times 10^{-5}$,α 4; dentro de la clase 0.5,0.935
+LISA,0.6,3,$6.99 \times 10^{-5}$,α 1; dentro de la clase 0.5,0.941
+LISA,0.7,4,$4.75 \times 10^{-5}$,α 2; dentro de la clase 0.5,0.954
+LISA,0.8,3,$6.99 \times 10^{-5}$,α 1; dentro de la clase 0.5,0.958
+LISA,0.9,3,$6.99 \times 10^{-5}$,α 1; dentro de la clase 0.5,0.978
+LISA,0.95,6,$5.68 \times 10^{-5}$,α 4; dentro de la clase 0.5,0.991
+LISA,0.99,0,$5 \times 10^{-5}$,valores por defecto,0.999
+LISA,1.0,0,$5 \times 10^{-5}$,valores por defecto,1.000
+DFA con fuente,0.5,7,$9.54 \times 10^{-5}$,sesgo 2; sesgo tras intercambio 5; intercambio 0.1; época de inicio 3; pesos ninguno,0.932
+DFA con fuente,0.6,1,$2.44 \times 10^{-5}$,sesgo 10; sesgo tras intercambio 5; intercambio 0.1; época de inicio 1; pesos 1/P(y | s),0.941
+DFA con fuente,0.7,4,$1.11 \times 10^{-5}$,sesgo 5; sesgo tras intercambio 2; intercambio 0.5; época de inicio 1; pesos ninguno,0.956
+DFA con fuente,0.8,5,$3.72 \times 10^{-5}$,sesgo 1; sesgo tras intercambio 5; intercambio 1; época de inicio 1; pesos ninguno,0.962
+DFA con fuente,0.9,4,$1.11 \times 10^{-5}$,sesgo 5; sesgo tras intercambio 2; intercambio 0.5; época de inicio 1; pesos ninguno,0.981
+DFA con fuente,0.95,2,$1.57 \times 10^{-5}$,sesgo 5; sesgo tras intercambio 2; intercambio 0.5; época de inicio 10; pesos ninguno,0.993
+DFA con fuente,0.99,2,$1.57 \times 10^{-5}$,sesgo 5; sesgo tras intercambio 2; intercambio 0.5; época de inicio 10; pesos ninguno,0.999
+DFA con fuente,1.0,1,$2.44 \times 10^{-5}$,sesgo 10; sesgo tras intercambio 5; intercambio 0.1; época de inicio 1; pesos 1/P(y | s),1.000
+DFR,0.5,1,$2.72 \times 10^{-5}$,solo la tasa,0.935
+DFR,0.6,4,$8.28 \times 10^{-5}$,solo la tasa,0.954
+DFR,0.7,6,$6.84 \times 10^{-5}$,solo la tasa,0.965
+DFR,0.8,5,$3.78 \times 10^{-5}$,solo la tasa,0.968
+DFR,0.9,4,$8.28 \times 10^{-5}$,solo la tasa,0.980
+DFR,0.95,5,$3.78 \times 10^{-5}$,solo la tasa,0.993
+DFR,0.99,5,$3.78 \times 10^{-5}$,solo la tasa,0.999
+DFR,1.0,0,$5 \times 10^{-5}$,valores por defecto,1.000
+ERM con máscara,0.5,0,$5 \times 10^{-5}$,valores por defecto,0.915
+ERM con máscara,0.6,0,$5 \times 10^{-5}$,valores por defecto,0.922
+ERM con máscara,0.7,2,$5.68 \times 10^{-5}$,solo la tasa,0.939
+ERM con máscara,0.8,5,$1.12 \times 10^{-4}$,solo la tasa,0.952
+ERM con máscara,0.9,0,$5 \times 10^{-5}$,valores por defecto,0.976
+ERM con máscara,0.95,5,$1.12 \times 10^{-4}$,solo la tasa,0.992
+ERM con máscara,0.99,5,$1.12 \times 10^{-4}$,solo la tasa,0.999
+ERM con máscara,1.0,0,$5 \times 10^{-5}$,valores por defecto,1.000
+ERM con cuotas,0.5,4,$2.40 \times 10^{-4}$,solo la tasa,0.930
+ERM con cuotas,0.6,6,$1.57 \times 10^{-4}$,solo la tasa,0.936
+ERM con cuotas,0.7,0,$5 \times 10^{-5}$,valores por defecto,0.954
+ERM con cuotas,0.8,0,$5 \times 10^{-5}$,valores por defecto,0.962
+ERM con cuotas,0.9,4,$2.40 \times 10^{-4}$,solo la tasa,0.982
+ERM con cuotas,0.95,7,$1.70 \times 10^{-5}$,solo la tasa,0.992
+ERM con cuotas,0.99,2,$1.64 \times 10^{-4}$,solo la tasa,0.999
+ERM con cuotas,1.0,0,$5 \times 10^{-5}$,valores por defecto,1.000

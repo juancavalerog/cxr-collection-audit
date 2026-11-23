@@ -1,0 +1,8 @@
+{
+  "method": "dann",
+  "params": {},
+  "lr_B": 5e-05,
+  "trial": 0,
+  "metrica_seleccion": 1.0,
+  "corrida_busqueda": "results/train/b3a_A_dann_rho100_t0/seed0"
+}

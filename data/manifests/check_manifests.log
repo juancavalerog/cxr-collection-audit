@@ -1,0 +1,101 @@
+== covidx_cxr4.csv
+  [OK]   filas 84818 (esperado 84818)
+  [OK]   image_path unico: True
+  [OK]   patient_id sin vacios
+  [OK]   conteo por particion {'train': 67863, 'test': 8482, 'val': 8473}
+  [OK]   train por clase (1=positivo) {1: 57199, 0: 10664}
+  [OK]   negativos de train en rsna: 9719 (esperado 9719)
+  [OK]   negativos de train en bimcv: 647 (esperado 647)
+  Tabla clase por fuente y particion:
+    label                0      1
+    split source                 
+    test  bimcv       4041   4041
+          ricord         0    200
+          rsna         200      0
+    train actmed        78     23
+          bimcv        647  42495
+          cohen        220    251
+          fig1           0     22
+          ricord         0    834
+          rsna        9719      0
+          sirm           0    878
+          stonybrook     0  12696
+    val   actmed        29      2
+          bimcv        257   3151
+          cohen         77     19
+          fig1           0      2
+          ricord         0     62
+          rsna        3869      0
+          sirm           0     65
+          stonybrook     0    940
+  [OK]   covidx_cxr4.csv: pacientes compartidos train-val (clave source+patient_id): 0
+  [OK]   covidx_cxr4.csv: pacientes compartidos train-test (clave source+patient_id): 0
+  [OK]   covidx_cxr4.csv: pacientes compartidos val-test (clave source+patient_id): 0
+  [OK]   covidx_cxr4.csv: pacientes compartidos train-val (clave patient_id): 0
+  [OK]   covidx_cxr4.csv: pacientes compartidos train-test (clave patient_id): 0
+  [OK]   covidx_cxr4.csv: pacientes compartidos val-test (clave patient_id): 0
+  Pacientes unicos: 45342
+  [OK]   covidx_cxr4.csv: existencia de ficheros (completo): 0 ausentes
+== nih_cxr14.csv
+  [OK]   filas 112120 (esperado 112120)
+  [OK]   image_path unico: True
+  [OK]   patient_id sin vacios
+  [INFO] nih_cxr14.csv: sin particiones definidas, no se comprueba solapamiento de pacientes
+  Vistas: {'PA': 67310, 'AP': 44810}
+  Pacientes unicos: 30805
+  [OK]   nih_cxr14.csv: existencia de ficheros (completo): 0 ausentes
+== chexpert_small.csv
+  [OK]   filas 223648 (esperado 223648)
+  [OK]   image_path unico: True
+  [OK]   patient_id sin vacios
+  [OK]   conteo por particion {'train': 223414, 'valid': 234}
+  [OK]   chexpert_small.csv: pacientes compartidos train-valid (clave patient_id): 0
+  Vistas: {'Frontal': 191229, 'Lateral': 32419}
+  Pacientes unicos: 64740
+  [OK]   chexpert_small.csv: existencia de ficheros (completo): 0 ausentes
+== covidx_rsna_to_nih_map.csv (enlace por hash RSNA -> NIH, ver docs/02_datos.md Section 4)
+  imagenes RSNA de COVIDx con copia confirmada en NIH: 13756; pacientes NIH distintos: 8007
+  [AVISO] pacientes NIH compartidos train-val via RSNA: 923 (3421 imagenes)
+  [AVISO] pacientes NIH compartidos train-test via RSNA: 114 (709 imagenes)
+  [AVISO] pacientes NIH compartidos val-test via RSNA: 44 (109 imagenes)
+  Estos cruces no son visibles con el patient_id oficial de COVIDx (un UUID por imagen RSNA).
+  No se cuentan como fallo de la particion oficial; los benchmarks nuevos reagrupan por paciente NIH.
+== covidx_cxr4_clean.csv
+  [OK]   columnas completas
+  [OK]   filas 84818 (esperado 84818)
+  split_clean: {'train': 67932, 'test': 8479, 'val': 7664, 'excluded': 743}
+  [OK]   excluidas por paciente NIH en test: 655 (esperado 655)
+  [OK]   pacientes NIH compartidos train-val en la version limpia: 0
+  [OK]   pacientes NIH compartidos train-test en la version limpia: 0
+  [OK]   pacientes NIH compartidos val-test en la version limpia: 0
+  [OK]   covidx_cxr4_clean: pacientes compartidos train-val (clave source+patient_id): 0
+  [OK]   covidx_cxr4_clean: pacientes compartidos train-test (clave source+patient_id): 0
+  [OK]   covidx_cxr4_clean: pacientes compartidos val-test (clave source+patient_id): 0
+  [OK]   pares casi identicos que siguen en particiones distintas: 0
+  [OK]   imagenes con etiqueta en conflicto excluidas: 8 (esperado 8)
+  [OK]   val_robust solo BIMCV de val limpia: 3407 imagenes, 999 pacientes
+  [OK]   test_subset {'bimcv': 8082, 'ricord': 200, 'rsna_con_fuga': 129, 'rsna_sin_fuga': 71}
+  Tabla clase por fuente de la version limpia:
+    label                      0      1
+    split_clean source                 
+    test        bimcv       4039   4040
+                ricord         0    200
+                rsna         200      0
+    train       actmed        78     23
+                bimcv        647  42493
+                cohen        219    246
+                fig1           0     21
+                ricord         0    834
+                rsna        9871      0
+                sirm           0    804
+                stonybrook     0  12696
+    val         actmed        29      2
+                bimcv        257   3150
+                cohen         76     19
+                fig1           0      2
+                ricord         0     62
+                rsna        3062      0
+                sirm           0     65
+                stonybrook     0    940
+
+RESUMEN: todas las comprobaciones pasan

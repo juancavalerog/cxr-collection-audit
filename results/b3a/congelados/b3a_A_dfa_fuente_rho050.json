@@ -1,0 +1,14 @@
+{
+  "method": "dfa_fuente",
+  "params": {
+    "lambda_dis_align": 2.0,
+    "lambda_swap": 0.1,
+    "lambda_swap_align": 5.0,
+    "peso": "ninguno",
+    "swap_start_epoch": 3
+  },
+  "lr_B": 9.538693800242192e-05,
+  "trial": 7,
+  "metrica_seleccion": 0.9321625000000001,
+  "corrida_busqueda": "results/train/b3a_A_dfa_fuente_rho050_t7/seed0"
+}

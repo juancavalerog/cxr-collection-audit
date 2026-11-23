@@ -1,0 +1,115 @@
+{
+ "nombre": "st_r50_cadena_g1",
+ "pasos": {
+  "st_r50_lisa_rho050_s0": {
+   "codigo": 0,
+   "segundos": 696.8,
+   "fin": "2026-11-19T23:19:34"
+  },
+  "st_r50_groupdro_rho090_s0": {
+   "codigo": 0,
+   "segundos": 571.0,
+   "fin": "2026-11-19T23:29:05"
+  },
+  "st_r50_dfr_rho090_s0": {
+   "codigo": 0,
+   "segundos": 346.3,
+   "fin": "2026-11-19T23:34:52"
+  },
+  "st_r50_erm_rho099_s0": {
+   "codigo": 0,
+   "segundos": 366.9,
+   "fin": "2026-11-19T23:40:58"
+  },
+  "st_r50_groupdro_rho099_s0": {
+   "codigo": 0,
+   "segundos": 340.5,
+   "fin": "2026-11-19T23:46:39"
+  },
+  "st_r50_lisa_rho099_s0": {
+   "codigo": 0,
+   "segundos": 421.6,
+   "fin": "2026-11-19T23:53:41"
+  },
+  "st_r50_groupdro_rho100_s0": {
+   "codigo": 0,
+   "segundos": 345.6,
+   "fin": "2026-11-19T23:59:26"
+  },
+  "st_r50_erm_rho050_s1": {
+   "codigo": 0,
+   "segundos": 669.2,
+   "fin": "2026-11-20T00:10:35"
+  },
+  "st_r50_groupdro_rho050_s1": {
+   "codigo": 0,
+   "segundos": 577.8,
+   "fin": "2026-11-20T00:20:13"
+  },
+  "st_r50_erm_rho090_s1": {
+   "codigo": 0,
+   "segundos": 427.6,
+   "fin": "2026-11-20T00:27:21"
+  },
+  "st_r50_groupdro_rho090_s1": {
+   "codigo": 0,
+   "segundos": 675.5,
+   "fin": "2026-11-20T00:38:36"
+  },
+  "st_r50_lisa_rho090_s1": {
+   "codigo": 0,
+   "segundos": 548.7,
+   "fin": "2026-11-20T00:47:45"
+  },
+  "st_r50_dfr_rho099_s1": {
+   "codigo": 0,
+   "segundos": 322.9,
+   "fin": "2026-11-20T00:53:08"
+  },
+  "st_r50_erm_rho100_s1": {
+   "codigo": 0,
+   "segundos": 298.5,
+   "fin": "2026-11-20T00:58:06"
+  },
+  "st_r50_lisa_rho100_s1": {
+   "codigo": 0,
+   "segundos": 298.3,
+   "fin": "2026-11-20T01:03:05"
+  },
+  "st_r50_lisa_rho050_s2": {
+   "codigo": 0,
+   "segundos": 579.8,
+   "fin": "2026-11-20T01:12:44"
+  },
+  "st_r50_dfr_rho050_s2": {
+   "codigo": 0,
+   "segundos": 440.7,
+   "fin": "2026-11-20T01:20:05"
+  },
+  "st_r50_dfr_rho090_s2": {
+   "codigo": 0,
+   "segundos": 312.2,
+   "fin": "2026-11-20T01:25:17"
+  },
+  "st_r50_erm_rho099_s2": {
+   "codigo": 0,
+   "segundos": 314.3,
+   "fin": "2026-11-20T01:30:32"
+  },
+  "st_r50_groupdro_rho099_s2": {
+   "codigo": 0,
+   "segundos": 243.4,
+   "fin": "2026-11-20T01:34:35"
+  },
+  "st_r50_lisa_rho099_s2": {
+   "codigo": 0,
+   "segundos": 453.8,
+   "fin": "2026-11-20T01:42:09"
+  },
+  "st_r50_groupdro_rho100_s2": {
+   "codigo": 0,
+   "segundos": 433.7,
+   "fin": "2026-11-20T01:49:23"
+  }
+ }
+}

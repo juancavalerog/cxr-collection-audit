@@ -1,0 +1,11 @@
+{
+  "method": "mixstyle",
+  "params": {
+    "alpha": 0.2,
+    "p": 0.5
+  },
+  "lr_B": 4.434234673254973e-05,
+  "trial": 6,
+  "metrica_seleccion": 0.981934375,
+  "corrida_busqueda": "results/train/b3a_A_mixstyle_rho090_t6/seed0"
+}

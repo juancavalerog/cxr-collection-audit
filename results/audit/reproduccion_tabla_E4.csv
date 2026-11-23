@@ -1,0 +1,16 @@
+cifra,registrada,reproducida,diferencia,cumple
+"expl_erm_reserva_seed42_best, val_robust",0.907,0.9070495954542647,4.9595454264639294e-05,True
+"expl_erm_reserva_seed42_best, AP",0.904,0.903733815115929,-0.00026618488407104124,True
+"expl_erm_reserva_seed42_best, PA",0.902,0.9018422991893884,-0.00015770081061161623,True
+"baseline_erm_seed42_best, val_robust",0.892,0.8920289049471929,2.890494719287595e-05,True
+"baseline_erm_seed42_best, AP",0.9,0.9002580978190734,0.00025809781907337737,True
+"baseline_erm_seed42_best, PA",0.886,0.8863743551952837,0.0003743551952837265,True
+"baseline_erm_seed123_best, val_robust",0.877,0.8771910320548453,0.00019103205484527486,True
+"baseline_erm_seed123_best, AP",0.865,0.8647653460661591,-0.0002346539338409226,True
+"baseline_erm_seed123_best, PA",0.89,0.8898378776713338,-0.00016212232866619214,True
+"expl_erm_reserva_seed42_best, cv_neg_vs_antiguos",0.93,0.9303139779529954,0.0003139779529953701,True
+"expl_erm_reserva_seed42_best, cv_neg_vs_nuevos",0.736,0.73624063726073,0.00024063726072998115,True
+"expl_erm_reserva_seed42_best, cv_antiguos_vs_nuevos",0.929,0.9293230059717377,0.00032300597173762213,True
+"expl_erm_reserva_seed42_best, transfer_antiguos_a_nuevos",0.62,0.6203880190605854,0.00038801906058538727,True
+"expl_erm_reserva_seed42_best, transfer_nuevos_a_antiguos",0.629,0.6290214697566429,2.1469756642855664e-05,True
+"expl_erm_reserva_seed42_best, lectura_nuevos_en_val_robust",0.635,0.635317151503922,0.0003171515039219752,True

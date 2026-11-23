@@ -1,0 +1,336 @@
+{
+  "seed": 42,
+  "experiment": "baseline_dfa_fuente_t7",
+  "history": [
+    {
+      "phase": "A",
+      "epoch": 0,
+      "loss": 1.2795952997414182,
+      "seconds": 57.2
+    },
+    {
+      "phase": "A",
+      "epoch": 1,
+      "loss": 0.971456252361197,
+      "seconds": 50.7
+    },
+    {
+      "phase": "A",
+      "epoch": 2,
+      "loss": 0.8400130852804346,
+      "seconds": 51.3
+    },
+    {
+      "phase": "B",
+      "epoch": 0,
+      "loss": 0.7106346760765981,
+      "seconds": 138.6,
+      "val_auc_roc": 0.5985832685832685,
+      "val_auc_pr": 0.9418242319479089,
+      "val_n": 1615,
+      "selection": 0.5985832685832685,
+      "improved": true,
+      "wait": 0,
+      "ema_t": 531,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 1,
+      "loss": 0.5048126436615619,
+      "seconds": 133.6,
+      "val_auc_roc": 0.8211862211862211,
+      "val_auc_pr": 0.9804486266667196,
+      "val_n": 1615,
+      "selection": 0.8211862211862211,
+      "improved": true,
+      "wait": 0,
+      "ema_t": 1062,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 2,
+      "loss": 0.3486836917712415,
+      "seconds": 133.2,
+      "val_auc_roc": 0.7491737891737891,
+      "val_auc_pr": 0.968386368975346,
+      "val_n": 1615,
+      "selection": 0.7491737891737891,
+      "wait": 1,
+      "ema_t": 1593,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 3,
+      "loss": 0.3915763303791848,
+      "seconds": 133.4,
+      "val_auc_roc": 0.7476638176638177,
+      "val_auc_pr": 0.9686313211815207,
+      "val_n": 1615,
+      "selection": 0.7476638176638177,
+      "wait": 2,
+      "ema_t": 2124,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 4,
+      "loss": 0.3012678688795441,
+      "seconds": 134.3,
+      "val_auc_roc": 0.8592955192955193,
+      "val_auc_pr": 0.9850536799070252,
+      "val_n": 1615,
+      "selection": 0.8592955192955193,
+      "improved": true,
+      "wait": 0,
+      "ema_t": 2655,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 5,
+      "loss": 0.2540149225900739,
+      "seconds": 133.6,
+      "val_auc_roc": 0.8094975394975394,
+      "val_auc_pr": 0.9762922984306517,
+      "val_n": 1615,
+      "selection": 0.8094975394975394,
+      "wait": 1,
+      "ema_t": 3186,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 6,
+      "loss": 0.22275014170454271,
+      "seconds": 134.3,
+      "val_auc_roc": 0.7748148148148147,
+      "val_auc_pr": 0.9704003137445694,
+      "val_n": 1615,
+      "selection": 0.7748148148148147,
+      "wait": 2,
+      "ema_t": 3717,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 7,
+      "loss": 0.21917134103507308,
+      "seconds": 134.2,
+      "val_auc_roc": 0.8626677026677025,
+      "val_auc_pr": 0.9850507449701653,
+      "val_n": 1615,
+      "selection": 0.8626677026677025,
+      "improved": true,
+      "wait": 0,
+      "ema_t": 4248,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 8,
+      "loss": 0.17720035490230876,
+      "seconds": 133.8,
+      "val_auc_roc": 0.7961538461538462,
+      "val_auc_pr": 0.9763739742372108,
+      "val_n": 1615,
+      "selection": 0.7961538461538462,
+      "wait": 1,
+      "ema_t": 4779,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 9,
+      "loss": 0.16782777588516334,
+      "seconds": 133.4,
+      "val_auc_roc": 0.5495260295260295,
+      "val_auc_pr": 0.93049179875594,
+      "val_n": 1615,
+      "selection": 0.5495260295260295,
+      "wait": 2,
+      "ema_t": 5310,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 10,
+      "loss": 0.15945331031796847,
+      "seconds": 133.3,
+      "val_auc_roc": 0.742991452991453,
+      "val_auc_pr": 0.9651823234389466,
+      "val_n": 1615,
+      "selection": 0.742991452991453,
+      "wait": 3,
+      "ema_t": 5841,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 11,
+      "loss": 0.14660452049148398,
+      "seconds": 133.1,
+      "val_auc_roc": 0.7884537684537685,
+      "val_auc_pr": 0.9757275573001426,
+      "val_n": 1615,
+      "selection": 0.7884537684537685,
+      "wait": 4,
+      "ema_t": 6372,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 12,
+      "loss": 0.14001192983674857,
+      "seconds": 132.8,
+      "val_auc_roc": 0.8285651385651386,
+      "val_auc_pr": 0.9809037383256675,
+      "val_n": 1615,
+      "selection": 0.8285651385651386,
+      "wait": 5,
+      "ema_t": 6903,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 13,
+      "loss": 0.1284613102444723,
+      "seconds": 132.6,
+      "val_auc_roc": 0.862053872053872,
+      "val_auc_pr": 0.9853270937649341,
+      "val_n": 1615,
+      "selection": 0.862053872053872,
+      "wait": 6,
+      "ema_t": 7434,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 14,
+      "loss": 0.11889516740595385,
+      "seconds": 133.0,
+      "val_auc_roc": 0.7734395234395234,
+      "val_auc_pr": 0.9750801715417322,
+      "val_n": 1615,
+      "selection": 0.7734395234395234,
+      "wait": 7,
+      "ema_t": 7965,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 15,
+      "loss": 0.11206993485297552,
+      "seconds": 132.9,
+      "val_auc_roc": 0.816928256928257,
+      "val_auc_pr": 0.9785337045344131,
+      "val_n": 1615,
+      "selection": 0.816928256928257,
+      "wait": 8,
+      "ema_t": 8496,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 16,
+      "loss": 0.10461585194472287,
+      "seconds": 133.4,
+      "val_auc_roc": 0.8279409479409479,
+      "val_auc_pr": 0.9804846167692371,
+      "val_n": 1615,
+      "selection": 0.8279409479409479,
+      "wait": 9,
+      "ema_t": 9027,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 17,
+      "loss": 0.09587870830522671,
+      "seconds": 133.9,
+      "val_auc_roc": 0.7740999740999741,
+      "val_auc_pr": 0.9738249586304757,
+      "val_n": 1615,
+      "selection": 0.7740999740999741,
+      "wait": 10,
+      "ema_t": 9558,
+      "ema_init_weight": null
+    }
+  ],
+  "early_stopping": {
+    "best": 0.8626677026677025,
+    "wait": 10,
+    "best_epoch": 7,
+    "stopped": true
+  },
+  "ema": {
+    "mode": "estandar",
+    "t": 9558,
+    "momentum": 0.9999
+  },
+  "results": {
+    "last/val": {
+      "n": 7664,
+      "auc_roc": 0.9819419800299771,
+      "auc_pr": 0.9821683505348192
+    },
+    "last/val_robust": {
+      "n": 3407,
+      "auc_roc": 0.796956951392749,
+      "auc_pr": 0.9778122883828765
+    },
+    "last/val_robust_sel": {
+      "n": 1615,
+      "auc_roc": 0.7927531727531727,
+      "auc_pr": 0.976470999130494
+    },
+    "best/val": {
+      "n": 7664,
+      "auc_roc": 0.9834402827984483,
+      "auc_pr": 0.9854689584685297
+    },
+    "best/val_robust": {
+      "n": 3407,
+      "auc_roc": 0.8546105861280958,
+      "auc_pr": 0.985529131549652
+    },
+    "best/val_robust_sel": {
+      "n": 1615,
+      "auc_roc": 0.8645091945091945,
+      "auc_pr": 0.9856193109001529
+    },
+    "ema/val": {
+      "n": 7664,
+      "auc_roc": 0.9848583045869336,
+      "auc_pr": 0.9853333879196211
+    },
+    "ema/val_robust": {
+      "n": 3407,
+      "auc_roc": 0.823816935334445,
+      "auc_pr": 0.9816073231404021
+    },
+    "ema/val_robust_sel": {
+      "n": 1615,
+      "auc_roc": 0.8288552188552188,
+      "auc_pr": 0.9813973712797497
+    }
+  },
+  "seleccion": "val_robust_sel",
+  "comparacion_entre_metodos": "val_robust_sel",
+  "no_comparables": {},
+  "almacenamiento": {
+    "estados_conservados": [],
+    "borrados": [
+      "best.pt",
+      "ema.pt",
+      "last.pt",
+      "checkpoint.pt"
+    ],
+    "politica": {
+      "states": [],
+      "keep_checkpoint": false
+    }
+  }
+}

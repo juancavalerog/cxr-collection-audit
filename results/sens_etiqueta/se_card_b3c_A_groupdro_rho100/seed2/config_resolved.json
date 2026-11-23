@@ -1,0 +1,184 @@
+{
+  "experiment": "se_card_b3c_A_groupdro_rho100",
+  "output_dir": "results/train/{experiment}/seed{seed}",
+  "device": null,
+  "precision": "auto",
+  "deterministic": true,
+  "data": {
+    "dataset": "covidx_cxr4",
+    "manifest": null,
+    "mode": "limpia",
+    "train_sources": null,
+    "channel": "homogeneo",
+    "res": 224,
+    "cache": "data/cache_m/bench_b3c/homogeneo_224",
+    "require_cache": true,
+    "num_workers": 12,
+    "eval_batch_size": 256,
+    "eval_sets": [
+      "val",
+      "val_desconf",
+      "test_desconf"
+    ],
+    "synthetic": null,
+    "debug_limit": null,
+    "bench": "data/manifests/bench/b3c/apos/rho1.00_s2.csv"
+  },
+  "model": {
+    "name": "paper1_convnext",
+    "backbone": "convnext_tiny",
+    "init": {
+      "type": "timm_imagenet",
+      "path": null
+    },
+    "input_scale": 1.0,
+    "dropout": 0.5,
+    "drop_path_rate": 0.1,
+    "l2_hidden": 0.0,
+    "freeze_backbone_norms": false,
+    "head_init": "glorot"
+  },
+  "train": {
+    "batch_size": 128,
+    "micro_batch": 128,
+    "steps_per_epoch": null,
+    "sampler": "exact",
+    "sampler_restart_each_phase": true,
+    "augment": "nuevo",
+    "augment_params": {
+      "rotation": 0.03,
+      "zoom": 0.1,
+      "brightness": 0.05,
+      "contrast": [
+        0.9,
+        1.1
+      ],
+      "cutout": 24
+    },
+    "grad_clip": 1.0,
+    "loss": {
+      "name": "focal",
+      "alpha": 0.5,
+      "gamma": 2.0,
+      "apply_class_balancing": true,
+      "label_smoothing": 0.0
+    },
+    "optimizer": {
+      "name": "adamw",
+      "weight_decay": 0.05,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "lr_mult": {
+        "backbone": 1.0,
+        "head": 20.0
+      },
+      "no_decay_norm_bias": true
+    },
+    "phases": [
+      {
+        "name": "A",
+        "epochs": 3,
+        "lr": 0.001,
+        "warmup_frac": 0.05,
+        "min_lr": 1e-07,
+        "train_backbone": false,
+        "ema": false,
+        "early_stopping": false
+      },
+      {
+        "name": "B",
+        "epochs": 60,
+        "lr": 5e-05,
+        "warmup_frac": 0.05,
+        "min_lr": 1e-07,
+        "train_backbone": true,
+        "ema": true,
+        "early_stopping": true
+      }
+    ],
+    "log_every": 20,
+    "stop_after_steps": null,
+    "checkpoint_every_steps": 0
+  },
+  "ema": {
+    "mode": "estandar",
+    "momentum": 0.9999
+  },
+  "selection": {
+    "metric": "auc_roc",
+    "subset": "val",
+    "impl": "exact",
+    "patience": 10,
+    "tta": false,
+    "drop_remainder_batch": null,
+    "subset_dc": "val_desconf"
+  },
+  "eval": {
+    "tta": true,
+    "states": [
+      "best",
+      "bestdc"
+    ]
+  },
+  "thermal": {
+    "every": 50
+  },
+  "protocol": {
+    "fase": "sensibilidad",
+    "test_bloqueado": false,
+    "congelado": "results/sens_etiqueta/congelados/se_card_groupdro.json"
+  },
+  "baseline": {
+    "method": "groupdro",
+    "params": {},
+    "trial": 0,
+    "trial_hparams": {
+      "common": {},
+      "params": {}
+    }
+  },
+  "storage": {
+    "states": [],
+    "keep_checkpoint": false
+  },
+  "seed": 2,
+  "bench": {
+    "id": "b3c",
+    "manifiesto": "data/manifests/bench/b3c/apos/rho1.00_s2.csv",
+    "sha256_manifiesto": "b63939298324e29a4d940bc94787472fda4198aa01b8e4cd82ada473d3e9b571",
+    "sha256_json": "444fe6aa3e9b95cfca00d7c7efa84b658503a6ff158fa7e9da8c6efc8b83838e",
+    "rho": 1.0,
+    "semilla": 2,
+    "orientacion": "apos",
+    "fuentes": [
+      "nih",
+      "chexpert"
+    ],
+    "fuentes_mixtas": [],
+    "fuentes_train": [
+      "chexpert",
+      "nih"
+    ],
+    "train_sources": null,
+    "subconjuntos": [
+      "val_desconf",
+      "test_desconf",
+      "test_invertido"
+    ],
+    "seleccion_json": "val",
+    "test_bloqueado": false,
+    "n": {
+      "test_desconf": 500,
+      "train": 1400,
+      "val": 200,
+      "val_desconf": 200,
+      "val_desconf_fit": 100,
+      "val_desconf_sel": 100,
+      "val_fit": 100,
+      "val_sel": 100
+    }
+  }
+}

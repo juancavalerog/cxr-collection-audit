@@ -1,0 +1,5 @@
+# Ablación A14 del piloto: re-firma canónica (todas las vistas llevadas a una firma de referencia, sin vistas
+# cruzadas), docs/03_arquitectura.md, Tabla 8. Una semilla (42). TEST BLOQUEADO.
+base: csdnet_piloto.yaml
+experiment: csdnet_piloto_a14_canonica
+model: {csdnet: {refirma_target: canonical}}

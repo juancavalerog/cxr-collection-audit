@@ -1,0 +1,14 @@
+Benchmark,Fase,Corridas,Terminadas con código 0,Horas de GPU
+COVIDx CXR-4,búsqueda de hiperparámetros (c),84,84,39.3
+COVIDx CXR-4,"corridas finales, cinco semillas",60,60,28.3
+COVIDx CXR-4,repetición de las corridas de la semilla 42 (b),10,10,4.7
+Derrame pleural,piloto,18,18,1.2
+Derrame pleural,búsqueda de hiperparámetros,704,704,55.2
+Derrame pleural,"corridas finales, cinco semillas (a)",552,506,48.9
+Derrame pleural,"semillas adicionales en 0.9, 0.95 y 0.99",165,165,17.1
+Derrame pleural,repetición de la búsqueda con la semilla 1,32,32,2.9
+Derrame pleural,repetición de la búsqueda con evaluación del test,96,96,9.3
+Derrame pleural,segundo tronco (ResNet-50),45,45,5.5
+Cardiomegalia,segunda etiqueta,45,45,2.4
+Tuberculosis,búsqueda de hiperparámetros,96,96,10.8
+Tuberculosis,"corridas finales, cinco semillas",60,60,7.8

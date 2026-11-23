@@ -1,0 +1,15 @@
+{
+ "orden": "python scripts/sensibilidad/v28.py s2",
+ "fecha_utc": "2026-11-20T16:39:24Z",
+ "B": 2000,
+ "semilla_bootstrap": 2026,
+ "congelacion": "db617b620c2b9a6c7ef588898982006f0d4731457bd63ae0f6d367c10f6e24dc",
+ "tablas": {
+  "s2_detectores_resumen": 4,
+  "s2_f_c1b": 12
+ },
+ "notas": [
+  "Extracto sin cálculo nuevo de results/c1/test/detectores.csv y f_c1b.csv (python scripts/eval/auditoria_covidx.py --c1 test)."
+ ],
+ "segundos": 375.3
+}

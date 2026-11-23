@@ -1,0 +1,25 @@
+Escenario,$\rho$,Semillas,"Razón de varianzas, original","Razón de varianzas, corregido","Cobertura del IC95, original","Cobertura del IC95, corregido","Error de tipo I, original","Error de tipo I, corregido"
+Realista,0.8,5,0.995,0.995,0.882,0.882,0.063,0.063
+Realista,0.9,10,0.897,1.005,0.903,0.921,0.052,0.042
+Realista,0.95,10,0.903,1.010,0.896,0.915,0.049,0.039
+Realista,0.99,10,0.898,1.004,0.899,0.917,0.046,0.037
+Realista,1.0,5,1.002,1.002,0.888,0.888,0.054,0.054
+Realista,área de 0.5 a 0.99,5 y 10,0.937,0.983,0.903,0.914,0.049,0.044
+Correlación alta entre niveles,0.8,5,0.992,0.992,0.877,0.877,0.064,0.064
+Correlación alta entre niveles,0.9,10,0.900,1.001,0.897,0.918,0.051,0.042
+Correlación alta entre niveles,0.95,10,0.895,0.999,0.900,0.920,0.052,0.043
+Correlación alta entre niveles,0.99,10,0.894,1.001,0.901,0.917,0.052,0.044
+Correlación alta entre niveles,1.0,5,0.999,0.999,0.892,0.892,0.057,0.057
+Correlación alta entre niveles,área de 0.5 a 0.99,5 y 10,0.902,0.948,0.886,0.898,0.058,0.052
+"Interacción grande, no proporcional",0.8,5,1.048,1.048,0.916,0.916,0.038,0.038
+"Interacción grande, no proporcional",0.9,10,0.957,1.014,0.928,0.931,0.036,0.034
+"Interacción grande, no proporcional",0.95,10,0.954,1.009,0.923,0.928,0.037,0.034
+"Interacción grande, no proporcional",0.99,10,0.969,1.027,0.922,0.927,0.036,0.035
+"Interacción grande, no proporcional",1.0,5,1.041,1.041,0.914,0.914,0.042,0.042
+"Interacción grande, no proporcional",área de 0.5 a 0.99,5 y 10,0.731,0.755,0.872,0.878,0.062,0.059
+Sin efecto de semilla,0.8,5,1.129,1.129,0.955,0.955,0.023,0.023
+Sin efecto de semilla,0.9,10,1.066,1.074,0.951,0.952,0.024,0.024
+Sin efecto de semilla,0.95,10,1.064,1.072,0.954,0.955,0.023,0.022
+Sin efecto de semilla,0.99,10,1.078,1.088,0.952,0.953,0.025,0.024
+Sin efecto de semilla,1.0,5,1.082,1.082,0.952,0.952,0.025,0.025
+Sin efecto de semilla,área de 0.5 a 0.99,5 y 10,1.072,1.073,0.955,0.955,0.023,0.022

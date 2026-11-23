@@ -1,0 +1,24 @@
+# Capa común del benchmark B3a (derrame pleural, NIH frente a CheXpert, confusión controlada rho de 0.5 a 1.0).
+# No se usa sola: cada configs/b3a_<metodo>.yaml la fusiona DESPUÉS de configs/baseline_<metodo>.yaml
+# (base: [baseline_<metodo>.yaml, b3a_base.yaml]), de modo que pérdida, optimizador, fases, aumento, lote, paciencia y
+# EMA son los del protocolo común de COVIDx (configs/nuevo_base.yaml) y aquí solo cambia lo propio del benchmark.
+# docs/13_entrenamiento_plan_b.md, Section 2; docs/08_evaluacion.md, versión 2, Sections V2.2.3, V2.4.5 y V2.4.6.
+# - data.bench: manifiesto de la corrida (uno por nivel de rho y semilla); obligatorio con --set.
+# - Pasos por época: sin cambio (null = una pasada por los datos, ceil(5 600 / 128) = 44 pasos), igual que en COVIDx.
+# - Selección (estado best) en val, la validación con la misma rho; estado bestdc elegido en val_desconf (sensibilidad).
+# - Tronco ImageNet obligatorio (los pesos NIH del artículo 1 vieron imágenes del test de B3a).
+# - Test bloqueado (test_desconf, test_invertido) hasta la congelación del protocolo.
+# - Almacenamiento: por defecto el de la búsqueda (sin estados; el checkpoint se borra al terminar con código 0).
+experiment: b3a_base
+data:
+  bench: "<obligatorio: --set data.bench=data/manifests/bench/b3a/<orientación>/rho<r>_s<s>.csv>"
+  cache: data/cache_m/bench_b3a/homogeneo_224
+  require_cache: true
+  train_sources: null
+  eval_sets: [val, val_desconf]
+model:
+  init: {type: timm_imagenet, path: null}
+selection: {metric: auc_roc, subset: val, subset_dc: val_desconf, impl: exact, patience: 10, tta: false, drop_remainder_batch: null}
+eval: {tta: true, states: [best, bestdc]}
+protocol: {fase: busqueda, test_bloqueado: true, congelado: null}
+storage: {states: [], keep_checkpoint: false}

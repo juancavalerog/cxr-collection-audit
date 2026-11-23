@@ -1,0 +1,5 @@
+Análisis,AUC (IC95),Diferencia con ERM (IC95)
+"Clasificador de solo adquisición, ajustado con BIMCV de entrenamiento",0.582 (0.565 a 0.600),−0.226 (−0.245 a −0.207)
+"Clasificador de solo adquisición, validación cruzada en el conjunto evaluado (usa la clase)",0.764 (0.749 a 0.779),−0.045 (−0.062 a −0.028)
+ERM con máscara,0.779,−0.029 (−0.038 a −0.021)
+Detector de colección sobre los troncos de ERM con máscara,0.829 (0.816 a 0.840),no aplica

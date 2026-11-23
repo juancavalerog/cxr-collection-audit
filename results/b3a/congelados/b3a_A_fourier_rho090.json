@@ -1,0 +1,12 @@
+{
+  "method": "fourier",
+  "params": {
+    "cons_weight": 4.0,
+    "eta": 0.5,
+    "ratio": 1.0
+  },
+  "lr_B": 2.959947779580301e-05,
+  "trial": 4,
+  "metrica_seleccion": 0.98271875,
+  "corrida_busqueda": "results/train/b3a_A_fourier_rho090_t4/seed0"
+}

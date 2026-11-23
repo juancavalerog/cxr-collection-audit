@@ -1,0 +1,16 @@
+# Configuración intermedia común a todas las líneas base (configs/baseline_*.yaml derivan de esta).
+# Deriva de configs/nuevo_base.yaml sin modificarlo y fija lo que deben compartir las líneas base y CSD-Net:
+# - Caché común: canal homogeneo construido CON máscaras pulmonares (P3 centrado en los pulmones), en la raíz
+#   data/cache_m (la construye un trabajo de 5d con scripts/build_cache.py --root data/cache_m --masks ...).
+#   require_cache: true detiene la corrida si falta alguna imagen en vez de preprocesar al vuelo sin máscara.
+# - Selección, parada temprana y comparación entre métodos en val_robust_sel (mitad de val_robust por paciente;
+#   la otra mitad, val_robust_fit, solo la usa DFR para reajustar). docs/06_lineas_base.md, Section 4.
+# - Test BLOQUEADO durante el piloto y la búsqueda (protocol.test_bloqueado: true).
+base: nuevo_base.yaml
+experiment: baseline_base
+data:
+  cache: data/cache_m/covidx_cxr4/homogeneo_224
+  require_cache: true
+  eval_sets: [val, val_robust, val_robust_sel]
+selection: {metric: auc_roc, subset: val_robust_sel, impl: exact, patience: 10, tta: false, drop_remainder_batch: null}
+protocol: {fase: piloto, test_bloqueado: true, congelado: null}

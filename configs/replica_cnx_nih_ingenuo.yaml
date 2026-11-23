@@ -1,0 +1,6 @@
+# Réplica del artículo 1: ConvNeXt-Tiny, preentreno nih, régimen ingenuo.
+base: replica_p1_base.yaml
+experiment: replica_cnx_nih_ingenuo
+data: {train_sources: null}
+model:
+  init: {type: keras_h5, path: nih/saved/nih_chest_convnext_tiny_weights.h5}   # relativo a la raíz de datos (/data/covid en el contenedor)

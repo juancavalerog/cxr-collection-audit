@@ -1,0 +1,19 @@
+{
+  "manifiestos": [
+    "data/manifests/bench/b2/b2_varB_s0.csv",
+    "data/manifests/bench/b2/b2_varB_s1.csv",
+    "data/manifests/bench/b2/b2_varB_s2.csv",
+    "data/manifests/bench/b2/b2_varB_s3.csv",
+    "data/manifests/bench/b2/b2_varB_s4.csv"
+  ],
+  "imagenes_unicas": 9040,
+  "deduplicacion": {
+    "rahman_copias_nlm_por_hash": 0,
+    "rahman_nlm_por_metadato": 800,
+    "rahman_nlm_metadato_sin_copia_hash": 800,
+    "rahman_copia_hash_sin_metadato_nlm": 0,
+    "tbx11k_copias_nlm": 0,
+    "casi_duplicados_resueltos": 185
+  },
+  "pendiente": "cohorte externa de Mendeley (scripts/download/dl_tb_pakistan_mendeley.sh)"
+}

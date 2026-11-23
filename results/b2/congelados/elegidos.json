@@ -1,0 +1,62 @@
+{
+  "b2_erm": {
+    "trial": 1,
+    "metrica": 0.9977492807681487,
+    "congelado": "results/b2/congelados/b2_erm.json"
+  },
+  "b2_control_fuente": {
+    "trial": 1,
+    "metrica": 0.9892546307640646,
+    "congelado": "results/b2/congelados/b2_control_fuente.json"
+  },
+  "b2_groupdro": {
+    "trial": 3,
+    "metrica": 0.9971015183279334,
+    "congelado": "results/b2/congelados/b2_groupdro.json"
+  },
+  "b2_dann": {
+    "trial": 6,
+    "metrica": 0.997306851080436,
+    "congelado": "results/b2/congelados/b2_dann.json"
+  },
+  "b2_coral": {
+    "trial": 6,
+    "metrica": 0.9972002141813462,
+    "congelado": "results/b2/congelados/b2_coral.json"
+  },
+  "b2_mixstyle": {
+    "trial": 2,
+    "metrica": 0.9971276103351574,
+    "congelado": "results/b2/congelados/b2_mixstyle.json"
+  },
+  "b2_fourier": {
+    "trial": 6,
+    "metrica": 0.9970697541452259,
+    "congelado": "results/b2/congelados/b2_fourier.json"
+  },
+  "b2_lisa": {
+    "trial": 3,
+    "metrica": 0.9959387223538168,
+    "congelado": "results/b2/congelados/b2_lisa.json"
+  },
+  "b2_dfa_fuente": {
+    "trial": 0,
+    "metrica": 0.9969755960321998,
+    "congelado": "results/b2/congelados/b2_dfa_fuente.json"
+  },
+  "b2_dfr": {
+    "trial": 0,
+    "metrica": 0.9962104021058364,
+    "congelado": "results/b2/congelados/b2_dfr.json"
+  },
+  "b2_erm_mascara": {
+    "trial": 5,
+    "metrica": 0.9899307540816975,
+    "congelado": "results/b2/congelados/b2_erm_mascara.json"
+  },
+  "b2_erm_cuotas": {
+    "trial": 1,
+    "metrica": 0.9970969805875466,
+    "congelado": "results/b2/congelados/b2_erm_cuotas.json"
+  }
+}

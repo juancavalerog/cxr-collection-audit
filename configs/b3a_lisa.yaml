@@ -1,0 +1,8 @@
+# Método lisa en el benchmark B3A. Protocolo común de configs/baseline_lisa.yaml más la capa configs/b3a_base.yaml.
+# Lanzar (lo hacen scripts/jobs/make_jobs_b3a.py): python -m src.baselines.run --config configs/b3a_lisa.yaml --seed <S>
+#   [--trial T] --experimento <nombre> --set data.bench=<manifiesto de la semilla S>
+base: [baseline_lisa.yaml, b3a_base.yaml]
+experiment: b3a_lisa
+baseline:
+  method: lisa
+  params: {}

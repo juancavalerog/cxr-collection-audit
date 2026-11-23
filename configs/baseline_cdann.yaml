@@ -1,0 +1,11 @@
+# Línea base cdann: CDANN (adversario de fuente condicionado a la clase). Referencia: li2018deep. Estado: implementado.
+# Deriva de configs/baseline_base.yaml (y esta de configs/nuevo_base.yaml): partición limpia, canal homogeneo con la
+# caché común con máscaras (data/cache_m), ConvNeXt-Tiny ImageNet con la cabeza del artículo 1, selección y
+# comparación en val_robust_sel, mismo presupuesto. Test BLOQUEADO en piloto y búsqueda; para los experimentos
+# finales, ver docs/06_lineas_base.md, Section 4 (protocol.congelado).
+# Lanzar: python -m src.baselines.run --config configs/baseline_cdann.yaml --seed 42 [--trial T]
+base: baseline_base.yaml
+experiment: baseline_cdann
+baseline:
+  method: cdann
+  params: {}            # valores por defecto del registro: {'lambda': 0.3, 'mlp_width': 256, 'mlp_depth': 3, 'mlp_dropout': 0.0, 'schedule': 'constante', 'disc_lr_mult': 10.0, 'grad_penalty': 1.0, 'grl_norm': 'clase'}

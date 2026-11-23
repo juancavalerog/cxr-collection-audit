@@ -1,0 +1,256 @@
+{
+  "seed": 42,
+  "experiment": "baseline_erm_cuotas_t2",
+  "history": [
+    {
+      "phase": "A",
+      "epoch": 0,
+      "loss": 0.07250918489012678,
+      "seconds": 36.8
+    },
+    {
+      "phase": "A",
+      "epoch": 1,
+      "loss": 0.0637419658472758,
+      "seconds": 32.9
+    },
+    {
+      "phase": "A",
+      "epoch": 2,
+      "loss": 0.05614797367930076,
+      "seconds": 32.7
+    },
+    {
+      "phase": "B",
+      "epoch": 0,
+      "loss": 0.045850790856430644,
+      "seconds": 82.5,
+      "val_auc_roc": 0.7771509971509971,
+      "val_auc_pr": 0.9750656839043728,
+      "val_n": 1615,
+      "selection": 0.7771509971509971,
+      "improved": true,
+      "wait": 0,
+      "ema_t": 1062,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 1,
+      "loss": 0.030314701876345242,
+      "seconds": 77.3,
+      "val_auc_roc": 0.8350712250712251,
+      "val_auc_pr": 0.9826864447267571,
+      "val_n": 1615,
+      "selection": 0.8350712250712251,
+      "improved": true,
+      "wait": 0,
+      "ema_t": 2124,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 2,
+      "loss": 0.025595437003503047,
+      "seconds": 77.6,
+      "val_auc_roc": 0.7162393162393162,
+      "val_auc_pr": 0.9648416757488483,
+      "val_n": 1615,
+      "selection": 0.7162393162393162,
+      "wait": 1,
+      "ema_t": 3186,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 3,
+      "loss": 0.021611112221223066,
+      "seconds": 77.2,
+      "val_auc_roc": 0.8268919968919968,
+      "val_auc_pr": 0.9819801171520678,
+      "val_n": 1615,
+      "selection": 0.8268919968919968,
+      "wait": 2,
+      "ema_t": 4248,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 4,
+      "loss": 0.01654943332326881,
+      "seconds": 77.0,
+      "val_auc_roc": 0.7847733747733747,
+      "val_auc_pr": 0.9773412842839908,
+      "val_n": 1615,
+      "selection": 0.7847733747733747,
+      "wait": 3,
+      "ema_t": 5310,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 5,
+      "loss": 0.01430780925621803,
+      "seconds": 77.3,
+      "val_auc_roc": 0.8276974876974877,
+      "val_auc_pr": 0.9812350129632005,
+      "val_n": 1615,
+      "selection": 0.8276974876974877,
+      "wait": 4,
+      "ema_t": 6372,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 6,
+      "loss": 0.01194929113777542,
+      "seconds": 77.0,
+      "val_auc_roc": 0.7930691530691529,
+      "val_auc_pr": 0.9770730248105265,
+      "val_n": 1615,
+      "selection": 0.7930691530691529,
+      "wait": 5,
+      "ema_t": 7434,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 7,
+      "loss": 0.010452376618734062,
+      "seconds": 77.0,
+      "val_auc_roc": 0.7851722351722351,
+      "val_auc_pr": 0.9699574375154768,
+      "val_n": 1615,
+      "selection": 0.7851722351722351,
+      "wait": 6,
+      "ema_t": 8496,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 8,
+      "loss": 0.008959612579223272,
+      "seconds": 77.2,
+      "val_auc_roc": 0.827889147889148,
+      "val_auc_pr": 0.979995517631298,
+      "val_n": 1615,
+      "selection": 0.827889147889148,
+      "wait": 7,
+      "ema_t": 9558,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 9,
+      "loss": 0.008114585858482952,
+      "seconds": 77.3,
+      "val_auc_roc": 0.7390365190365189,
+      "val_auc_pr": 0.9673738958254477,
+      "val_n": 1615,
+      "selection": 0.7390365190365189,
+      "wait": 8,
+      "ema_t": 10620,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 10,
+      "loss": 0.007599704547044418,
+      "seconds": 77.5,
+      "val_auc_roc": 0.7958016058016057,
+      "val_auc_pr": 0.9758161062077774,
+      "val_n": 1615,
+      "selection": 0.7958016058016057,
+      "wait": 9,
+      "ema_t": 11682,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 11,
+      "loss": 0.007085402758134658,
+      "seconds": 77.6,
+      "val_auc_roc": 0.8126443926443927,
+      "val_auc_pr": 0.977252855203454,
+      "val_n": 1615,
+      "selection": 0.8126443926443927,
+      "wait": 10,
+      "ema_t": 12744,
+      "ema_init_weight": null
+    }
+  ],
+  "early_stopping": {
+    "best": 0.8350712250712251,
+    "wait": 10,
+    "best_epoch": 1,
+    "stopped": true
+  },
+  "ema": {
+    "mode": "estandar",
+    "t": 12744,
+    "momentum": 0.9999
+  },
+  "results": {
+    "last/val": {
+      "n": 7664,
+      "auc_roc": 0.9798931446724564,
+      "auc_pr": 0.9792346687987136
+    },
+    "last/val_robust": {
+      "n": 3407,
+      "auc_roc": 0.8057260206287443,
+      "auc_pr": 0.9784663577854767
+    },
+    "last/val_robust_sel": {
+      "n": 1615,
+      "auc_roc": 0.8119373219373219,
+      "auc_pr": 0.9780792403984565
+    },
+    "best/val": {
+      "n": 7664,
+      "auc_roc": 0.9674654009985011,
+      "auc_pr": 0.9739402238472635
+    },
+    "best/val_robust": {
+      "n": 3407,
+      "auc_roc": 0.8283614353653265,
+      "auc_pr": 0.9820134107695442
+    },
+    "best/val_robust_sel": {
+      "n": 1615,
+      "auc_roc": 0.8281507381507381,
+      "auc_pr": 0.9817474005006893
+    },
+    "ema/val": {
+      "n": 7664,
+      "auc_roc": 0.9808631979038088,
+      "auc_pr": 0.9811525156830918
+    },
+    "ema/val_robust": {
+      "n": 3407,
+      "auc_roc": 0.8212747822864555,
+      "auc_pr": 0.9814912159168286
+    },
+    "ema/val_robust_sel": {
+      "n": 1615,
+      "auc_roc": 0.8303988603988605,
+      "auc_pr": 0.9819297229190567
+    }
+  },
+  "seleccion": "val_robust_sel",
+  "comparacion_entre_metodos": "val_robust_sel",
+  "no_comparables": {},
+  "almacenamiento": {
+    "estados_conservados": [],
+    "borrados": [
+      "best.pt",
+      "ema.pt",
+      "last.pt",
+      "checkpoint.pt"
+    ],
+    "politica": {
+      "states": [],
+      "keep_checkpoint": false
+    }
+  }
+}

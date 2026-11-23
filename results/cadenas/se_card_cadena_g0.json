@@ -1,0 +1,120 @@
+{
+ "nombre": "se_card_cadena_g0",
+ "pasos": {
+  "se_card_erm_rho050_s0": {
+   "codigo": 0,
+   "segundos": 160.0,
+   "fin": "2026-11-20T03:49:14"
+  },
+  "se_card_groupdro_rho050_s0": {
+   "codigo": 0,
+   "segundos": 180.3,
+   "fin": "2026-11-20T03:52:14"
+  },
+  "se_card_dfr_rho050_s0": {
+   "codigo": 0,
+   "segundos": 170.9,
+   "fin": "2026-11-20T03:55:05"
+  },
+  "se_card_erm_rho090_s0": {
+   "codigo": 0,
+   "segundos": 218.6,
+   "fin": "2026-11-20T03:58:43"
+  },
+  "se_card_lisa_rho090_s0": {
+   "codigo": 0,
+   "segundos": 257.0,
+   "fin": "2026-11-20T04:03:00"
+  },
+  "se_card_dfr_rho099_s0": {
+   "codigo": 0,
+   "segundos": 146.6,
+   "fin": "2026-11-20T04:05:27"
+  },
+  "se_card_erm_rho100_s0": {
+   "codigo": 0,
+   "segundos": 135.7,
+   "fin": "2026-11-20T04:07:43"
+  },
+  "se_card_lisa_rho100_s0": {
+   "codigo": 0,
+   "segundos": 137.2,
+   "fin": "2026-11-20T04:10:00"
+  },
+  "se_card_lisa_rho050_s1": {
+   "codigo": 0,
+   "segundos": 206.2,
+   "fin": "2026-11-20T04:13:26"
+  },
+  "se_card_dfr_rho050_s1": {
+   "codigo": 0,
+   "segundos": 200.7,
+   "fin": "2026-11-20T04:16:47"
+  },
+  "se_card_dfr_rho090_s1": {
+   "codigo": 0,
+   "segundos": 249.3,
+   "fin": "2026-11-20T04:20:56"
+  },
+  "se_card_erm_rho099_s1": {
+   "codigo": 0,
+   "segundos": 221.4,
+   "fin": "2026-11-20T04:24:37"
+  },
+  "se_card_groupdro_rho099_s1": {
+   "codigo": 0,
+   "segundos": 179.1,
+   "fin": "2026-11-20T04:27:36"
+  },
+  "se_card_lisa_rho099_s1": {
+   "codigo": 0,
+   "segundos": 153.6,
+   "fin": "2026-11-20T04:30:10"
+  },
+  "se_card_groupdro_rho100_s1": {
+   "codigo": 0,
+   "segundos": 152.4,
+   "fin": "2026-11-20T04:32:42"
+  },
+  "se_card_erm_rho050_s2": {
+   "codigo": 0,
+   "segundos": 174.9,
+   "fin": "2026-11-20T04:35:37"
+  },
+  "se_card_groupdro_rho050_s2": {
+   "codigo": 0,
+   "segundos": 189.9,
+   "fin": "2026-11-20T04:38:47"
+  },
+  "se_card_erm_rho090_s2": {
+   "codigo": 0,
+   "segundos": 174.0,
+   "fin": "2026-11-20T04:41:41"
+  },
+  "se_card_groupdro_rho090_s2": {
+   "codigo": 0,
+   "segundos": 288.7,
+   "fin": "2026-11-20T04:46:30"
+  },
+  "se_card_lisa_rho090_s2": {
+   "codigo": 0,
+   "segundos": 290.2,
+   "fin": "2026-11-20T04:51:20"
+  },
+  "se_card_dfr_rho099_s2": {
+   "codigo": 0,
+   "segundos": 148.1,
+   "fin": "2026-11-20T04:53:48"
+  },
+  "se_card_erm_rho100_s2": {
+   "codigo": 0,
+   "segundos": 139.4,
+   "fin": "2026-11-20T04:56:08"
+  },
+  "se_card_lisa_rho100_s2": {
+   "codigo": 0,
+   "segundos": 140.0,
+   "fin": "2026-11-20T04:58:28"
+  }
+ }
+}

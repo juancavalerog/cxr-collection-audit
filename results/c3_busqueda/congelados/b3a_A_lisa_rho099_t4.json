@@ -1,0 +1,17 @@
+{
+  "method": "lisa",
+  "params": {
+    "mix_alpha": 2.0,
+    "mix_ratio": 0.5
+  },
+  "lr_B": 4.751689266899079e-05,
+  "trial": 4,
+  "config": "configs/b3a_lisa.yaml",
+  "parametros_completos": {
+    "mix_alpha": 2.0,
+    "mix_ratio": 0.5
+  },
+  "corrida_busqueda": "results/train/b3a_A_lisa_rho099_t4/seed0",
+  "uso": "C3 parte (b), enmienda E2: repetición del ensayo 4",
+  "comprobado_con": "results/train/b3a_A_lisa_rho099_t4/seed0/config_resolved.json"
+}

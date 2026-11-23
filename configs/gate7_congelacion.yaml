@@ -1,0 +1,119 @@
+# Lista de lo que entra en la congelación del protocolo (review/informe_puerta7.md, Section 5, punto 10; docs/08_evaluacion.md, V2.7.2).
+# La lee scripts/eval/congelar.py. Cada grupo tiene patrones glob relativos a paper_new (** recorre subdirectorios),
+# un mínimo de ficheros (si no se alcanza, la congelación se niega) y una nota. Para cambiar lo que entra se edita
+# este fichero, no el código; el propio fichero entra en la congelación (grupo "configuraciones").
+# Se excluyen siempre __pycache__, *.pyc, ficheros ocultos y lo que case con "excluir".
+excluir:
+  - "**/__pycache__/**"
+  - "**/*.pyc"
+  - "**/.*"
+  - "results/**/_trainer/**"
+grupos:
+  plan:
+    nota: docs/08_evaluacion.md completo con sus enmiendas y el documento de esta auditoría
+    patrones: [docs/08_evaluacion.md, docs/14_auditoria_y_congelacion.md]
+    minimo: 2
+  codigo_src:
+    nota: todo src/ (entrenadores, líneas base, datos, evaluación y desbloqueo)
+    patrones: ["src/**/*.py"]
+    minimo: 50
+  guiones_evaluacion:
+    nota: scripts/eval/ completo
+    patrones: ["scripts/eval/**/*.py"]
+    minimo: 8
+  pruebas:
+    nota: pruebas del proyecto (tests/), incluidas las de esta auditoría
+    patrones: ["tests/*.py"]
+    minimo: 10
+  guiones_trabajos:
+    nota: scripts/jobs/ completo, incluidos bench_jobs.py, make_jobs_*.py y cadena.py
+    patrones: ["scripts/jobs/**/*.py"]
+    minimo: 5
+  guiones_diag_auditoria:
+    nota: guiones de scripts/diag/ de los que deriva la auditoría C1 (extracción, colecciones, diagnóstico de la firma)
+    patrones: ["scripts/diag/expl_*.py", "scripts/diag/r2_*.py"]
+    minimo: 5
+  configuraciones:
+    nota: configs/ completo, incluidas esta lista y la lista cerrada de análisis (gate7_*.yaml)
+    patrones: ["configs/**/*.yaml", "configs/**/*.yml", "configs/**/*.json"]
+    minimo: 20
+  manifiestos_covidx:
+    nota: partición limpia, colecciones de bimcv y manifiestos de la reserva de la exploración
+    patrones: [data/manifests/covidx_cxr4_clean.csv, data/manifests/covidx_cxr4_colecciones.csv,
+               "data/manifests/expl/*.csv", data/manifests/README.md]
+    minimo: 3
+  manifiestos_b3a:
+    nota: los 61 manifiestos de B3a (46 originales y 15 de las semillas 5 a 9, enmienda E8) con sus JSON y los ficheros auxiliares
+    patrones: ["data/manifests/bench/b3a/**/*.csv", "data/manifests/bench/b3a/**/*.json"]
+    minimo: 122
+  manifiestos_b3c:
+    nota: "S-E (enmienda E8): los 12 manifiestos de B3c (cardiomegalia) con sus JSON y los ficheros auxiliares"
+    patrones: ["data/manifests/bench/b3c/**/*.csv", "data/manifests/bench/b3c/**/*.json"]
+    minimo: 24
+  guiones_datos:
+    nota: constructores y comprobadores de los manifiestos y de la caché (añadido el 17-11-2026)
+    patrones: ["scripts/data/**/*.py", scripts/build_cache.py]
+    minimo: 8
+  congelados_extra:
+    nota: "enmienda E8: JSON de protocol.congelado de C3 parte (b), S-T y S-E (make_jobs_extra.py --fase congelados)"
+    patrones: ["results/c3_busqueda/congelados/*.json", "results/sens_tronco/congelados/*.json", "results/sens_etiqueta/congelados/*.json"]
+    minimo: 104
+  estabilidad_busqueda:
+    nota: "S-B (enmienda E8): resúmenes de las 32 corridas de la semilla 1 y su informe, ya ejecutados antes de congelar"
+    patrones: ["results/estabilidad_b3a/*/seed1/summary.json", "results/estabilidad_b3a/*/seed1/config_resolved.json", "results/sensibilidad/estabilidad/*"]
+    minimo: 64
+  tablas_validacion:
+    nota: tablas de validación ya publicadas en docs/13 (búsquedas y finales de B1) y salidas de validación de C1
+    patrones: ["results/b1/*.csv", "results/b2/*.csv", "results/b3a/*.csv", "results/c1/val/*", "results/audit/*.csv", "results/gate6/*"]
+    minimo: 15
+  manifiestos_b2:
+    nota: los 5 manifiestos de B2 con sus JSON y los ficheros auxiliares
+    patrones: ["data/manifests/bench/b2/**/*.csv", "data/manifests/bench/b2/**/*.json"]
+    minimo: 10
+  manifiesto_covidgr:
+    nota: COVIDGR (cohorte externa, C1-vi)
+    patrones: ["data/manifests/bench/covidgr/*.csv", "data/manifests/bench/covidgr/*.json"]
+    minimo: 2
+  congelados_b1:
+    nota: "M6: los doce JSON de hiperparámetros congelados de B1 ({method, params, lr_B}) y elegidos.json"
+    patrones: ["results/b1/congelados/*"]
+    minimo: 13
+  congelados_b2_b3a:
+    nota: hiperparámetros congelados de B2 y B3a
+    patrones: ["results/b2/congelados/*", "results/b3a/congelados/*"]
+    minimo: 1
+  finales_b1_configuracion:
+    nota: config_resolved.json y summary.json de las 60 corridas finales de B1 (12 métodos x 5 semillas)
+    patrones: ["results/train/baseline_*_final/seed*/config_resolved.json", "results/train/baseline_*_final/seed*/summary.json"]
+    minimo: 120
+  finales_b1_estados:
+    nota: estados que se evaluarán en el test de COVIDx (best, last, ema y variantes de DFR)
+    patrones: ["results/train/baseline_*_final/seed*/states/*.pt"]
+    minimo: 60
+  finales_b1_huellas:
+    nota: huellas y comprobación de los estados (scripts/eval/evaluar_test_b1.py, modos huellas y comprobar)
+    patrones: [results/gate7/estados_b1.json, results/gate7/comprobacion_estados_b1.json]
+    minimo: 2
+  troncos_exploracion:
+    nota: troncos de D_RES y de D_ERM del piloto ya usados en la exploración (para extraer su test)
+    patrones: ["results/train/expl_erm_reserva*/seed*/config_resolved.json", "results/train/expl_erm_reserva*/seed*/states/best.pt",
+               "results/train/baseline_erm/seed*/config_resolved.json", "results/train/baseline_erm/seed*/states/best.pt"]
+    minimo: 8
+  caracteristicas_c1:
+    nota: "características de producción (scripts/eval/extraer_caracteristicas.py): D_IN, D_ERM de las 5 finales de ERM y ERM con máscara de las 5 finales (npz, meta e info de cada tronco: 33) y la lista del conjunto de ajuste del detector"
+    patrones: ["results/c1/caracteristicas/*.npz", "results/c1/caracteristicas/*_meta.csv",
+               "results/c1/caracteristicas/*_info.json", results/c1/caracteristicas/lista_ajuste_detector.csv]
+    minimo: 34
+  caracteristicas_exploracion:
+    nota: características de la exploración (D_ERM del piloto y D_RES), las de la Tabla E4
+    patrones: ["results/diag/expl_lectura/*.npz", "results/diag/expl_lectura/*_meta.csv"]
+    minimo: 12
+  adquisicion:
+    nota: estadísticos de adquisición de entrenamiento y validación (C1-iv)
+    patrones: ["results/c1/adquisicion/*_estadisticos.npz", "results/c1/adquisicion/*_meta.csv"]
+    minimo: 2
+  entorno:
+    nota: paquetes del contenedor (trabajo c1_entorno), bloqueo de versiones e identificador de la imagen
+    patrones: [docker/requirements.lock.txt, docker/requirements.txt, docker/Dockerfile,
+               results/gate7/entorno_contenedor.json, results/gate7/imagen_docker.txt]
+    minimo: 4

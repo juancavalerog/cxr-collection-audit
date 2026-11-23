@@ -1,0 +1,34 @@
+{
+  "title": "cxr-collection-audit: code, configurations, split manifests and result tables for \"A Class-Blind Collection Detector Matches Nearly All Methods in the Internal Evaluation of COVIDx CXR-4\"",
+  "description": "Code, configurations, split manifests, result tables, per-image predictions and figures of a retrospective evaluation study of chest radiograph classification under class-source confounding, carried out under a prespecified, internally frozen analysis plan: an audit of the internal evaluation of COVIDx CXR-4 with a class-blind collection detector, a controlled confounding benchmark (pleural effusion, NIH ChestX-ray14 and CheXpert) with a tuberculosis evaluation, and an analysis of model selection. The freeze record (SHA-256 hashes) is included, together with the original and the corrected tables of the one post hoc change to the analysis (the calibration factor of the seed term of the hierarchical intervals, which changes no decision). No image is redistributed; the images must be obtained from their original public sources under their own licences.",
+  "upload_type": "software",
+  "language": "eng",
+  "version": "1.0.0",
+  "license": "mit",
+  "creators": [
+    {
+      "name": "Valero Gómez, Juan Carlos",
+      "affiliation": "Universidad Nacional de Moquegua, Peru",
+      "orcid": "0000-0002-7077-7531"
+    },
+    {
+      "name": "Clares Perca, Juan Carlos",
+      "affiliation": "Universidad Nacional de Moquegua, Peru",
+      "orcid": "0000-0001-5146-2879"
+    },
+    {
+      "name": "Zuñiga Incalla, Alex Peter",
+      "affiliation": "Universidad Nacional de Moquegua, Peru",
+      "orcid": "0000-0003-4734-2262"
+    }
+  ],
+  "keywords": [
+    "chest radiography",
+    "COVID-19",
+    "shortcut learning",
+    "source confounding",
+    "domain generalization",
+    "model selection"
+  ],
+  "notes": "Code under the MIT License; result tables, split manifests, predictions and figures under the Creative Commons Attribution 4.0 International licence (CC BY 4.0; see LICENSE-DATA.md)."
+}

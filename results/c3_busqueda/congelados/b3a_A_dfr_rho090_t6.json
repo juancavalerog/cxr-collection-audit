@@ -1,0 +1,31 @@
+{
+  "method": "dfr",
+  "params": {
+    "states": [
+      "best",
+      "bestdc"
+    ]
+  },
+  "lr_B": 6.842075189780502e-05,
+  "trial": 6,
+  "config": "configs/b3a_dfr.yaml",
+  "parametros_completos": {
+    "C_grid": [
+      1.0,
+      0.7,
+      0.3,
+      0.1,
+      0.07,
+      0.03,
+      0.01
+    ],
+    "n_reps": 10,
+    "states": [
+      "best",
+      "bestdc"
+    ]
+  },
+  "corrida_busqueda": "results/train/b3a_A_dfr_rho090_t6/seed0",
+  "uso": "C3 parte (b), enmienda E2: repetición del ensayo 6",
+  "comprobado_con": "results/train/b3a_A_dfr_rho090_t6/seed0/config_resolved.json"
+}

@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# kaggle simulado para pruebas. FAKE_MODE: ok | fail429x2 | alwaysfail | paginate | hang | hangx1 | slow | slowhidden ; contador en $FAKE_STATE
+st="${FAKE_STATE:-/tmp/ktest/state}"; n=$(( $(cat "$st" 2>/dev/null || echo 0) + 1 )); echo "$n" > "$st"
+echo "$(date +%T) llamada $n: kaggle $*" >> /tmp/ktest/calls.log
+fail429() { echo "429 Client Error: Too Many Requests for url: https://www.kaggle.com/api/v1/datasets/list/x?pagesize=200" >&2; exit 1; }
+case "${FAKE_MODE:-ok}" in
+  fail429x2) (( n <= 2 )) && fail429 ;;
+  alwaysfail) fail429 ;;
+  hang) exec sleep 600 ;;                 # la CLI real puede quedar colgada sin escribir nada
+  hangx1) (( n <= 1 )) && exec sleep 600 ;;
+esac
+if [[ "$1 $2" == "datasets files" ]]; then
+  tok=""; prev=""
+  for a in "$@"; do [[ "$prev" == "--page-token" ]] && tok="$a"; prev="$a"; done
+  if [[ "${FAKE_MODE}" == "paginate" ]]; then
+    case "$tok" in "") p=1; next="tok2";; tok2) p=2; next="tok3";; tok3) p=3; next="";; esac
+  else p=1; next=""; fi
+  [[ -n "$next" ]] && echo "Next Page Token = $next"
+  echo "name,size,creationDate"
+  for i in 1 2 3; do echo "DB/Normal/Normal-p${p}-$i.png,1000,2021-06-14 09:58:46"; done
+  echo "DB/Tuberculosis/Tuberculosis-p${p}.png,1000,2021-06-14 09:58:46"
+  [[ $p == 1 ]] && echo "DB/Normal.metadata.xlsx,10,2021-06-14 09:58:46"
+  exit 0
+fi
+if [[ "$1 $2" == "datasets download" ]]; then
+  dest="."; prev=""; for a in "$@"; do [[ "$prev" == "-p" ]] && dest="$a"; prev="$a"; done
+  mkdir -p "$dest"
+  # slowhidden: como la CLI real, escribe durante 8 s en una ubicacion temporal fuera del destino (desde este mismo proceso)
+  if [[ "${FAKE_MODE}" == "slowhidden" ]]; then for k in 1 2 3 4 5 6 7 8; do printf '%4000s' ' ' >> /tmp/ktest/oculto.bin; sleep 1; done; fi
+  if [[ "${FAKE_MODE}" == "slow" ]]; then for k in 1 2 3 4 5 6 7 8; do head -c 1000 /dev/zero >> "$dest/parcial.bin"; sleep 1; done; rm -f "$dest/parcial.bin"; fi
+  python3 -c "
+import zipfile,sys; z=zipfile.ZipFile(sys.argv[1]+'/fake.zip','w'); z.writestr('img/a.png','x'*100); z.writestr('img/b.png','y'*100); z.close()" "$dest"
+  echo "Downloading fake.zip"; exit 0
+fi
+echo "comando no simulado: $*" >&2; exit 2

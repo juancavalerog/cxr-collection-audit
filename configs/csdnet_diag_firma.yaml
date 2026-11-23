@@ -1,0 +1,15 @@
+# Diagnóstico de la firma de adquisición en GPU (docs/10_correccion_independencia.md): una semilla,
+# solo las fases A1 y A2 con el calendario del piloto (3 + 2 épocas; el programa de tasas se calcula con las
+# 65 épocas, como en el piloto), V1, V1b y V2 en validación al final de A2 y parada (csdnet.parar_tras_A2).
+# Sin fase B no hay selección de modelo: solo se guarda el estado de la última época y no se ejecutan los probes
+# finales. La variante se elige con --set csdnet.ind.mode=... y la salida va a results/diag/ (--out).
+# TEST BLOQUEADO.
+base: csdnet_base.yaml
+experiment: diag_firma
+data:
+  eval_sets: [val_robust]
+eval: {tta: false, states: [last]}
+protocol: {fase: diagnostico, test_bloqueado: true, congelado: null}
+csdnet:
+  parar_tras_A2: true
+  final_probe_states: []

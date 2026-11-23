@@ -1,0 +1,55 @@
+{
+  "benchmark": "b3c",
+  "variante": "3c_cardiomegalia",
+  "orientacion": "apos",
+  "rho": 0.9,
+  "semilla": 1,
+  "fuentes": [
+    "nih",
+    "chexpert"
+  ],
+  "fuentes_mixtas": [
+    "nih",
+    "chexpert"
+  ],
+  "subconjuntos": [
+    "val_desconf",
+    "test_desconf",
+    "test_invertido"
+  ],
+  "seleccion": "val",
+  "seleccion_alternativa": "val_desconf",
+  "prevalencia_train_por_fuente": {
+    "nih": 0.9,
+    "chexpert": 0.09999999999999998
+  },
+  "fraccion_ap_por_fuente": {
+    "nih": 0.5,
+    "chexpert": 0.7
+  },
+  "tamanos": {
+    "train_por_fuente": 700,
+    "val_por_fuente": 100,
+    "val_desconf_por_celda": 50,
+    "test_desconf_por_celda": 125,
+    "test_invertido_por_fuente": 250,
+    "test_invertido_por_fuente_diseno": 250,
+    "factor_k": 0.25,
+    "tamanos_b3a": {
+      "train": 2800,
+      "val": 400,
+      "val_desconf": 200,
+      "test_desconf": 500,
+      "test_invertido": 1000
+    }
+  },
+  "etiqueta": {
+    "nih": "positivo y_cardiomegaly = 1 (Finding Labels contiene Cardiomegaly); negativo y_no_finding = 1",
+    "chexpert": "positivo Cardiomegaly = 1; negativo No Finding = 1 y Cardiomegaly vacío o 0; se excluye todo paciente con alguna imagen frontal con Cardiomegaly = -1"
+  },
+  "reservas": "las de B3a para los pacientes que ya la tienen (data/manifests/bench/b3a/reservas_pacientes.csv); los nuevos, repartidos por estrato fuente x clase x vistas hacia el 70/10/20",
+  "notas": "val_desconf puede compartir filas con val (las filas solo de val_desconf llevan split=fuera); test_desconf y test_invertido salen de la misma ordenación fija de la reserva de test y comparten filas; un paciente con AP y PA puede aportar imágenes distintas a dos subconjuntos, nunca dos imágenes al mismo conjunto ni pacientes entre reservas.",
+  "test_bloqueado": true,
+  "semilla_reservas": 20261114,
+  "generador": "scripts/data/build_b3c.py"
+}

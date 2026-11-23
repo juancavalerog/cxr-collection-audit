@@ -1,0 +1,120 @@
+{
+ "nombre": "st_r50_cadena_g0",
+ "pasos": {
+  "st_r50_erm_rho050_s0": {
+   "codigo": 0,
+   "segundos": 477.5,
+   "fin": "2026-11-20T01:07:33"
+  },
+  "st_r50_groupdro_rho050_s0": {
+   "codigo": 0,
+   "segundos": 594.2,
+   "fin": "2026-11-20T01:17:27"
+  },
+  "st_r50_dfr_rho050_s0": {
+   "codigo": 0,
+   "segundos": 473.0,
+   "fin": "2026-11-20T01:25:20"
+  },
+  "st_r50_erm_rho090_s0": {
+   "codigo": 0,
+   "segundos": 619.9,
+   "fin": "2026-11-20T01:35:40"
+  },
+  "st_r50_lisa_rho090_s0": {
+   "codigo": 0,
+   "segundos": 651.0,
+   "fin": "2026-11-20T01:46:31"
+  },
+  "st_r50_dfr_rho099_s0": {
+   "codigo": 0,
+   "segundos": 314.6,
+   "fin": "2026-11-20T01:51:46"
+  },
+  "st_r50_erm_rho100_s0": {
+   "codigo": 0,
+   "segundos": 314.3,
+   "fin": "2026-11-20T01:57:00"
+  },
+  "st_r50_lisa_rho100_s0": {
+   "codigo": 0,
+   "segundos": 322.9,
+   "fin": "2026-11-20T02:02:23"
+  },
+  "st_r50_lisa_rho050_s1": {
+   "codigo": 0,
+   "segundos": 572.9,
+   "fin": "2026-11-20T02:11:56"
+  },
+  "st_r50_dfr_rho050_s1": {
+   "codigo": 0,
+   "segundos": 606.2,
+   "fin": "2026-11-20T02:22:02"
+  },
+  "st_r50_dfr_rho090_s1": {
+   "codigo": 0,
+   "segundos": 443.5,
+   "fin": "2026-11-20T02:29:26"
+  },
+  "st_r50_erm_rho099_s1": {
+   "codigo": 0,
+   "segundos": 224.2,
+   "fin": "2026-11-20T02:33:10"
+  },
+  "st_r50_groupdro_rho099_s1": {
+   "codigo": 0,
+   "segundos": 360.8,
+   "fin": "2026-11-20T02:39:11"
+  },
+  "st_r50_lisa_rho099_s1": {
+   "codigo": 0,
+   "segundos": 454.4,
+   "fin": "2026-11-20T02:46:45"
+  },
+  "st_r50_groupdro_rho100_s1": {
+   "codigo": 0,
+   "segundos": 382.5,
+   "fin": "2026-11-20T02:53:08"
+  },
+  "st_r50_erm_rho050_s2": {
+   "codigo": 0,
+   "segundos": 432.1,
+   "fin": "2026-11-20T03:00:20"
+  },
+  "st_r50_groupdro_rho050_s2": {
+   "codigo": 0,
+   "segundos": 548.7,
+   "fin": "2026-11-20T03:09:28"
+  },
+  "st_r50_erm_rho090_s2": {
+   "codigo": 0,
+   "segundos": 301.3,
+   "fin": "2026-11-20T03:14:30"
+  },
+  "st_r50_groupdro_rho090_s2": {
+   "codigo": 0,
+   "segundos": 534.2,
+   "fin": "2026-11-20T03:23:24"
+  },
+  "st_r50_lisa_rho090_s2": {
+   "codigo": 0,
+   "segundos": 445.8,
+   "fin": "2026-11-20T03:30:50"
+  },
+  "st_r50_dfr_rho099_s2": {
+   "codigo": 0,
+   "segundos": 313.8,
+   "fin": "2026-11-20T03:36:03"
+  },
+  "st_r50_erm_rho100_s2": {
+   "codigo": 0,
+   "segundos": 312.5,
+   "fin": "2026-11-20T03:41:16"
+  },
+  "st_r50_lisa_rho100_s2": {
+   "codigo": 0,
+   "segundos": 316.8,
+   "fin": "2026-11-20T03:46:33"
+  }
+ }
+}

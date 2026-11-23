@@ -1,0 +1,35 @@
+{
+ "nombre": "p3_mascaras",
+ "pasos": {
+  "p3_01_profesor_preparar": {
+   "codigo": 0,
+   "segundos": 156.6,
+   "fin": "2026-11-13T04:57:00"
+  },
+  "p3_02_profesor_entrenar": {
+   "codigo": 0,
+   "segundos": 1309.1,
+   "fin": "2026-11-13T05:18:49"
+  },
+  "p3_03_pseudomascaras_covidx": {
+   "codigo": 0,
+   "segundos": 542.2,
+   "fin": "2026-11-13T06:02:40"
+  },
+  "p3_05_cache_m_homogeneo_224": {
+   "codigo": 0,
+   "segundos": 144.3,
+   "fin": "2026-11-13T06:05:05"
+  },
+  "p3_06_mascaras_alineadas_224": {
+   "codigo": 0,
+   "segundos": 60.0,
+   "fin": "2026-11-13T06:06:05"
+  },
+  "p3_04_auditoria_mascaras": {
+   "codigo": 0,
+   "segundos": 156.6,
+   "fin": "2026-11-13T06:08:41"
+  }
+ }
+}

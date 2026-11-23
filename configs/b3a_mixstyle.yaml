@@ -1,0 +1,8 @@
+# Método mixstyle en el benchmark B3A. Protocolo común de configs/baseline_mixstyle.yaml más la capa configs/b3a_base.yaml.
+# Lanzar (lo hacen scripts/jobs/make_jobs_b3a.py): python -m src.baselines.run --config configs/b3a_mixstyle.yaml --seed <S>
+#   [--trial T] --experimento <nombre> --set data.bench=<manifiesto de la semilla S>
+base: [baseline_mixstyle.yaml, b3a_base.yaml]
+experiment: b3a_mixstyle
+baseline:
+  method: mixstyle
+  params: {}

@@ -1,0 +1,21 @@
+benchmark,conjunto,fuente,clase,n_imagenes,n_vistas,frac_imagenes,frac_pacientes,origen
+derrame,reserva de test,NIH,negativa,1000,245,0.245,0.397,reservas y recuento de la reserva de test
+derrame,reserva de test,NIH,positiva,816,88,0.10784313725490197,0.368,reservas y recuento de la reserva de test
+derrame,reserva de test,CheXpert,negativa,816,58,0.07107843137254902,0.125,reservas y recuento de la reserva de test
+derrame,reserva de test,CheXpert,positiva,1000,81,0.081,0.239,reservas y recuento de la reserva de test
+derrame,reserva de entrenamiento,NIH,negativa,,,0.288,0.404,reservas
+derrame,reserva de entrenamiento,NIH,positiva,,,0.116,0.383,reservas
+derrame,reserva de entrenamiento,CheXpert,negativa,,,0.079,0.119,reservas
+derrame,reserva de entrenamiento,CheXpert,positiva,,,0.067,0.255,reservas
+derrame,reserva de validación,NIH,negativa,,,0.288,0.397,reservas
+derrame,reserva de validación,NIH,positiva,,,0.131,0.375,reservas
+derrame,reserva de validación,CheXpert,negativa,,,0.083,0.121,reservas
+derrame,reserva de validación,CheXpert,positiva,,,0.07,0.249,reservas
+derrame,test desconfundido,NIH,negativa,500,141,0.282,0.398,manifiesto rho0.50_s0
+derrame,test desconfundido,NIH,positiva,500,57,0.114,0.386,manifiesto rho0.50_s0
+derrame,test desconfundido,CheXpert,negativa,500,36,0.072,0.128,manifiesto rho0.50_s0
+derrame,test desconfundido,CheXpert,positiva,500,45,0.09,0.25,manifiesto rho0.50_s0
+cardiomegalia,test desconfundido,NIH,negativa,125,33,0.264,0.408,manifiesto rho0.50_s0
+cardiomegalia,test desconfundido,NIH,positiva,125,18,0.144,0.328,manifiesto rho0.50_s0
+cardiomegalia,test desconfundido,CheXpert,negativa,125,5,0.04,0.168,manifiesto rho0.50_s0
+cardiomegalia,test desconfundido,CheXpert,positiva,125,13,0.104,0.272,manifiesto rho0.50_s0

@@ -1,0 +1,70 @@
+{
+ "nombre": "b2_busq_cadena_02",
+ "pasos": {
+  "b2_busq_erm_cuotas_s0_t6": {
+   "codigo": 0,
+   "segundos": 261.0,
+   "fin": "2026-11-15T21:19:30"
+  },
+  "b2_busq_erm_s0_t7": {
+   "codigo": 0,
+   "segundos": 262.9,
+   "fin": "2026-11-15T21:23:53"
+  },
+  "b2_busq_control_fuente_s0_t7": {
+   "codigo": 0,
+   "segundos": 244.7,
+   "fin": "2026-11-15T21:27:58"
+  },
+  "b2_busq_groupdro_s0_t7": {
+   "codigo": 0,
+   "segundos": 396.6,
+   "fin": "2026-11-15T21:34:35"
+  },
+  "b2_busq_dann_s0_t7": {
+   "codigo": 0,
+   "segundos": 313.1,
+   "fin": "2026-11-15T21:39:48"
+  },
+  "b2_busq_coral_s0_t7": {
+   "codigo": 0,
+   "segundos": 362.6,
+   "fin": "2026-11-15T21:45:50"
+  },
+  "b2_busq_mixstyle_s0_t7": {
+   "codigo": 0,
+   "segundos": 206.5,
+   "fin": "2026-11-15T21:49:17"
+  },
+  "b2_busq_fourier_s0_t7": {
+   "codigo": 0,
+   "segundos": 485.1,
+   "fin": "2026-11-15T21:57:22"
+  },
+  "b2_busq_lisa_s0_t7": {
+   "codigo": 0,
+   "segundos": 476.2,
+   "fin": "2026-11-15T22:05:18"
+  },
+  "b2_busq_dfa_fuente_s0_t7": {
+   "codigo": 0,
+   "segundos": 964.5,
+   "fin": "2026-11-15T22:21:23"
+  },
+  "b2_busq_dfr_s0_t7": {
+   "codigo": 0,
+   "segundos": 400.8,
+   "fin": "2026-11-15T22:28:03"
+  },
+  "b2_busq_erm_mascara_s0_t7": {
+   "codigo": 0,
+   "segundos": 533.6,
+   "fin": "2026-11-15T22:36:57"
+  },
+  "b2_busq_erm_cuotas_s0_t7": {
+   "codigo": 0,
+   "segundos": 256.6,
+   "fin": "2026-11-15T22:41:14"
+  }
+ }
+}

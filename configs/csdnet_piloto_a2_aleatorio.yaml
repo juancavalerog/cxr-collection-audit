@@ -1,0 +1,5 @@
+# Ablación A2 del piloto: intercambio aleatorio (destino uniforme entre las otras fuentes) en vez del plan de las
+# ecuaciones (10) a (12). Una semilla (42). TEST BLOQUEADO.
+base: csdnet_piloto.yaml
+experiment: csdnet_piloto_a2_aleatorio
+csdnet: {swap_routing: random}

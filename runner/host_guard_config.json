@@ -1,0 +1,7 @@
+{
+  "gpu_mem_warn": 80.0,
+  "gpu_mem_stop": 85.0,
+  "_nota": "decisiones del autor del 17-11-2026: memoria de las GPU, aviso 80 y corte 85 °C; CPU igual que las GPU, aviso 75 y corte 80 °C",
+  "cpu_warn": 75.0,
+  "cpu_stop": 80.0
+}

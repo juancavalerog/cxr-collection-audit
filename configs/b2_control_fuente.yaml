@@ -1,0 +1,11 @@
+# Método control_fuente en el benchmark B2. Protocolo común de configs/baseline_control_fuente.yaml más la capa configs/b2_base.yaml.
+# Lanzar (lo hacen scripts/jobs/make_jobs_b2.py): python -m src.baselines.run --config configs/b2_control_fuente.yaml --seed <S>
+#   [--trial T] --experimento <nombre> --set data.bench=<manifiesto de la semilla S>
+base: [baseline_control_fuente.yaml, b2_base.yaml]
+experiment: b2_control_fuente
+# Control de fuente: entrena solo con las fuentes mixtas del manifiesto. En B3a no es aplicable en ningún nivel
+# (rho < 1: todas mixtas, idéntico a ERM; rho = 1: ninguna mixta) y la corrida termina en estado no_aplicable.
+data: {train_sources: mixtas}
+baseline:
+  method: control_fuente
+  params: {}

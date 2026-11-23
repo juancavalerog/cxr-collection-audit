@@ -1,0 +1,30 @@
+{
+ "nombre": "b1_final_cadena_09",
+ "pasos": {
+  "b1_final_lisa_s7": {
+   "codigo": 0,
+   "segundos": 1393.6,
+   "fin": "2026-11-17T13:56:06"
+  },
+  "b1_final_dfa_fuente_s7": {
+   "codigo": 0,
+   "segundos": 2468.6,
+   "fin": "2026-11-17T14:37:15"
+  },
+  "b1_final_dfr_s7": {
+   "codigo": 0,
+   "segundos": 1832.3,
+   "fin": "2026-11-17T15:07:47"
+  },
+  "b1_final_erm_s999": {
+   "codigo": 0,
+   "segundos": 1503.0,
+   "fin": "2026-11-17T15:32:50"
+  },
+  "b1_final_erm_cuotas_s999": {
+   "codigo": 0,
+   "segundos": 1405.0,
+   "fin": "2026-11-17T15:56:15"
+  }
+ }
+}

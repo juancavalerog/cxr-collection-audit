@@ -1,0 +1,197 @@
+{
+  "experiment": "b2_erm",
+  "output_dir": "results/train/{experiment}/seed{seed}",
+  "device": null,
+  "precision": "auto",
+  "deterministic": true,
+  "data": {
+    "dataset": "covidx_cxr4",
+    "manifest": null,
+    "mode": "limpia",
+    "train_sources": null,
+    "channel": "homogeneo",
+    "res": 224,
+    "cache": "data/cache_m/bench_b2/homogeneo_224",
+    "require_cache": true,
+    "num_workers": 12,
+    "eval_batch_size": 256,
+    "eval_sets": [
+      "val",
+      "val_robust",
+      "test_shenzhen",
+      "test_montgomery",
+      "test_robusto"
+    ],
+    "synthetic": null,
+    "debug_limit": null,
+    "bench": "data/manifests/bench/b2/b2_varB_s1.csv"
+  },
+  "model": {
+    "name": "paper1_convnext",
+    "backbone": "convnext_tiny",
+    "init": {
+      "type": "timm_imagenet",
+      "path": null
+    },
+    "input_scale": 1.0,
+    "dropout": 0.5,
+    "drop_path_rate": 0.1,
+    "l2_hidden": 0.0,
+    "freeze_backbone_norms": false,
+    "head_init": "glorot"
+  },
+  "train": {
+    "batch_size": 128,
+    "micro_batch": 128,
+    "steps_per_epoch": null,
+    "sampler": "exact",
+    "sampler_restart_each_phase": true,
+    "augment": "nuevo",
+    "augment_params": {
+      "rotation": 0.03,
+      "zoom": 0.1,
+      "brightness": 0.05,
+      "contrast": [
+        0.9,
+        1.1
+      ],
+      "cutout": 24
+    },
+    "grad_clip": 1.0,
+    "loss": {
+      "name": "focal",
+      "alpha": 0.5,
+      "gamma": 2.0,
+      "apply_class_balancing": true,
+      "label_smoothing": 0.0
+    },
+    "optimizer": {
+      "name": "adamw",
+      "weight_decay": 0.05,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "lr_mult": {
+        "backbone": 1.0,
+        "head": 20.0
+      },
+      "no_decay_norm_bias": true
+    },
+    "phases": [
+      {
+        "name": "A",
+        "epochs": 3,
+        "lr": 0.001,
+        "warmup_frac": 0.05,
+        "min_lr": 1e-07,
+        "train_backbone": false,
+        "ema": false,
+        "early_stopping": false
+      },
+      {
+        "name": "B",
+        "epochs": 60,
+        "lr": 4.269191248263394e-05,
+        "warmup_frac": 0.05,
+        "min_lr": 1e-07,
+        "train_backbone": true,
+        "ema": true,
+        "early_stopping": true
+      }
+    ],
+    "log_every": 20,
+    "stop_after_steps": null,
+    "checkpoint_every_steps": 0
+  },
+  "ema": {
+    "mode": "estandar",
+    "momentum": 0.9999
+  },
+  "selection": {
+    "metric": "auc_roc",
+    "subset": "val",
+    "impl": "exact",
+    "patience": 10,
+    "tta": false,
+    "drop_remainder_batch": null,
+    "subset_dc": "val_robust"
+  },
+  "eval": {
+    "tta": true,
+    "states": [
+      "best",
+      "bestdc"
+    ]
+  },
+  "thermal": {
+    "every": 50
+  },
+  "protocol": {
+    "fase": "final",
+    "test_bloqueado": false,
+    "congelado": "results/b2/congelados/b2_erm.json"
+  },
+  "baseline": {
+    "method": "erm",
+    "params": {},
+    "trial": 1,
+    "trial_hparams": {
+      "common": {
+        "lr_B": 4.269191248263394e-05
+      },
+      "params": {}
+    }
+  },
+  "storage": {
+    "states": [],
+    "keep_checkpoint": false
+  },
+  "seed": 1,
+  "bench": {
+    "id": "b2",
+    "manifiesto": "data/manifests/bench/b2/b2_varB_s1.csv",
+    "sha256_manifiesto": "93d54fc746e208cd5b680924330bf977d245f117478fc16b2e90846e835792a5",
+    "sha256_json": "a747909694f2a7f579a32ab4ad768b921032ef5d74a9207ed155f294ee9344ba",
+    "rho": null,
+    "semilla": 1,
+    "orientacion": null,
+    "fuentes": [
+      "belarus",
+      "rsna_nih",
+      "tbx11k",
+      "shenzhen",
+      "montgomery"
+    ],
+    "fuentes_mixtas": [
+      "tbx11k"
+    ],
+    "fuentes_train": [
+      "belarus",
+      "rsna_nih",
+      "tbx11k"
+    ],
+    "train_sources": null,
+    "subconjuntos": [
+      "val_robust",
+      "test_shenzhen",
+      "test_montgomery",
+      "test_robusto"
+    ],
+    "seleccion_json": "val_robust",
+    "test_bloqueado": false,
+    "n": {
+      "test_montgomery": 138,
+      "test_robusto": 800,
+      "test_shenzhen": 662,
+      "train": 4248,
+      "val": 2139,
+      "val_fit": 1066,
+      "val_robust": 1791,
+      "val_robust_fit": 896,
+      "val_robust_sel": 895,
+      "val_sel": 1073
+    }
+  }
+}

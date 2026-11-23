@@ -1,0 +1,35 @@
+{
+ "nombre": "b1_busq_cadena_05",
+ "pasos": {
+  "bl_busq_erm_cuotas_t3_s42": {
+   "codigo": 0,
+   "segundos": 1563.0,
+   "fin": "2026-11-16T06:11:22"
+  },
+  "bl_busq_erm_mascara_t3_s42": {
+   "codigo": 0,
+   "segundos": 1447.7,
+   "fin": "2026-11-16T06:35:30"
+  },
+  "bl_busq_fourier_t3_s42": {
+   "codigo": 0,
+   "segundos": 2482.3,
+   "fin": "2026-11-16T07:16:52"
+  },
+  "bl_busq_groupdro_t3_s42": {
+   "codigo": 0,
+   "segundos": 1271.6,
+   "fin": "2026-11-16T07:38:04"
+  },
+  "bl_busq_lisa_t3_s42": {
+   "codigo": 0,
+   "segundos": 1257.4,
+   "fin": "2026-11-16T07:59:01"
+  },
+  "bl_busq_mixstyle_t3_s42": {
+   "codigo": 0,
+   "segundos": 1227.7,
+   "fin": "2026-11-16T08:19:29"
+  }
+ }
+}

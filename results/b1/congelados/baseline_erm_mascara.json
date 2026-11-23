@@ -1,0 +1,8 @@
+{
+  "method": "erm_mascara",
+  "params": {},
+  "lr_B": 5.677749570293024e-05,
+  "trial": 2,
+  "metrica_seleccion": 0.8660243460243459,
+  "corrida_busqueda": "results/train/baseline_erm_mascara_t2/seed42"
+}

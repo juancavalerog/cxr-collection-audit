@@ -1,0 +1,35 @@
+{
+ "nombre": "b1_busq_cadena_06",
+ "pasos": {
+  "bl_busq_control_fuente_t4_s42": {
+   "codigo": 0,
+   "segundos": 782.8,
+   "fin": "2026-11-16T06:48:23"
+  },
+  "bl_busq_coral_t4_s42": {
+   "codigo": 0,
+   "segundos": 1389.2,
+   "fin": "2026-11-16T07:11:32"
+  },
+  "bl_busq_dann_t4_s42": {
+   "codigo": 0,
+   "segundos": 1680.2,
+   "fin": "2026-11-16T07:39:33"
+  },
+  "bl_busq_dfa_fuente_t4_s42": {
+   "codigo": 0,
+   "segundos": 4424.9,
+   "fin": "2026-11-16T08:53:18"
+  },
+  "bl_busq_dfr_t4_s42": {
+   "codigo": 0,
+   "segundos": 1284.0,
+   "fin": "2026-11-16T09:14:42"
+  },
+  "bl_busq_erm_t4_s42": {
+   "codigo": 0,
+   "segundos": 1221.9,
+   "fin": "2026-11-16T09:35:03"
+  }
+ }
+}

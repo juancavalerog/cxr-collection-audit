@@ -1,0 +1,8 @@
+# Reproduce la penalización de independencia del primer intento del piloto (13-11-2026, 06:10 a 06:27 UTC):
+# estimador sesgado de la MMD sobre las firmas del lote, sin banco ni tope, con lambda_ind = 1.0
+# (docs/10_correccion_independencia.md). El control de validez de la firma sigue activo. TEST BLOQUEADO.
+base: csdnet_piloto.yaml
+experiment: csdnet_piloto_r1_mmd_sesgada
+csdnet:
+  weights: {lambda_ind: 1.0}
+  ind: {mode: mmd_sesgada}

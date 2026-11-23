@@ -1,0 +1,4 @@
+# Control de fuente con el protocolo nuevo: train restringido a bimcv (ambas clases) en la partición limpia.
+base: nuevo_base.yaml
+experiment: nuevo_control_cnx_imagenet
+data: {train_sources: [bimcv]}

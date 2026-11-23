@@ -1,0 +1,195 @@
+{
+  "experiment": "b3a_A_dfr_rho095_t4",
+  "output_dir": "results/train/{experiment}/seed{seed}",
+  "device": null,
+  "precision": "auto",
+  "deterministic": true,
+  "data": {
+    "dataset": "covidx_cxr4",
+    "manifest": null,
+    "mode": "limpia",
+    "train_sources": null,
+    "channel": "homogeneo",
+    "res": 224,
+    "cache": "data/cache_m/bench_b3a/homogeneo_224",
+    "require_cache": true,
+    "num_workers": 12,
+    "eval_batch_size": 256,
+    "eval_sets": [
+      "val",
+      "val_desconf",
+      "test_desconf",
+      "val_sel"
+    ],
+    "synthetic": null,
+    "debug_limit": null,
+    "bench": "data/manifests/bench/b3a/apos/rho0.95_s0.csv"
+  },
+  "model": {
+    "name": "paper1_convnext",
+    "backbone": "convnext_tiny",
+    "init": {
+      "type": "timm_imagenet",
+      "path": null
+    },
+    "input_scale": 1.0,
+    "dropout": 0.5,
+    "drop_path_rate": 0.1,
+    "l2_hidden": 0.0,
+    "freeze_backbone_norms": false,
+    "head_init": "glorot"
+  },
+  "train": {
+    "batch_size": 128,
+    "micro_batch": 128,
+    "steps_per_epoch": null,
+    "sampler": "exact",
+    "sampler_restart_each_phase": true,
+    "augment": "nuevo",
+    "augment_params": {
+      "rotation": 0.03,
+      "zoom": 0.1,
+      "brightness": 0.05,
+      "contrast": [
+        0.9,
+        1.1
+      ],
+      "cutout": 24
+    },
+    "grad_clip": 1.0,
+    "loss": {
+      "name": "focal",
+      "alpha": 0.5,
+      "gamma": 2.0,
+      "apply_class_balancing": true,
+      "label_smoothing": 0.0
+    },
+    "optimizer": {
+      "name": "adamw",
+      "weight_decay": 0.05,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "lr_mult": {
+        "backbone": 1.0,
+        "head": 20.0
+      },
+      "no_decay_norm_bias": true
+    },
+    "phases": [
+      {
+        "name": "A",
+        "epochs": 3,
+        "lr": 0.001,
+        "warmup_frac": 0.05,
+        "min_lr": 1e-07,
+        "train_backbone": false,
+        "ema": false,
+        "early_stopping": false
+      },
+      {
+        "name": "B",
+        "epochs": 60,
+        "lr": 8.284018684423225e-05,
+        "warmup_frac": 0.05,
+        "min_lr": 1e-07,
+        "train_backbone": true,
+        "ema": true,
+        "early_stopping": true
+      }
+    ],
+    "log_every": 20,
+    "stop_after_steps": null,
+    "checkpoint_every_steps": 0
+  },
+  "ema": {
+    "mode": "estandar",
+    "momentum": 0.9999
+  },
+  "selection": {
+    "metric": "auc_roc",
+    "subset": "val_sel",
+    "impl": "exact",
+    "patience": 10,
+    "tta": false,
+    "drop_remainder_batch": null,
+    "subset_dc": "val_desconf_sel"
+  },
+  "eval": {
+    "tta": true,
+    "states": [
+      "best",
+      "bestdc"
+    ]
+  },
+  "thermal": {
+    "every": 50
+  },
+  "protocol": {
+    "fase": "busqueda",
+    "test_bloqueado": false,
+    "congelado": "results/c3_busqueda/congelados/b3a_A_dfr_rho095_t4.json"
+  },
+  "baseline": {
+    "method": "dfr",
+    "params": {
+      "states": [
+        "best",
+        "bestdc"
+      ]
+    },
+    "trial": 4,
+    "trial_hparams": {
+      "common": {
+        "lr_B": 8.284018684423225e-05
+      },
+      "params": {}
+    }
+  },
+  "storage": {
+    "states": [],
+    "keep_checkpoint": false
+  },
+  "seed": 0,
+  "bench": {
+    "id": "b3a",
+    "manifiesto": "data/manifests/bench/b3a/apos/rho0.95_s0.csv",
+    "sha256_manifiesto": "87da074d3806972d942bf65a652c61b4b880151c3bcbcc5fe27e8b75f31a550f",
+    "sha256_json": "e4e8733b0bcf665b294ae2f4ae637108d0dc5f522b46f91de7184c15a5cd8f86",
+    "rho": 0.95,
+    "semilla": 0,
+    "orientacion": "apos",
+    "fuentes": [
+      "nih",
+      "chexpert"
+    ],
+    "fuentes_mixtas": [
+      "nih",
+      "chexpert"
+    ],
+    "fuentes_train": [
+      "chexpert",
+      "nih"
+    ],
+    "train_sources": null,
+    "subconjuntos": [
+      "val_desconf",
+      "test_desconf",
+      "test_invertido"
+    ],
+    "seleccion_json": "val",
+    "test_bloqueado": false,
+    "n": {
+      "test_desconf": 2000,
+      "train": 5600,
+      "val": 800,
+      "val_desconf": 800,
+      "val_desconf_fit": 400,
+      "val_desconf_sel": 400,
+      "val_fit": 400,
+      "val_sel": 400
+    }
+  }
+}

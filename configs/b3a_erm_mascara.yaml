@@ -1,0 +1,8 @@
+# Método erm_mascara en el benchmark B3A. Protocolo común de configs/baseline_erm_mascara.yaml más la capa configs/b3a_base.yaml.
+# Lanzar (lo hacen scripts/jobs/make_jobs_b3a.py): python -m src.baselines.run --config configs/b3a_erm_mascara.yaml --seed <S>
+#   [--trial T] --experimento <nombre> --set data.bench=<manifiesto de la semilla S>
+base: [baseline_erm_mascara.yaml, b3a_base.yaml]
+experiment: b3a_erm_mascara
+baseline:
+  method: erm_mascara
+  params: {mask_dir: data/masks/bench_b3a/homogeneo_224}

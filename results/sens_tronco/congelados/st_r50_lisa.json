@@ -1,0 +1,12 @@
+{
+  "method": "lisa",
+  "params": {},
+  "lr_B": 5e-05,
+  "trial": 0,
+  "config": "configs/b3a_tronco_resnet50_lisa.yaml",
+  "parametros_completos": {
+    "mix_alpha": 2.0,
+    "mix_ratio": 0.5
+  },
+  "uso": "S-T, enmienda E8 punto 3: valores por defecto"
+}

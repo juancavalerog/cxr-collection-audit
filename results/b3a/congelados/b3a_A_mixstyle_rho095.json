@@ -1,0 +1,8 @@
+{
+  "method": "mixstyle",
+  "params": {},
+  "lr_B": 5e-05,
+  "trial": 0,
+  "metrica_seleccion": 0.9934875,
+  "corrida_busqueda": "results/train/b3a_A_mixstyle_rho095_t0/seed0"
+}

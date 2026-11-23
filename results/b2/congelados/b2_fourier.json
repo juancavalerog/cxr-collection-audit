@@ -1,0 +1,12 @@
+{
+  "method": "fourier",
+  "params": {
+    "cons_weight": 4.0,
+    "eta": 1.0,
+    "ratio": 1.0
+  },
+  "lr_B": 6.445072219491792e-05,
+  "trial": 6,
+  "metrica_seleccion": 0.9970697541452259,
+  "corrida_busqueda": "results/train/b2_fourier_t6/seed0"
+}

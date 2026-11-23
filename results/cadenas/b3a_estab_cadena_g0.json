@@ -1,0 +1,85 @@
+{
+ "nombre": "b3a_estab_cadena_g0",
+ "pasos": {
+  "b3a_estab_erm_rho090_s1_t0": {
+   "codigo": 0,
+   "segundos": 321.4,
+   "fin": "2026-11-17T21:16:23"
+  },
+  "b3a_estab_lisa_rho090_s1_t0": {
+   "codigo": 0,
+   "segundos": 316.8,
+   "fin": "2026-11-17T21:21:39"
+  },
+  "b3a_estab_erm_rho099_s1_t0": {
+   "codigo": 0,
+   "segundos": 218.8,
+   "fin": "2026-11-17T21:25:18"
+  },
+  "b3a_estab_lisa_rho099_s1_t0": {
+   "codigo": 0,
+   "segundos": 236.1,
+   "fin": "2026-11-17T21:29:14"
+  },
+  "b3a_estab_erm_rho090_s1_t2": {
+   "codigo": 0,
+   "segundos": 400.7,
+   "fin": "2026-11-17T21:35:55"
+  },
+  "b3a_estab_lisa_rho090_s1_t2": {
+   "codigo": 0,
+   "segundos": 518.8,
+   "fin": "2026-11-17T21:44:34"
+  },
+  "b3a_estab_erm_rho099_s1_t2": {
+   "codigo": 0,
+   "segundos": 268.0,
+   "fin": "2026-11-17T21:49:02"
+  },
+  "b3a_estab_lisa_rho099_s1_t2": {
+   "codigo": 0,
+   "segundos": 266.9,
+   "fin": "2026-11-17T21:53:29"
+  },
+  "b3a_estab_erm_rho090_s1_t4": {
+   "codigo": 0,
+   "segundos": 280.4,
+   "fin": "2026-11-17T21:58:09"
+  },
+  "b3a_estab_lisa_rho090_s1_t4": {
+   "codigo": 0,
+   "segundos": 367.1,
+   "fin": "2026-11-17T22:04:16"
+  },
+  "b3a_estab_erm_rho099_s1_t4": {
+   "codigo": 0,
+   "segundos": 285.3,
+   "fin": "2026-11-17T22:09:01"
+  },
+  "b3a_estab_lisa_rho099_s1_t4": {
+   "codigo": 0,
+   "segundos": 242.9,
+   "fin": "2026-11-17T22:13:04"
+  },
+  "b3a_estab_erm_rho090_s1_t6": {
+   "codigo": 0,
+   "segundos": 260.0,
+   "fin": "2026-11-17T22:17:24"
+  },
+  "b3a_estab_lisa_rho090_s1_t6": {
+   "codigo": 0,
+   "segundos": 511.9,
+   "fin": "2026-11-17T22:25:56"
+  },
+  "b3a_estab_erm_rho099_s1_t6": {
+   "codigo": 0,
+   "segundos": 243.1,
+   "fin": "2026-11-17T22:29:59"
+  },
+  "b3a_estab_lisa_rho099_s1_t6": {
+   "codigo": 0,
+   "segundos": 263.2,
+   "fin": "2026-11-17T22:34:23"
+  }
+ }
+}

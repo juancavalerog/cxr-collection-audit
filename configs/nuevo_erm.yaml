@@ -1,0 +1,4 @@
+# Línea base ERM con el protocolo nuevo (todas las fuentes de la partición limpia).
+base: nuevo_base.yaml
+experiment: nuevo_erm_cnx_imagenet
+data: {train_sources: null}

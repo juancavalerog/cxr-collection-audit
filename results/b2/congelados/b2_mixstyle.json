@@ -1,0 +1,11 @@
+{
+  "method": "mixstyle",
+  "params": {
+    "alpha": 0.1,
+    "p": 0.7
+  },
+  "lr_B": 2.7720938130880127e-05,
+  "trial": 2,
+  "metrica_seleccion": 0.9971276103351574,
+  "corrida_busqueda": "results/train/b2_mixstyle_t2/seed0"
+}

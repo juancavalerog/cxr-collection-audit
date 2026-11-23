@@ -1,0 +1,50 @@
+{
+ "baseline_erm": {
+  "trial": 3,
+  "metrica": 0.8807252007252009
+ },
+ "baseline_erm_cuotas": {
+  "trial": 3,
+  "metrica": 0.8807873607873608
+ },
+ "baseline_erm_mascara": {
+  "trial": 2,
+  "metrica": 0.8660243460243459
+ },
+ "baseline_control_fuente": {
+  "trial": 4,
+  "metrica": 0.8623983423983423
+ },
+ "baseline_groupdro": {
+  "trial": 3,
+  "metrica": 0.8613131313131313
+ },
+ "baseline_dann": {
+  "trial": 5,
+  "metrica": 0.8814270914270913
+ },
+ "baseline_coral": {
+  "trial": 0,
+  "metrica": 0.8901113701113701
+ },
+ "baseline_mixstyle": {
+  "trial": 4,
+  "metrica": 0.8793602693602693
+ },
+ "baseline_fourier": {
+  "trial": 1,
+  "metrica": 0.8784563584563586
+ },
+ "baseline_lisa": {
+  "trial": 5,
+  "metrica": 0.874965034965035
+ },
+ "baseline_dfa_fuente": {
+  "trial": 1,
+  "metrica": 0.8986298886298886
+ },
+ "baseline_dfr": {
+  "trial": 0,
+  "metrica": 0.8747837347837348
+ }
+}

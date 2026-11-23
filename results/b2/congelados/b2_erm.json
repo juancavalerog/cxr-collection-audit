@@ -1,0 +1,8 @@
+{
+  "method": "erm",
+  "params": {},
+  "lr_B": 4.269191248263394e-05,
+  "trial": 1,
+  "metrica_seleccion": 0.9977492807681487,
+  "corrida_busqueda": "results/train/b2_erm_t1/seed0"
+}

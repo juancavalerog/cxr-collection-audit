@@ -1,0 +1,18 @@
+{
+ "orden": "python scripts/sensibilidad/v28.py s7",
+ "fecha_utc": "2026-11-20T16:47:40Z",
+ "B": 2000,
+ "semilla_bootstrap": 2026,
+ "congelacion": "db617b620c2b9a6c7ef588898982006f0d4731457bd63ae0f6d367c10f6e24dc",
+ "tablas": {
+  "s7_auc": 16,
+  "s7_familias": 24,
+  "s7_detectores": 15,
+  "s7_composicion": 3
+ },
+ "notas": [
+  "Test limpio completo: 8 479 imágenes, la parte bimcv (8 079) más 200 positivas de ricord y 200 negativas de rsna. Advertencia registrada (docs/08, versión 1, Section 1): las fuentes de una sola clase permiten acertar reconociendo la fuente, de modo que estas cifras no miden mejor la enfermedad que las de bimcv.",
+  "En las filas de detectores, ic95_inf e ic95_sup son el mínimo y el máximo de los extremos entre troncos cuando hay varios; el IC de cada tronco está en s7_detectores."
+ ],
+ "segundos": 871.1
+}

@@ -1,0 +1,8 @@
+{
+  "method": "erm_cuotas",
+  "params": {},
+  "lr_B": 1.6978211409091993e-05,
+  "trial": 7,
+  "metrica_seleccion": 0.992040625,
+  "corrida_busqueda": "results/train/b3a_A_erm_cuotas_rho095_t7/seed0"
+}

@@ -1,0 +1,10 @@
+coleccion,particion,imagenes,origen,fraccion_de_la_particion
+Negativos,Entrenamiento,647,"manifiesto limpio, coincide con la Tabla E1",0.014997681965693092
+Negativos,Validación,257,"manifiesto limpio, coincide con la Tabla E1",0.07543293219841503
+Negativos,Test,4039,Tabla E1,0.49993811115237036
+"Positivos, identificador de cinco cifras",Entrenamiento,5370,"manifiesto limpio, coincide con la Tabla E1",0.12447844228094576
+"Positivos, identificador de cinco cifras",Validación,3150,"manifiesto limpio, coincide con la Tabla E1",0.9245670678015849
+"Positivos, identificador de cinco cifras",Test,4040,Tabla E1,0.5000618888476297
+"Positivos, identificador de seis cifras",Entrenamiento,37123,"manifiesto limpio, coincide con la Tabla E1",0.8605238757533612
+"Positivos, identificador de seis cifras",Validación,0,"manifiesto limpio, coincide con la Tabla E1",0.0
+"Positivos, identificador de seis cifras",Test,0,Tabla E1,0.0

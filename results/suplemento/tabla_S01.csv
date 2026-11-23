@@ -1,0 +1,21 @@
+Benchmark,Conjunto,Fuente,Clase,Imágenes,Vistas por el segmentador,Fracción de imágenes,Fracción de imágenes de pacientes con alguna imagen vista
+Derrame pleural,reserva de entrenamiento,NIH,negativa,sin desglose (a),sin desglose (a),0.288,0.404
+Derrame pleural,reserva de entrenamiento,NIH,positiva,sin desglose (a),sin desglose (a),0.116,0.383
+Derrame pleural,reserva de entrenamiento,CheXpert,negativa,sin desglose (a),sin desglose (a),0.079,0.119
+Derrame pleural,reserva de entrenamiento,CheXpert,positiva,sin desglose (a),sin desglose (a),0.067,0.255
+Derrame pleural,reserva de validación,NIH,negativa,sin desglose (a),sin desglose (a),0.288,0.397
+Derrame pleural,reserva de validación,NIH,positiva,sin desglose (a),sin desglose (a),0.131,0.375
+Derrame pleural,reserva de validación,CheXpert,negativa,sin desglose (a),sin desglose (a),0.083,0.121
+Derrame pleural,reserva de validación,CheXpert,positiva,sin desglose (a),sin desglose (a),0.070,0.249
+Derrame pleural,reserva de test,NIH,negativa,1 000,245,0.245,0.397
+Derrame pleural,reserva de test,NIH,positiva,816,88,0.108,0.368
+Derrame pleural,reserva de test,CheXpert,negativa,816,58,0.071,0.125
+Derrame pleural,reserva de test,CheXpert,positiva,1 000,81,0.081,0.239
+Derrame pleural,test desconfundido,NIH,negativa,500,141,0.282,0.398
+Derrame pleural,test desconfundido,NIH,positiva,500,57,0.114,0.386
+Derrame pleural,test desconfundido,CheXpert,negativa,500,36,0.072,0.128
+Derrame pleural,test desconfundido,CheXpert,positiva,500,45,0.090,0.250
+Cardiomegalia,test desconfundido,NIH,negativa,125,33,0.264,0.408
+Cardiomegalia,test desconfundido,NIH,positiva,125,18,0.144,0.328
+Cardiomegalia,test desconfundido,CheXpert,negativa,125,5,0.040,0.168
+Cardiomegalia,test desconfundido,CheXpert,positiva,125,13,0.104,0.272

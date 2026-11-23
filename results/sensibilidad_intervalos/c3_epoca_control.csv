@@ -1,0 +1,15 @@
+tabla,columna,filas,max_abs_dif,nan_distintos,reproduce
+c3-epoca.csv,delta_sel_media_metodos,8,9.877081791342945e-17,0,True
+c3-epoca.csv,ic95_inf,8,6.071532165918825e-17,0,True
+c3-epoca.csv,ic95_sup,8,8.326672684688674e-17,0,True
+c3-epoca.csv,p_unilateral,8,5.551115123125783e-17,0,True
+c3-epoca.csv,p_holm,3,9.367506770274758e-17,0,True
+c3_epoca_por_metodo.csv,delta_sel,88,9.985502008591496e-17,0,True
+c3_epoca_por_metodo.csv,ic95_inf,88,9.833713704443525e-17,0,True
+c3_epoca_por_metodo.csv,ic95_sup,88,9.71445146547012e-17,0,True
+c3_epoca_por_metodo.csv,n_semillas,88,0.0,0,True
+c3_epoca_por_metodo.csv,t_media,88,9.985502008591496e-17,0,True
+c3_epoca_por_metodo.csv,t_ic95_inf,88,9.8879238130678e-17,0,True
+c3_epoca_por_metodo.csv,t_ic95_sup,88,9.627715291671279e-17,0,True
+c3_epoca_por_metodo.csv,t_p_unilateral,88,9.73613550891983e-17,0,True
+c3_epoca_por_metodo.csv,t_gl,88,0.0,0,True

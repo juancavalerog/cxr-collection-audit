@@ -1,0 +1,24 @@
+Familia,Comparación,Estimación,"IC95, factor original","IC95, factor corregido","p de Holm, factor original","p de Holm, factor corregido",Cambia la decisión
+Área frente a ERM,GroupDRO,0.0143,0.0099 a 0.0186,0.0099 a 0.0186,0.0050,0.0050,no
+Área frente a ERM,DANN,0.0020,−0.0010 a 0.0050,−0.0012 a 0.0052,0.442,0.537,no
+Área frente a ERM,CORAL,0.0019,−0.0008 a 0.0047,−0.0009 a 0.0048,0.442,0.537,no
+Área frente a ERM,MixStyle,0.0023,−0.0002 a 0.0049,−0.0002 a 0.0050,0.225,0.243,no
+Área frente a ERM,Mezcla de amplitud de Fourier,−0.0049,−0.0078 a −0.0022,−0.0078 a −0.0021,1.000,1.000,no
+Área frente a ERM,LISA,0.0147,0.0093 a 0.0200,0.0093 a 0.0199,0.0050,0.0050,no
+Área frente a ERM,DFA con fuente,−0.0014,−0.0050 a 0.0027,−0.0052 a 0.0029,1.000,1.000,no
+Área frente a ERM,DFR,0.0104,0.0047 a 0.0158,0.0047 a 0.0158,0.0050,0.0050,no
+Área frente a ERM,ERM con máscara,−0.0217,−0.0285 a −0.0141,−0.0286 a −0.0140,1.000,1.000,no
+Área frente a ERM,ERM con cuotas,0.0072,0.0045 a 0.0099,0.0045 a 0.0099,0.0050,0.0050,no
+AUC con $\rho = 0.99$ frente a ERM,GroupDRO,0.009,−0.004 a 0.025,−0.005 a 0.026,1.000,1.000,no
+AUC con $\rho = 0.99$ frente a ERM,DANN,−0.066,−0.086 a −0.045,−0.096 a −0.035,1.000,1.000,no
+AUC con $\rho = 0.99$ frente a ERM,CORAL,−0.015,−0.024 a −0.004,−0.025 a −0.003,1.000,1.000,no
+AUC con $\rho = 0.99$ frente a ERM,MixStyle,0.000,−0.010 a 0.012,−0.010 a 0.012,1.000,1.000,no
+AUC con $\rho = 0.99$ frente a ERM,Mezcla de amplitud de Fourier,0.003,−0.009 a 0.018,−0.011 a 0.020,1.000,1.000,no
+AUC con $\rho = 0.99$ frente a ERM,LISA,−0.004,−0.019 a 0.012,−0.019 a 0.012,1.000,1.000,no
+AUC con $\rho = 0.99$ frente a ERM,DFA con fuente,−0.029,−0.053 a −0.007,−0.057 a −0.003,1.000,1.000,no
+AUC con $\rho = 0.99$ frente a ERM,DFR,0.048,0.009 a 0.087,0.009 a 0.087,0.070,0.075,no
+AUC con $\rho = 0.99$ frente a ERM,ERM con máscara,−0.015,−0.027 a −0.003,−0.027 a −0.002,1.000,1.000,no
+AUC con $\rho = 0.99$ frente a ERM,ERM con cuotas,−0.001,−0.013 a 0.014,−0.013 a 0.014,1.000,1.000,no
+Pérdida media por selección de época,$\rho = 0.9$,0.0408,0.0337 a 0.0482,0.0335 a 0.0483,0.0015,0.0015,no
+Pérdida media por selección de época,$\rho = 0.95$,0.0600,0.0518 a 0.0688,0.0517 a 0.0689,0.0015,0.0015,no
+Pérdida media por selección de época,$\rho = 0.99$,0.0366,0.0305 a 0.0423,0.0302 a 0.0424,0.0015,0.0015,no

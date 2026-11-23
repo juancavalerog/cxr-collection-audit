@@ -1,0 +1,19 @@
+metodo,rho,semilla,estado_corrida,mejor_epoca,na,best_val,best_val_desconf,best_val_sel,bestdc_val,bestdc_val_desconf,bestdc_val_sel,dfr_best_val,dfr_best_val_desconf,dfr_best_val_sel,dfr_bestdc_val,dfr_bestdc_val_desconf,dfr_bestdc_val_sel
+dfr,0.5,0,terminado,19,{},0.928,0.928,0.93,0.919,0.923,0.92,0.935,0.927,0.93,0.919,0.926,0.922
+dfr,0.5,1,terminado,9,{},0.944,0.926,0.947,0.94,0.926,0.939,0.945,0.926,0.946,0.941,0.928,0.94
+dfr,0.9,0,terminado,11,{},0.98,0.847,0.978,0.981,0.873,0.978,0.977,0.873,0.977,0.953,0.915,0.951
+dfr,0.9,1,terminado,8,{},0.974,0.838,0.975,0.967,0.863,0.972,0.973,0.855,0.975,0.938,0.904,0.949
+dfr,1.0,0,terminado,1,"{""dfr_best"": ""val_fit no tiene ninguna fuente con las dos clases (sin celdas minoritarias)",1.0,0.506,1.0,1.0,0.568,1.0,,,,0.78,0.771,0.801
+dfr,1.0,1,terminado,0,"{""dfr_best"": ""val_fit no tiene ninguna fuente con las dos clases (sin celdas minoritarias)",1.0,0.524,1.0,1.0,0.571,1.0,,,,0.733,0.754,0.737
+erm,0.5,0,terminado,6,{},0.932,0.925,,0.926,0.931,,,,,,,
+erm,0.5,1,terminado,9,{},0.944,0.926,,0.94,0.926,,,,,,,
+erm,0.9,0,terminado,6,{},0.982,0.824,,0.981,0.873,,,,,,,
+erm,0.9,1,terminado,18,{},0.975,0.832,,0.967,0.863,,,,,,,
+erm,1.0,0,terminado,0,{},1.0,0.534,,1.0,0.568,,,,,,,
+erm,1.0,1,terminado,0,{},1.0,0.524,,1.0,0.576,,,,,,,
+groupdro,0.5,0,terminado,6,{},0.934,0.927,,0.934,0.927,,,,,,,
+groupdro,0.5,1,terminado,9,{},0.944,0.929,,0.944,0.929,,,,,,,
+groupdro,0.9,0,terminado,32,{},0.979,0.828,,0.964,0.912,,,,,,,
+groupdro,0.9,1,terminado,18,{},0.973,0.855,,0.938,0.916,,,,,,,
+groupdro,1.0,0,terminado,0,{},1.0,0.532,,1.0,0.585,,,,,,,
+groupdro,1.0,1,terminado,0,{},1.0,0.525,,1.0,0.572,,,,,,,

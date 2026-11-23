@@ -1,0 +1,9 @@
+fuente,conjunto,clase,n_no_vistas,n_vistas,q_media_no_vistas,q_media_vistas,diferencia_vistas_menos_no_vistas
+NIH,reserva de test,negativa,755,245,0.988,0.9891,0.0011
+NIH,reserva de test,positiva,728,88,0.9861,0.9875,0.0014
+NIH,reservas de entrenamiento y validación,negativa,4669,1886,0.9883,0.9888,0.0005
+NIH,reservas de entrenamiento y validación,positiva,3014,404,0.9847,0.9871,0.0024
+CheXpert,reserva de test,negativa,758,58,0.9876,0.9879,0.0003
+CheXpert,reserva de test,positiva,919,81,0.9841,0.9857,0.0016
+CheXpert,reservas de entrenamiento y validación,negativa,6837,592,0.9872,0.9877,0.0005
+CheXpert,reservas de entrenamiento y validación,positiva,7869,572,0.9837,0.9848,0.0011

@@ -1,0 +1,17 @@
+{
+ "orden": "python scripts/sensibilidad/v28.py s5",
+ "fecha_utc": "2026-11-20T16:42:11Z",
+ "B": 2000,
+ "semilla_bootstrap": 2026,
+ "congelacion": "db617b620c2b9a6c7ef588898982006f0d4731457bd63ae0f6d367c10f6e24dc",
+ "tablas": {
+  "s5_auc_conjunto": 12,
+  "s5_d_in_frente_conjunto": 12
+ },
+ "notas": [
+  "Conjunto: media de las probabilidades de las cinco semillas (42, 123, 2024, 7, 999) del estado principal.",
+  "La comparación con D_IN repite la prueba de F-C1 con el conjunto en lugar de la media por semilla; es una sensibilidad sin familia propia y no sustituye a la cifra principal (V2.2.1, V2.9 punto 5).",
+  "No se forma un conjunto de D_ERM: sus puntuaciones son funciones de decisión de cinco detectores con escalas distintas y el registro no lo prevé."
+ ],
+ "segundos": 543.1
+}

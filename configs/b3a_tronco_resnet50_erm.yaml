@@ -1,0 +1,13 @@
+# Sensibilidad al tronco (S-T; docs/08_evaluacion.md, enmienda E8, punto 3): método erm en B3a con ResNet-50 de timm
+# preentrenado en ImageNet en lugar de ConvNeXt-Tiny. Todo lo demás es configs/b3a_erm.yaml (protocolo común, capa
+# del benchmark, test bloqueado salvo desbloqueo explícito, inicialización ImageNet obligatoria) con los valores por
+# defecto del método (ensayo 0): no se buscan hiperparámetros para este tronco, lo que el artículo declara.
+# El resumen de cada corrida registra en "tronco" la etiqueta efectiva de los pesos de timm (resnet50.a1_in1k con
+# timm 1.0.30 y 1.0.31). Con el tronco congelado (fase A) sus BatchNorm quedan en evaluación (parche 06).
+# Lanzar (lo hace scripts/jobs/make_jobs_extra.py --fase tronco, tras la congelación del protocolo):
+#   python -m src.baselines.run --config configs/b3a_tronco_resnet50_erm.yaml --seed <S> --trial 0
+#   --experimento st_r50_b3a_A_erm_rho<RRR> --out results/sens_tronco/<experimento>/seed<S> --set data.bench=<manifiesto> ...
+base: [b3a_erm.yaml]
+experiment: b3a_tronco_resnet50_erm
+model:
+  backbone: resnet50

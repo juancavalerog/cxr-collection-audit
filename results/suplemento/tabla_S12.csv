@@ -1,0 +1,16 @@
+Referencia sin información de clase,AUC (IC95),AUC en AP (IC95),AUC en PA (IC95),"Positivos de ajuste, cinco cifras / seis cifras"
+Referencia principal (red de ImageNet),0.821 (0.808 a 0.834),0.821 (0.801 a 0.840),0.820 (0.802 a 0.838),768 / 5 232
+"Referencia secundaria, tronco de ERM, semilla 42",0.855 (0.842 a 0.866),0.864 (0.847 a 0.881),0.848 (0.831 a 0.866),768 / 5 232
+"Referencia secundaria, tronco de ERM, semilla 123",0.846 (0.833 a 0.859),0.857 (0.838 a 0.876),0.843 (0.825 a 0.861),768 / 5 232
+"Referencia secundaria, tronco de ERM, semilla 2024",0.854 (0.841 a 0.866),0.854 (0.835 a 0.873),0.850 (0.834 a 0.867),768 / 5 232
+"Referencia secundaria, tronco de ERM, semilla 7",0.853 (0.839 a 0.866),0.856 (0.836 a 0.876),0.844 (0.825 a 0.862),768 / 5 232
+"Referencia secundaria, tronco de ERM, semilla 999",0.858 (0.846 a 0.870),0.864 (0.847 a 0.882),0.846 (0.828 a 0.863),768 / 5 232
+"Tronco de ERM con máscara, semilla 42",0.829 (0.816 a 0.841),0.821 (0.801 a 0.841),0.840 (0.824 a 0.857),768 / 5 232
+"Tronco de ERM con máscara, semilla 123",0.830 (0.817 a 0.842),0.827 (0.808 a 0.845),0.838 (0.821 a 0.855),768 / 5 232
+"Tronco de ERM con máscara, semilla 2024",0.821 (0.808 a 0.834),0.813 (0.793 a 0.833),0.832 (0.814 a 0.850),768 / 5 232
+"Tronco de ERM con máscara, semilla 7",0.831 (0.817 a 0.844),0.827 (0.808 a 0.846),0.840 (0.822 a 0.858),768 / 5 232
+"Tronco de ERM con máscara, semilla 999",0.833 (0.820 a 0.846),0.828 (0.808 a 0.847),0.846 (0.829 a 0.862),768 / 5 232
+"Tronco con conjunto reservado (todos los negativos), semilla 42",0.853 (0.841 a 0.864),0.864 (0.847 a 0.880),0.843 (0.826 a 0.860),1 301 / 1 300
+"Tronco con conjunto reservado (todos los negativos), semilla 123",0.847 (0.835 a 0.859),0.859 (0.841 a 0.876),0.838 (0.819 a 0.856),1 301 / 1 300
+"Tronco con conjunto reservado (20 % de los pacientes negativos), semilla 42",0.850 (0.838 a 0.861),0.861 (0.845 a 0.878),0.842 (0.825 a 0.859),1 301 / 1 300
+"Tronco con conjunto reservado (20 % de los pacientes negativos), semilla 123",0.852 (0.840 a 0.863),0.858 (0.841 a 0.875),0.845 (0.828 a 0.862),1 301 / 1 300

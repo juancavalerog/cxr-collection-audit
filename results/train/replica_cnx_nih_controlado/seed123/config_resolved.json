@@ -1,0 +1,132 @@
+{
+  "experiment": "replica_cnx_nih_controlado",
+  "output_dir": "results/train/{experiment}/seed{seed}",
+  "device": null,
+  "precision": "auto",
+  "deterministic": true,
+  "data": {
+    "dataset": "covidx_cxr4",
+    "manifest": null,
+    "mode": "oficial",
+    "train_sources": [
+      "bimcv"
+    ],
+    "channel": "p1",
+    "res": 224,
+    "cache": "auto",
+    "require_cache": false,
+    "num_workers": 12,
+    "eval_batch_size": 256,
+    "eval_sets": [
+      "val",
+      "test",
+      "val_robust"
+    ],
+    "synthetic": null,
+    "debug_limit": null
+  },
+  "model": {
+    "name": "paper1_convnext",
+    "backbone": "convnext_tiny",
+    "init": {
+      "type": "keras_h5",
+      "path": "nih/saved/nih_chest_convnext_tiny_weights.h5"
+    },
+    "input_scale": 255.0,
+    "dropout": 0.5,
+    "drop_path_rate": 0.0,
+    "l2_hidden": 0.01,
+    "freeze_backbone_norms": true,
+    "head_init": "glorot"
+  },
+  "train": {
+    "batch_size": 768,
+    "micro_batch": 256,
+    "steps_per_epoch": null,
+    "sampler": "bernoulli",
+    "sampler_restart_each_phase": true,
+    "augment": "p1",
+    "augment_params": {
+      "rotation": 0.03,
+      "zoom": 0.1,
+      "brightness": 0.1,
+      "contrast": [
+        0.9,
+        1.1
+      ],
+      "cutout": 24,
+      "mixup_alpha": 0.2
+    },
+    "grad_clip": null,
+    "loss": {
+      "name": "focal",
+      "alpha": 0.5,
+      "gamma": 2.0,
+      "apply_class_balancing": true,
+      "label_smoothing": 0.0
+    },
+    "optimizer": {
+      "name": "tf_adamw",
+      "weight_decay": 1e-05,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-07,
+      "lr_mult": {
+        "backbone": 1.0,
+        "head": 1.0
+      },
+      "no_decay_norm_bias": false
+    },
+    "phases": [
+      {
+        "name": "A",
+        "epochs": 5,
+        "lr": 0.001,
+        "warmup_frac": 0.1,
+        "min_lr": 1e-07,
+        "train_backbone": false,
+        "ema": false,
+        "early_stopping": false
+      },
+      {
+        "name": "B",
+        "epochs": 100,
+        "lr": 2.5e-05,
+        "warmup_frac": 0.1,
+        "min_lr": 1e-07,
+        "train_backbone": true,
+        "ema": true,
+        "early_stopping": true
+      }
+    ],
+    "log_every": 10,
+    "stop_after_steps": null,
+    "checkpoint_every_steps": 0
+  },
+  "ema": {
+    "mode": "tfkeras_exacta",
+    "momentum": 0.9999
+  },
+  "selection": {
+    "metric": "auc_pr",
+    "subset": "val",
+    "impl": "keras200",
+    "patience": 15,
+    "tta": false,
+    "drop_remainder_batch": 768
+  },
+  "eval": {
+    "tta": true,
+    "states": [
+      "last",
+      "best",
+      "ema"
+    ]
+  },
+  "thermal": {
+    "every": 50
+  },
+  "seed": 123
+}

@@ -1,0 +1,20 @@
+{
+ "nombre": "b_cadena_b3a",
+ "pasos": {
+  "b_01_mascaras_b3a": {
+   "codigo": 0,
+   "segundos": 169.0,
+   "fin": "2026-11-14T03:43:56"
+  },
+  "b_02_cache_m_b3a": {
+   "codigo": 0,
+   "segundos": 52.0,
+   "fin": "2026-11-14T03:44:48"
+  },
+  "b_03_mascaras_alineadas_b3a": {
+   "codigo": 0,
+   "segundos": 20.1,
+   "fin": "2026-11-14T03:45:08"
+  }
+ }
+}

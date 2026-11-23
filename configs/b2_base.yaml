@@ -1,0 +1,24 @@
+# Capa común del benchmark B2 (tuberculosis, variante B: belarus solo TB, rsna_nih solo normales, tbx11k mixta).
+# Se fusiona DESPUÉS de configs/baseline_<metodo>.yaml (base: [baseline_<metodo>.yaml, b2_base.yaml]): el protocolo
+# común de COVIDx no cambia. docs/13_entrenamiento_plan_b.md, Section 2; docs/08_evaluacion.md, versión 2,
+# Sections V2.2.3 y V2.5.
+# - data.bench: manifiesto de la semilla (data/manifests/bench/b2/b2_varB_s<s>.csv); obligatorio con --set.
+# - Pasos por época: sin cambio (ceil(4 248 / 128) = 34 pasos).
+# - Selección (best) en val, la validación con la distribución de entrenamiento (V2.2.3 remite a V2.4.5); estado bestdc
+#   elegido en val_robust (TBX11K val, la fuente mixta), como sensibilidad. El JSON del manifiesto propone val_robust
+#   como selección; manda docs/08 versión 2 (docs/13_entrenamiento_plan_b.md, Section 4).
+# - Tronco ImageNet obligatorio (los pesos NIH vieron las normales de rsna_nih).
+# - Test bloqueado (test_shenzhen, test_montgomery, test_robusto) hasta la congelación del protocolo.
+experiment: b2_base
+data:
+  bench: "<obligatorio: --set data.bench=data/manifests/bench/b2/b2_varB_s<s>.csv>"
+  cache: data/cache_m/bench_b2/homogeneo_224
+  require_cache: true
+  train_sources: null
+  eval_sets: [val, val_robust]
+model:
+  init: {type: timm_imagenet, path: null}
+selection: {metric: auc_roc, subset: val, subset_dc: val_robust, impl: exact, patience: 10, tta: false, drop_remainder_batch: null}
+eval: {tta: true, states: [best, bestdc]}
+protocol: {fase: busqueda, test_bloqueado: true, congelado: null}
+storage: {states: [], keep_checkpoint: false}

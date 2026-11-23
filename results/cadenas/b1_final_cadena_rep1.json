@@ -1,0 +1,30 @@
+{
+ "nombre": "b1_final_cadena_rep1",
+ "pasos": {
+  "b1_final_dann_s42_rep": {
+   "codigo": 0,
+   "segundos": 2577.3,
+   "fin": "2026-11-17T18:56:46"
+  },
+  "b1_final_coral_s42_rep": {
+   "codigo": 0,
+   "segundos": 1388.4,
+   "fin": "2026-11-17T19:19:54"
+  },
+  "b1_final_mixstyle_s42_rep": {
+   "codigo": 0,
+   "segundos": 2253.9,
+   "fin": "2026-11-17T19:57:28"
+  },
+  "b1_final_fourier_s42_rep": {
+   "codigo": 0,
+   "segundos": 2790.8,
+   "fin": "2026-11-17T20:43:59"
+  },
+  "b1_final_lisa_s42_rep": {
+   "codigo": 0,
+   "segundos": 1619.9,
+   "fin": "2026-11-17T21:10:59"
+  }
+ }
+}

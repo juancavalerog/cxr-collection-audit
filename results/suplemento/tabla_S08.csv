@@ -1,0 +1,20 @@
+Elemento,Valor
+Python,"3.10.22 (main, Oct  6 2026, 02:05:33) [GCC 14.2.0]"
+Sistema,Linux-6.8.0-149-generic-x86_64-with-glibc2.41
+GPU,NVIDIA A100 80GB PCIe
+PyTorch,2.14.0+cu126
+CUDA de PyTorch,12.6
+cuDNN,9.10.2.21
+torchvision,0.29.0+cu126
+timm,1.0.30
+Pesos de ConvNeXt-Tiny,timm/convnext_tiny.in12k_ft_in1k
+NumPy,1.26.4
+pandas,2.3.3
+SciPy,1.15.3
+scikit-learn,1.7.2
+PyWavelets,1.8.0
+OpenCV,4.10.0.84
+Pillow,12.3.0
+Paquetes listados en el contenedor,93
+Ficheros con huella SHA256 en la congelación del protocolo,1 129
+Fecha de la congelación (UTC),2026-11-17T23:32:48Z

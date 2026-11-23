@@ -1,0 +1,18 @@
+{
+ "orden": "python scripts/sensibilidad/v28.py e3",
+ "fecha_utc": "2026-11-20T16:49:48Z",
+ "B": 2000,
+ "semilla_bootstrap": 2026,
+ "congelacion": "db617b620c2b9a6c7ef588898982006f0d4731457bd63ae0f6d367c10f6e24dc",
+ "tablas": {
+  "e3_detectores": 30,
+  "e3_detectores_resumen": 8,
+  "e3_erm_desde_logit": 10,
+  "e3_auc_metodos": 12,
+  "e3_familias": 24
+ },
+ "notas": [
+  "Referencias: mismo ajuste del detector; la puntuación es la función de decisión de la imagen original (tta 'no'), frente a la media con su espejo de la cifra principal."
+ ],
+ "segundos": 999.6
+}

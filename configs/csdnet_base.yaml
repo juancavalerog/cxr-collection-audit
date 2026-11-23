@@ -1,0 +1,70 @@
+# CSD-Net, configuración base (docs/03_arquitectura.md, Sections 2.8 y 4, Tabla 6; docs/07_piloto.md).
+# Entrada: python -m src.train.csdnet_run --config configs/csdnet_base.yaml --seed 42 [--trial T]
+# Mismos datos y la misma selección que las líneas base del protocolo nuevo: partición limpia, caché común con
+# máscaras (P1 a P6 con P3 centrado en los pulmones del profesor), máscaras alineadas con la caché y selección
+# por AUC-ROC en val_robust_sel (la mitad por paciente de val_robust que DFR no usa; src/baselines/methods/dfr.py).
+# TEST BLOQUEADO: protocol.test_bloqueado: true y ningún test en eval_sets (la regla de check_test_lock).
+experiment: csdnet_base
+precision: auto
+deterministic: true
+data:
+  dataset: covidx_cxr4
+  mode: limpia
+  train_sources: null
+  channel: homogeneo
+  res: 224
+  cache: data/cache_m/covidx_cxr4/homogeneo_224
+  masks: data/masks/covidx_cxr4/homogeneo_224
+  require_cache: true
+  num_workers: 12
+  eval_batch_size: 128
+  eval_sets: [val, val_robust, val_robust_sel]
+model:
+  csdnet:                       # campos de CSDNetConfig (src/model/csdnet.py); valores por defecto de la Tabla 6
+    img_size: 224
+    pretrained: true            # timm ImageNet (convnext_tiny.in12k_ft_in1k y bloques de ViT-S); descarga en el servidor
+    gate_region: lungs
+    seg_channels: 2
+train:
+  batch_size: 64                # Tabla 6: 64 por GPU a 224 (una GPU por trabajo)
+  steps_per_epoch: null         # ceil(67 932 / 64) = 1 062
+  augment: nuevo                # sin mixup; la máscara recibe la misma transformación geométrica
+  augment_params: {rotation: 0.03, zoom: 0.1, brightness: 0.05, contrast: [0.9, 1.1], cutout: 24}
+  log_every: 50
+  checkpoint_every_steps: 500
+selection: {metric: auc_roc, subset: val_robust_sel, impl: exact, patience: 10, tta: false}
+eval: {tta: true, states: [last, best, ema]}
+thermal: {every: 50}
+protocol: {fase: piloto, test_bloqueado: true, congelado: null}
+csdnet:
+  weights: {lambda_swap: 1.0, lambda_cons: 1.0, lambda_src: 0.5, lambda_seg: 0.5, lambda_sig: 0.1, lambda_ind: 10.0,
+            rho_within: 0.5, focal_alpha: 0.5, focal_gamma: 2.0}
+  # Enmienda de 13-11-2026 (docs/10_correccion_independencia.md): penalización de independencia con MMD
+  # insesgada, banco de 256 firmas por fuente mixta y clase y tope del gradiente sobre la firma en 0.5 veces el de
+  # lambda_src L_src. El primer intento del piloto usaba mode: mmd_sesgada con lambda_ind: 1.0
+  # (configs/csdnet_piloto_r1_mmd_sesgada.yaml lo reproduce).
+  ind: {mode: mmd_banco_tope, bank_size: 256, beta: 0.5, desde: A1}
+  # Control de validez previo a V1: si al final de A2 la L_src media de la época no baja al menos margen_nats de la
+  # entropía de la composición de fuentes de la época, V1 queda no concluyente ("firma sin información de fuente").
+  firma_check: {activo: true, margen_nats: 0.05}
+  epochs: {A1: 3, A2: 2, ramp: 2, B: 60}
+  lr: {trunk_conv: 5.0e-5, transformer: 1.0e-4, new: 1.0e-3}
+  weight_decay: 0.05
+  warmup_frac: 0.05
+  grad_clip: 1.0
+  sampler: {min_per_source: 2, min_per_class_mixed: 4}
+  swap_routing: table
+  gate_dice_threshold: 0.90
+  v1_fail_action: stop          # regla del Algoritmo 1: si V1 falla al final de A2 no se activa la fase B
+  v1_inconclusive: no_activar   # docs/07_piloto.md: un V1 sin potencia no cuenta como aprobado
+  probe_every: 5
+  probe_rows_cap: 600
+  probe_n_boot: 1000
+  final_probe_states: [best]
+  ema_mode: estandar
+  ema_momentum: 0.9999
+# Presupuesto de búsqueda (igual que las líneas base; src/train/csdnet_run.py, --trial): 8 configuraciones (la 0
+# con estos valores), 1 semilla en la búsqueda, 5 semillas (42, 123, 2024, 7, 999) para la configuración
+# congelada; tasa de la fase B en 10^U(-5, -3.5) aplicada al tronco con las razones de la Tabla 6.
+busqueda: {configuraciones: 8, semillas_busqueda: 1, semillas_finales: [42, 123, 2024, 7, 999],
+           lr_B: "10^U(-5, -3.5)", lambda_cons: "10^U(-1, 0.7)", lambda_ind: "10^U(-1, 1)", rho_within: "U(0, 0.75)"}

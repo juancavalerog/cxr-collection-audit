@@ -1,0 +1,8 @@
+# Método groupdro en el benchmark B3C (cardiomegalia; sensibilidad S-E, docs/08, enmienda E8, punto 4). Protocolo común de configs/baseline_groupdro.yaml más la capa configs/b3c_base.yaml.
+# Lanzar (lo hacen scripts/jobs/make_jobs_extra.py --fase etiqueta): python -m src.baselines.run --config configs/b3c_groupdro.yaml --seed <S>
+#   [--trial T] --experimento <nombre> --set data.bench=<manifiesto de la semilla S>
+base: [baseline_groupdro.yaml, b3c_base.yaml]
+experiment: b3c_groupdro
+baseline:
+  method: groupdro
+  params: {}

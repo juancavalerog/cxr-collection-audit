@@ -1,0 +1,15 @@
+{
+  "method": "dann",
+  "params": {
+    "disc_lr_mult": 30.0,
+    "grad_penalty": 3.492297443402205,
+    "lambda": 0.03356481810285185,
+    "mlp_depth": 3,
+    "mlp_dropout": 0.0,
+    "mlp_width": 256
+  },
+  "lr_B": 2.3624919136944225e-05,
+  "trial": 1,
+  "metrica_seleccion": 0.93275,
+  "corrida_busqueda": "results/train/b3a_A_dann_rho050_t1/seed0"
+}

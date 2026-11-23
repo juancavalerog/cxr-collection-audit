@@ -1,0 +1,11 @@
+{
+  "method": "erm",
+  "params": {},
+  "lr_B": 6.867312512156552e-05,
+  "trial": 6,
+  "config": "configs/b3a_erm.yaml",
+  "parametros_completos": {},
+  "corrida_busqueda": "results/train/b3a_A_erm_rho099_t6/seed0",
+  "uso": "C3 parte (b), enmienda E2: repetición del ensayo 6",
+  "comprobado_con": "results/train/b3a_A_erm_rho099_t6/seed0/config_resolved.json"
+}

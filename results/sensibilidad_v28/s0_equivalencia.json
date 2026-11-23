@@ -1,0 +1,15 @@
+{
+ "orden": "python scripts/sensibilidad/v28.py s0",
+ "fecha_utc": "2026-11-20T16:34:53Z",
+ "B": 2000,
+ "semilla_bootstrap": 2026,
+ "congelacion": "db617b620c2b9a6c7ef588898982006f0d4731457bd63ae0f6d367c10f6e24dc",
+ "tablas": {
+  "s0_equivalencia": 31
+ },
+ "notas": [
+  "Compara el cálculo con caché de comun.py con las tablas congeladas de results/c1/test/.",
+  "Entorno de esta ejecución: Python 3.10.22, numpy 1.26.4, máquina 3d25670bd256."
+ ],
+ "segundos": 104.8
+}

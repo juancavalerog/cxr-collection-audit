@@ -1,0 +1,25 @@
+{
+ "nombre": "inf_cadena_2",
+ "pasos": {
+  "inf_05_sens_tronco": {
+   "codigo": 0,
+   "segundos": 30.0,
+   "fin": "2026-11-20T05:46:45"
+  },
+  "inf_06_sens_etiqueta": {
+   "codigo": 0,
+   "segundos": 27.4,
+   "fin": "2026-11-20T05:47:13"
+  },
+  "inf_07_plan_b": {
+   "codigo": 0,
+   "segundos": 0.6,
+   "fin": "2026-11-20T05:47:13"
+  },
+  "inf_08_verificar": {
+   "codigo": 0,
+   "segundos": 16.9,
+   "fin": "2026-11-20T05:47:30"
+  }
+ }
+}

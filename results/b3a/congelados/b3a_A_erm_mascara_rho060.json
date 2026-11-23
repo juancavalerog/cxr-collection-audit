@@ -1,0 +1,10 @@
+{
+  "method": "erm_mascara",
+  "params": {
+    "mask_dir": "data/masks/bench_b3a/homogeneo_224"
+  },
+  "lr_B": 5e-05,
+  "trial": 0,
+  "metrica_seleccion": 0.922390625,
+  "corrida_busqueda": "results/train/b3a_A_erm_mascara_rho060_t0/seed0"
+}

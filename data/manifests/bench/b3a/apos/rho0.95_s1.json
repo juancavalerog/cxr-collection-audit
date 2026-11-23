@@ -1,0 +1,42 @@
+{
+  "benchmark": "b3a",
+  "variante": "3a_derrame_pleural",
+  "orientacion": "apos",
+  "rho": 0.95,
+  "semilla": 1,
+  "fuentes": [
+    "nih",
+    "chexpert"
+  ],
+  "fuentes_mixtas": [
+    "nih",
+    "chexpert"
+  ],
+  "subconjuntos": [
+    "val_desconf",
+    "test_desconf",
+    "test_invertido"
+  ],
+  "seleccion": "val",
+  "seleccion_alternativa": "val_desconf",
+  "prevalencia_train_por_fuente": {
+    "nih": 0.95,
+    "chexpert": 0.050000000000000044
+  },
+  "fraccion_ap_por_fuente": {
+    "nih": 0.5,
+    "chexpert": 0.7
+  },
+  "tamanos": {
+    "train_por_fuente": 2800,
+    "val_por_fuente": 400,
+    "val_desconf_por_celda": 200,
+    "test_desconf_por_celda": 500,
+    "test_invertido_por_fuente": 1000,
+    "test_invertido_por_fuente_diseno": 1000
+  },
+  "notas": "val_desconf puede compartir filas con val (las filas solo de val_desconf llevan split=fuera); test_desconf y test_invertido salen de la misma ordenación fija de la reserva de test y comparten filas; un paciente con AP y PA puede aportar imágenes distintas a dos subconjuntos, nunca dos imágenes al mismo conjunto ni pacientes entre reservas.",
+  "test_bloqueado": true,
+  "semilla_reservas": 20261114,
+  "generador": "scripts/data/build_b3a.py"
+}

@@ -1,0 +1,8 @@
+# Método fourier en el benchmark B2. Protocolo común de configs/baseline_fourier.yaml más la capa configs/b2_base.yaml.
+# Lanzar (lo hacen scripts/jobs/make_jobs_b2.py): python -m src.baselines.run --config configs/b2_fourier.yaml --seed <S>
+#   [--trial T] --experimento <nombre> --set data.bench=<manifiesto de la semilla S>
+base: [baseline_fourier.yaml, b2_base.yaml]
+experiment: b2_fourier
+baseline:
+  method: fourier
+  params: {}

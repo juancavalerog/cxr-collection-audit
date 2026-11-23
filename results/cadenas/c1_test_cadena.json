@@ -1,0 +1,40 @@
+{
+ "nombre": "c1_test_cadena",
+ "pasos": {
+  "c1t_01_evaluar_test_b1": {
+   "codigo": 0,
+   "segundos": 1290.8,
+   "fin": "2026-11-18T00:53:59"
+  },
+  "c1t_02_inferencia_covidgr": {
+   "codigo": 0,
+   "segundos": 179.1,
+   "fin": "2026-11-18T00:56:58"
+  },
+  "c1t_03_extraer_din_test": {
+   "codigo": 0,
+   "segundos": 47.1,
+   "fin": "2026-11-18T00:57:45"
+  },
+  "c1t_04_extraer_troncos_test": {
+   "codigo": 0,
+   "segundos": 329.9,
+   "fin": "2026-11-18T01:03:15"
+  },
+  "c1t_05_adquisicion_test": {
+   "codigo": 0,
+   "segundos": 39.5,
+   "fin": "2026-11-18T01:03:55"
+  },
+  "c1t_06_auditoria_test": {
+   "codigo": 0,
+   "segundos": 431.9,
+   "fin": "2026-11-18T01:11:07"
+  },
+  "c1t_07_verificar": {
+   "codigo": 0,
+   "segundos": 17.8,
+   "fin": "2026-11-18T01:11:25"
+  }
+ }
+}

@@ -1,0 +1,259 @@
+{
+ "veredicto": "informativo",
+ "metodo": "erm",
+ "conjunto": "val_desconf",
+ "rho_bajo": 0.5,
+ "rho_alto": 1.0,
+ "semillas": [
+  0,
+  1
+ ],
+ "auc_rho_bajo_por_semilla": {
+  "0": 0.92535,
+  "1": 0.925940625
+ },
+ "auc_rho_alto_por_semilla": {
+  "0": 0.5335625,
+  "1": 0.523715625
+ },
+ "caida": 0.39700624999999995,
+ "ic95": [
+  0.35581498822177215,
+  0.4399169454905012
+ ],
+ "umbral": 0.05,
+ "caida_por_semilla": {
+  "0": 0.39178749999999996,
+  "1": 0.40222499999999994
+ },
+ "semillas_con_caida_>=_umbral": 2,
+ "B": 2000,
+ "semilla_bootstrap": 2026,
+ "unidad_remuestreo": "paciente",
+ "n_imagenes": 800,
+ "programa": "scripts/eval/puerta6.py",
+ "fecha_utc": "2026-11-14 05:53:00",
+ "criterio": "caída de ERM >= 0.05 entre rho 0.5 y 1.0 en val_desconf, IC95 > 0 y positiva en cada semilla",
+ "descriptivo": {
+  "curva": [
+   {
+    "metodo": "dfr",
+    "rho": 0.5,
+    "auc_media_semillas": 0.9264796875,
+    "dt_semillas": 0.0001745669866054146,
+    "ic95_inf": 0.9086212284858274,
+    "ic95_sup": 0.9432966920527767,
+    "n_semillas": 2,
+    "semillas": "0 1"
+   },
+   {
+    "metodo": "dfr",
+    "rho": 0.9,
+    "auc_media_semillas": 0.8636484375,
+    "dt_semillas": 0.012933424969640199,
+    "ic95_inf": 0.8391604137731932,
+    "ic95_sup": 0.8866711435650139,
+    "n_semillas": 2,
+    "semillas": "0 1"
+   },
+   {
+    "metodo": "erm",
+    "rho": 0.5,
+    "auc_media_semillas": 0.9256453124999999,
+    "dt_semillas": 0.0004176349426382734,
+    "ic95_inf": 0.9073284016041117,
+    "ic95_sup": 0.943244226267533,
+    "n_semillas": 2,
+    "semillas": "0 1"
+   },
+   {
+    "metodo": "erm",
+    "rho": 0.9,
+    "auc_media_semillas": 0.8283640624999999,
+    "dt_semillas": 0.005778388227508854,
+    "ic95_inf": 0.7996393244978043,
+    "ic95_sup": 0.8535407636400026,
+    "n_semillas": 2,
+    "semillas": "0 1"
+   },
+   {
+    "metodo": "erm",
+    "rho": 1.0,
+    "auc_media_semillas": 0.5286390625,
+    "dt_semillas": 0.006962792085996309,
+    "ic95_inf": 0.4892119287432686,
+    "ic95_sup": 0.5674831002455165,
+    "n_semillas": 2,
+    "semillas": "0 1"
+   },
+   {
+    "metodo": "groupdro",
+    "rho": 0.5,
+    "auc_media_semillas": 0.928359375,
+    "dt_semillas": 0.0014716659883445265,
+    "ic95_inf": 0.910094196143565,
+    "ic95_sup": 0.9452685620426092,
+    "n_semillas": 2,
+    "semillas": "0 1"
+   },
+   {
+    "metodo": "groupdro",
+    "rho": 0.9,
+    "auc_media_semillas": 0.8416203124999999,
+    "dt_semillas": 0.01879799183610612,
+    "ic95_inf": 0.8147983728837835,
+    "ic95_sup": 0.866558817064875,
+    "n_semillas": 2,
+    "semillas": "0 1"
+   },
+   {
+    "metodo": "groupdro",
+    "rho": 1.0,
+    "auc_media_semillas": 0.5286140625,
+    "dt_semillas": 0.0044348853432543255,
+    "ic95_inf": 0.48813328273869794,
+    "ic95_sup": 0.56720945938345,
+    "n_semillas": 2,
+    "semillas": "0 1"
+   }
+  ],
+  "comparacion_erm": [
+   {
+    "metodo": "dfr",
+    "medida": "delta_auc_rho050",
+    "rho": 0.5,
+    "delta": 0.0008343749999999983,
+    "ic95_inf": -0.0034537406050527395,
+    "ic95_sup": 0.0052046988165167325,
+    "p_unilateral": 0.3598200899550225,
+    "semillas_a_favor": 2.0,
+    "n_semillas": 2,
+    "margen": null,
+    "no_inferior": null
+   },
+   {
+    "metodo": "dfr",
+    "medida": "delta_auc_rho090",
+    "rho": 0.9,
+    "delta": 0.035284375000000034,
+    "ic95_inf": 0.025153442733850805,
+    "ic95_sup": 0.04541589539739612,
+    "p_unilateral": 0.0004997501249375312,
+    "semillas_a_favor": 2.0,
+    "n_semillas": 2,
+    "margen": null,
+    "no_inferior": null
+   },
+   {
+    "metodo": "dfr",
+    "medida": "coste_rho050_no_inferioridad",
+    "rho": 0.5,
+    "delta": 0.0008343749999999983,
+    "ic95_inf": -0.0034537406050527395,
+    "ic95_sup": 0.0052046988165167325,
+    "p_unilateral": 0.0004997501249375312,
+    "semillas_a_favor": 2.0,
+    "n_semillas": 2,
+    "margen": 0.01,
+    "no_inferior": true
+   },
+   {
+    "metodo": "groupdro",
+    "medida": "delta_auc_rho050",
+    "rho": 0.5,
+    "delta": 0.002714062500000003,
+    "ic95_inf": -0.0007604577731582449,
+    "ic95_sup": 0.006162102686639915,
+    "p_unilateral": 0.06846576711644178,
+    "semillas_a_favor": 2.0,
+    "n_semillas": 2,
+    "margen": null,
+    "no_inferior": null
+   },
+   {
+    "metodo": "groupdro",
+    "medida": "delta_auc_rho090",
+    "rho": 0.9,
+    "delta": 0.01325624999999997,
+    "ic95_inf": 0.003946003732045214,
+    "ic95_sup": 0.023013079148954417,
+    "p_unilateral": 0.0024987506246876563,
+    "semillas_a_favor": 2.0,
+    "n_semillas": 2,
+    "margen": null,
+    "no_inferior": null
+   },
+   {
+    "metodo": "groupdro",
+    "medida": "delta_auc_rho100",
+    "rho": 1.0,
+    "delta": -2.5000000000052758e-05,
+    "ic95_inf": -0.0025915836574897503,
+    "ic95_sup": 0.002384477503432251,
+    "p_unilateral": 0.5257371314342829,
+    "semillas_a_favor": 1.0,
+    "n_semillas": 2,
+    "margen": null,
+    "no_inferior": null
+   },
+   {
+    "metodo": "groupdro",
+    "medida": "delta_area_dosis",
+    "rho": null,
+    "delta": 0.007711250000000003,
+    "ic95_inf": 0.003090282336465595,
+    "ic95_sup": 0.012742309438629258,
+    "p_unilateral": 0.0004997501249375312,
+    "semillas_a_favor": null,
+    "n_semillas": 2,
+    "margen": null,
+    "no_inferior": null
+   },
+   {
+    "metodo": "groupdro",
+    "medida": "delta_caida_050_100",
+    "rho": null,
+    "delta": 0.002739062500000111,
+    "ic95_inf": -0.0013704992523555198,
+    "ic95_sup": 0.007146048965206757,
+    "p_unilateral": 0.9075462268865567,
+    "semillas_a_favor": null,
+    "n_semillas": 2,
+    "margen": null,
+    "no_inferior": null
+   },
+   {
+    "metodo": "groupdro",
+    "medida": "coste_rho050_no_inferioridad",
+    "rho": 0.5,
+    "delta": 0.002714062500000003,
+    "ic95_inf": -0.0007604577731582449,
+    "ic95_sup": 0.006162102686639915,
+    "p_unilateral": 0.0004997501249375312,
+    "semillas_a_favor": 2.0,
+    "n_semillas": 2,
+    "margen": 0.01,
+    "no_inferior": true
+   }
+  ]
+ },
+ "nota": "",
+ "entradas_sha256": {
+  "results/piloto_b3a/b3a_A_dfr_rho050/seed0/predictions/dfr_best_val_desconf.csv": "f930decb42365eec704850dc03790e8aa58f1b5ffa7a848c0c6dd483cf6969c2",
+  "results/piloto_b3a/b3a_A_dfr_rho050/seed1/predictions/dfr_best_val_desconf.csv": "aaa8a247425fecd9784c3c2dd9e329c91cb4f16f83ea603ef881e732e13c2ff7",
+  "results/piloto_b3a/b3a_A_dfr_rho090/seed0/predictions/dfr_best_val_desconf.csv": "1a98bd8fd08b88660e996c4df954f23d11be27cf48e0d481b396848904478255",
+  "results/piloto_b3a/b3a_A_dfr_rho090/seed1/predictions/dfr_best_val_desconf.csv": "445a6bd3289176a890e33211b5a98f03a143d459ad0ee7d863dfd98bab48444f",
+  "results/piloto_b3a/b3a_A_erm_rho050/seed0/predictions/best_val_desconf.csv": "3c0a1d9a02ba6068eee2a45ee58dc7051e07a7c72d266ac2174c17beae5e6370",
+  "results/piloto_b3a/b3a_A_erm_rho050/seed1/predictions/best_val_desconf.csv": "c782c7ed589acf65dfad76c49c16837bcf5d9dfd1234dd623670f8c3bf12234b",
+  "results/piloto_b3a/b3a_A_erm_rho090/seed0/predictions/best_val_desconf.csv": "21da527f553b51930f4cc3db7d51f0d3c824bd7b08633e7666971422545e7fe9",
+  "results/piloto_b3a/b3a_A_erm_rho090/seed1/predictions/best_val_desconf.csv": "26090e5393f238ff3e05d00e89aa1cfbf7ff52d2436d26903f0e24e6475bfe8f",
+  "results/piloto_b3a/b3a_A_erm_rho100/seed0/predictions/best_val_desconf.csv": "0da94718ba0fdc71af5e49da9d44174bf08df9bad362e5bd6bc0806ebd1d9ec6",
+  "results/piloto_b3a/b3a_A_erm_rho100/seed1/predictions/best_val_desconf.csv": "7e3374af5dc198bdfa70d8a22b8311d509412605dfbd01dd219dedda6538da15",
+  "results/piloto_b3a/b3a_A_groupdro_rho050/seed0/predictions/best_val_desconf.csv": "820d299a5016a33659534e72582cb57d301efba91af7b8385815c47f0678e64b",
+  "results/piloto_b3a/b3a_A_groupdro_rho050/seed1/predictions/best_val_desconf.csv": "d2b308a758d989e41f951bd688019c2a18bc682356da7f3fdcfdd1bc69c76fb0",
+  "results/piloto_b3a/b3a_A_groupdro_rho090/seed0/predictions/best_val_desconf.csv": "d1a9c1377abf56aed97d4e3c1b526edae22581452a7396cffcc79fb82b5b6840",
+  "results/piloto_b3a/b3a_A_groupdro_rho090/seed1/predictions/best_val_desconf.csv": "105fcc083406bdcb066293a302230b07fcba1e7c8121c9642a6a508f1a468b75",
+  "results/piloto_b3a/b3a_A_groupdro_rho100/seed0/predictions/best_val_desconf.csv": "ea0097fabf9db4b45f59ee920126b4c7fe06e5d89e9627dd77c078ceb0d0b6f7",
+  "results/piloto_b3a/b3a_A_groupdro_rho100/seed1/predictions/best_val_desconf.csv": "2fe0aaf64b2e90def92da5b64e327b5be12927adc33c825c38fcea625dcea8b3"
+ }
+}

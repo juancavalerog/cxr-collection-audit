@@ -1,0 +1,16 @@
+{
+ "orden": "python scripts/sensibilidad/v28.py s6",
+ "fecha_utc": "2026-11-20T16:44:55Z",
+ "B": 2000,
+ "semilla_bootstrap": 2026,
+ "congelacion": "db617b620c2b9a6c7ef588898982006f0d4731457bd63ae0f6d367c10f6e24dc",
+ "tablas": {
+  "s6_familias": 48,
+  "s6_comparacion": 24,
+  "s6_detectores": 30
+ },
+ "notas": [
+  "Parte bimcv del test: 8 079 imágenes de 4 343 pacientes. La unidad 'imagen' remuestrea cada imagen como independiente con el mismo generador (pesos_remuestreo con image_id como grupo)."
+ ],
+ "segundos": 707.0
+}

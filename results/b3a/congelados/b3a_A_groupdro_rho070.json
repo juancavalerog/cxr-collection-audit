@@ -1,0 +1,10 @@
+{
+  "method": "groupdro",
+  "params": {
+    "eta": 0.010283970119268149
+  },
+  "lr_B": 1.8303530535678595e-05,
+  "trial": 4,
+  "metrica_seleccion": 0.9557343750000001,
+  "corrida_busqueda": "results/train/b3a_A_groupdro_rho070_t4/seed0"
+}

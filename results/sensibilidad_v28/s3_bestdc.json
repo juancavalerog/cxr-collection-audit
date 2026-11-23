@@ -1,0 +1,17 @@
+{
+ "orden": "python scripts/sensibilidad/v28.py s3",
+ "fecha_utc": "2026-11-20T16:39:24Z",
+ "B": 2000,
+ "semilla_bootstrap": 2026,
+ "congelacion": "db617b620c2b9a6c7ef588898982006f0d4731457bd63ae0f6d367c10f6e24dc",
+ "tablas": {
+  "s3_curva_best_bestdc": 88,
+  "s3_comparacion_erm_best_bestdc": 60
+ },
+ "notas": [
+  "Extracto sin cálculo nuevo de results/b3/test_A_best y results/b3/test_A_bestdc (scripts/eval/informe_b3.py con --estado best y bestdc).",
+  "En DFR, el estado bestdc es dfr_bestdc: parte de la época elegida en val_desconf y reajusta la última capa con una mitad de val_desconf (DFR-dc de V2.4.6), definido también en rho = 1.0.",
+  "Las familias de la tabla bestdc no son confirmatorias (V2.4.5): la selección con oráculo va aparte."
+ ],
+ "segundos": 375.3
+}

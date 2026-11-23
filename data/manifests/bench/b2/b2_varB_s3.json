@@ -1,0 +1,75 @@
+{
+  "benchmark": "b2",
+  "variante": "B",
+  "rho": null,
+  "semilla": 3,
+  "fuentes": [
+    "belarus",
+    "rsna_nih",
+    "tbx11k",
+    "shenzhen",
+    "montgomery"
+  ],
+  "fuentes_mixtas": [
+    "tbx11k"
+  ],
+  "subconjuntos": [
+    "val_robust",
+    "test_shenzhen",
+    "test_montgomery",
+    "test_robusto"
+  ],
+  "seleccion": "val_robust",
+  "recuentos_por_fuente_neg_pos": {
+    "train": {
+      "belarus": [
+        0,
+        274
+      ],
+      "rsna_nih": [
+        2774,
+        0
+      ],
+      "tbx11k": [
+        600,
+        600
+      ]
+    },
+    "val": {
+      "belarus": [
+        0,
+        31
+      ],
+      "rsna_nih": [
+        317,
+        0
+      ],
+      "tbx11k": [
+        1591,
+        200
+      ]
+    },
+    "test": {
+      "montgomery": [
+        80,
+        58
+      ],
+      "shenzhen": [
+        326,
+        336
+      ]
+    }
+  },
+  "notas": "variante B de docs/02_datos.md Section 3.2; la semilla fija la submuestra de 600 no TB de TBX11K train (300 sanas y 300 enfermas no TB); val_robust = TBX11K val (fuente mixta). Cohorte externa de Mendeley pendiente de descarga.",
+  "deduplicacion": {
+    "rahman_copias_nlm_por_hash": 0,
+    "rahman_nlm_por_metadato": 800,
+    "rahman_nlm_metadato_sin_copia_hash": 800,
+    "rahman_copia_hash_sin_metadato_nlm": 0,
+    "tbx11k_copias_nlm": 0,
+    "casi_duplicados_resueltos": 185
+  },
+  "test_bloqueado": true,
+  "semilla_reservas": 20261114,
+  "generador": "scripts/data/build_b2.py"
+}

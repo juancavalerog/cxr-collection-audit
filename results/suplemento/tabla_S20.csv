@@ -1,0 +1,111 @@
+Medida,Método,Diferencia frente a ERM (IC95),p unilateral,Papel,p de Holm,Rechaza con Holm
+Área (ecuación (9)),GroupDRO,0.0143 (0.0099 a 0.0186),0.0005,confirmatoria,0.0050,sí
+Área (ecuación (9)),DANN,0.0020 (−0.0012 a 0.0052),0.109,confirmatoria,0.537,no
+Área (ecuación (9)),CORAL,0.0019 (−0.0009 a 0.0048),0.107,confirmatoria,0.537,no
+Área (ecuación (9)),MixStyle,0.0023 (−0.0002 a 0.0050),0.040,confirmatoria,0.243,no
+Área (ecuación (9)),Mezcla de amplitud de Fourier,−0.0049 (−0.0078 a −0.0021),1.000,confirmatoria,1.000,no
+Área (ecuación (9)),LISA,0.0147 (0.0093 a 0.0199),0.0005,confirmatoria,0.0050,sí
+Área (ecuación (9)),DFA con fuente,−0.0014 (−0.0052 a 0.0029),0.730,confirmatoria,1.000,no
+Área (ecuación (9)),DFR,0.0104 (0.0047 a 0.0158),0.0005,confirmatoria,0.0050,sí
+Área (ecuación (9)),ERM con máscara,−0.0217 (−0.0286 a −0.0140),1.000,confirmatoria,1.000,no
+Área (ecuación (9)),ERM con cuotas,0.0072 (0.0045 a 0.0099),0.0005,confirmatoria,0.0050,sí
+"AUC, $\rho = 0.5$",GroupDRO,−0.002 (−0.004 a 0.000),0.962,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.5$",DANN,−0.002 (−0.004 a 0.001),0.942,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.5$",CORAL,0.000 (−0.002 a 0.003),0.343,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.5$",MixStyle,0.000 (−0.002 a 0.003),0.463,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.5$",Mezcla de amplitud de Fourier,0.000 (−0.004 a 0.004),0.397,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.5$",LISA,0.001 (−0.002 a 0.005),0.170,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.5$",DFA con fuente,0.003 (0.000 a 0.007),0.018,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.5$",DFR,−0.003 (−0.005 a 0.001),0.945,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.5$",ERM con máscara,−0.020 (−0.026 a −0.013),1.000,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.5$",ERM con cuotas,−0.001 (−0.004 a 0.003),0.688,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.6$",GroupDRO,0.002 (−0.002 a 0.005),0.164,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.6$",DANN,0.003 (0.000 a 0.005),0.048,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.6$",CORAL,0.004 (0.000 a 0.008),0.022,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.6$",MixStyle,0.002 (−0.002 a 0.006),0.273,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.6$",Mezcla de amplitud de Fourier,−0.001 (−0.007 a 0.006),0.622,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.6$",LISA,0.006 (0.002 a 0.010),0.0005,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.6$",DFA con fuente,0.003 (0.000 a 0.007),0.023,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.6$",DFR,0.001 (−0.001 a 0.003),0.222,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.6$",ERM con máscara,−0.020 (−0.027 a −0.012),1.000,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.6$",ERM con cuotas,0.001 (−0.002 a 0.004),0.249,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.7$",GroupDRO,0.008 (0.003 a 0.013),0.0010,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.7$",DANN,−0.001 (−0.006 a 0.004),0.658,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.7$",CORAL,0.006 (0.003 a 0.009),0.0005,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.7$",MixStyle,0.003 (−0.003 a 0.008),0.159,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.7$",Mezcla de amplitud de Fourier,−0.002 (−0.007 a 0.002),0.835,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.7$",LISA,0.012 (0.008 a 0.017),0.0005,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.7$",DFA con fuente,0.000 (−0.004 a 0.004),0.495,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.7$",DFR,0.005 (0.000 a 0.010),0.029,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.7$",ERM con máscara,−0.023 (−0.031 a −0.014),1.000,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.7$",ERM con cuotas,0.003 (−0.003 a 0.009),0.213,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.8$",GroupDRO,0.015 (−0.006 a 0.038),0.097,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.8$",DANN,0.017 (0.004 a 0.032),0.0045,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.8$",CORAL,0.012 (−0.001 a 0.028),0.033,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.8$",MixStyle,0.003 (−0.007 a 0.015),0.253,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.8$",Mezcla de amplitud de Fourier,−0.004 (−0.022 a 0.014),0.641,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.8$",LISA,0.015 (0.001 a 0.031),0.020,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.8$",DFA con fuente,0.006 (−0.007 a 0.018),0.176,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.8$",DFR,0.017 (0.004 a 0.036),0.0010,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.8$",ERM con máscara,−0.021 (−0.036 a −0.004),0.994,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.8$",ERM con cuotas,0.009 (−0.008 a 0.028),0.160,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.9$",GroupDRO,0.028 (0.013 a 0.043),0.0005,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.9$",DANN,0.019 (0.004 a 0.032),0.006,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.9$",CORAL,−0.006 (−0.014 a 0.003),0.912,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.9$",MixStyle,0.002 (−0.003 a 0.008),0.237,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.9$",Mezcla de amplitud de Fourier,−0.017 (−0.025 a −0.010),1.000,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.9$",LISA,0.032 (0.012 a 0.049),0.0010,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.9$",DFA con fuente,−0.005 (−0.018 a 0.007),0.778,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.9$",DFR,0.016 (−0.010 a 0.039),0.129,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.9$",ERM con máscara,−0.027 (−0.051 a −0.002),0.983,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.9$",ERM con cuotas,0.022 (0.012 a 0.032),0.0005,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.95$",GroupDRO,0.052 (0.039 a 0.063),0.0005,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.95$",DANN,−0.019 (−0.044 a 0.007),0.920,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.95$",CORAL,−0.013 (−0.025 a −0.001),0.981,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.95$",MixStyle,0.003 (−0.015 a 0.023),0.363,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.95$",Mezcla de amplitud de Fourier,−0.011 (−0.027 a 0.005),0.891,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.95$",LISA,0.032 (0.013 a 0.051),0.0005,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.95$",DFA con fuente,−0.018 (−0.043 a 0.010),0.895,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.95$",DFR,0.017 (−0.006 a 0.039),0.078,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.95$",ERM con máscara,−0.022 (−0.044 a 0.000),0.975,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.95$",ERM con cuotas,0.015 (−0.001 a 0.031),0.032,descriptiva,no aplica,no aplica
+"AUC, $\rho = 0.99$",GroupDRO,0.009 (−0.005 a 0.026),0.122,secundaria,1.000,no
+"AUC, $\rho = 0.99$",DANN,−0.066 (−0.096 a −0.035),1.000,secundaria,1.000,no
+"AUC, $\rho = 0.99$",CORAL,−0.015 (−0.025 a −0.003),0.988,secundaria,1.000,no
+"AUC, $\rho = 0.99$",MixStyle,0.000 (−0.010 a 0.012),0.511,secundaria,1.000,no
+"AUC, $\rho = 0.99$",Mezcla de amplitud de Fourier,0.003 (−0.011 a 0.020),0.395,secundaria,1.000,no
+"AUC, $\rho = 0.99$",LISA,−0.004 (−0.019 a 0.012),0.703,secundaria,1.000,no
+"AUC, $\rho = 0.99$",DFA con fuente,−0.029 (−0.057 a −0.003),0.989,secundaria,1.000,no
+"AUC, $\rho = 0.99$",DFR,0.048 (0.009 a 0.087),0.007,secundaria,0.075,no
+"AUC, $\rho = 0.99$",ERM con máscara,−0.015 (−0.027 a −0.002),0.992,secundaria,1.000,no
+"AUC, $\rho = 0.99$",ERM con cuotas,−0.001 (−0.013 a 0.014),0.571,secundaria,1.000,no
+"AUC, $\rho = 1.0$",GroupDRO,−0.001 (−0.007 a 0.005),0.665,secundaria,1.000,no
+"AUC, $\rho = 1.0$",DANN,−0.004 (−0.022 a 0.014),0.650,secundaria,1.000,no
+"AUC, $\rho = 1.0$",CORAL,0.000 (−0.016 a 0.018),0.513,secundaria,1.000,no
+"AUC, $\rho = 1.0$",MixStyle,0.045 (0.030 a 0.064),0.0005,secundaria,0.0045,sí
+"AUC, $\rho = 1.0$",Mezcla de amplitud de Fourier,0.038 (0.014 a 0.064),0.0015,secundaria,0.009,sí
+"AUC, $\rho = 1.0$",LISA,0.000 (0.000 a 0.000),1.000,secundaria,1.000,no
+"AUC, $\rho = 1.0$",DFA con fuente,0.017 (0.010 a 0.025),0.0005,secundaria,0.0045,sí
+"AUC, $\rho = 1.0$",DFR,no aplica,no aplica,no aplica,no aplica,no aplica
+"AUC, $\rho = 1.0$",ERM con máscara,0.060 (0.036 a 0.083),0.0005,secundaria,0.0045,sí
+"AUC, $\rho = 1.0$",ERM con cuotas,0.014 (0.000 a 0.030),0.025,secundaria,0.125,no
+"No inferioridad, $\rho = 0.5$, δ = 0.01",GroupDRO,−0.002 (−0.004 a 0.000),0.0005,secundaria,0.0050,sí
+"No inferioridad, $\rho = 0.5$, δ = 0.01",DANN,−0.002 (−0.004 a 0.001),0.0005,secundaria,0.0050,sí
+"No inferioridad, $\rho = 0.5$, δ = 0.01",CORAL,0.000 (−0.002 a 0.003),0.0005,secundaria,0.0050,sí
+"No inferioridad, $\rho = 0.5$, δ = 0.01",MixStyle,0.000 (−0.002 a 0.003),0.0005,secundaria,0.0050,sí
+"No inferioridad, $\rho = 0.5$, δ = 0.01",Mezcla de amplitud de Fourier,0.000 (−0.004 a 0.004),0.0005,secundaria,0.0050,sí
+"No inferioridad, $\rho = 0.5$, δ = 0.01",LISA,0.001 (−0.002 a 0.005),0.0005,secundaria,0.0050,sí
+"No inferioridad, $\rho = 0.5$, δ = 0.01",DFA con fuente,0.003 (0.000 a 0.007),0.0005,secundaria,0.0050,sí
+"No inferioridad, $\rho = 0.5$, δ = 0.01",DFR,−0.003 (−0.005 a 0.001),0.0005,secundaria,0.0050,sí
+"No inferioridad, $\rho = 0.5$, δ = 0.01",ERM con máscara,−0.020 (−0.026 a −0.013),0.996,secundaria,0.996,no
+"No inferioridad, $\rho = 0.5$, δ = 0.01",ERM con cuotas,−0.001 (−0.004 a 0.003),0.0005,secundaria,0.0050,sí
+Caída entre $\rho = 0.5$ y 1.0,GroupDRO,−0.001 (−0.007 a 0.005),0.419,descriptiva,no aplica,no aplica
+Caída entre $\rho = 0.5$ y 1.0,DANN,0.002 (−0.016 a 0.020),0.571,descriptiva,no aplica,no aplica
+Caída entre $\rho = 0.5$ y 1.0,CORAL,0.000 (−0.017 a 0.017),0.529,descriptiva,no aplica,no aplica
+Caída entre $\rho = 0.5$ y 1.0,MixStyle,−0.045 (−0.062 a −0.030),0.0005,descriptiva,no aplica,no aplica
+Caída entre $\rho = 0.5$ y 1.0,Mezcla de amplitud de Fourier,−0.037 (−0.064 a −0.012),0.0020,descriptiva,no aplica,no aplica
+Caída entre $\rho = 0.5$ y 1.0,LISA,0.001 (−0.002 a 0.005),0.831,descriptiva,no aplica,no aplica
+Caída entre $\rho = 0.5$ y 1.0,DFA con fuente,−0.014 (−0.021 a −0.007),0.0005,descriptiva,no aplica,no aplica
+Caída entre $\rho = 0.5$ y 1.0,DFR,no aplica,no aplica,no aplica,no aplica,no aplica
+Caída entre $\rho = 0.5$ y 1.0,ERM con máscara,−0.080 (−0.103 a −0.054),0.0005,descriptiva,no aplica,no aplica
+Caída entre $\rho = 0.5$ y 1.0,ERM con cuotas,−0.015 (−0.031 a −0.001),0.020,descriptiva,no aplica,no aplica

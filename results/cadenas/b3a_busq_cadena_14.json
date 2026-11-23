@@ -1,0 +1,190 @@
+{
+ "nombre": "b3a_busq_cadena_14",
+ "pasos": {
+  "b3a_busq_erm_cuotas_rho099_s0_t5": {
+   "codigo": 0,
+   "segundos": 297.8,
+   "fin": "2026-11-15T09:00:20"
+  },
+  "b3a_busq_erm_rho100_s0_t5": {
+   "codigo": 0,
+   "segundos": 152.4,
+   "fin": "2026-11-15T09:02:52"
+  },
+  "b3a_busq_groupdro_rho100_s0_t5": {
+   "codigo": 0,
+   "segundos": 149.5,
+   "fin": "2026-11-15T09:05:22"
+  },
+  "b3a_busq_dann_rho100_s0_t5": {
+   "codigo": 0,
+   "segundos": 148.9,
+   "fin": "2026-11-15T09:07:51"
+  },
+  "b3a_busq_coral_rho100_s0_t5": {
+   "codigo": 0,
+   "segundos": 146.9,
+   "fin": "2026-11-15T09:10:18"
+  },
+  "b3a_busq_mixstyle_rho100_s0_t5": {
+   "codigo": 0,
+   "segundos": 170.1,
+   "fin": "2026-11-15T09:13:08"
+  },
+  "b3a_busq_fourier_rho100_s0_t5": {
+   "codigo": 0,
+   "segundos": 224.8,
+   "fin": "2026-11-15T09:16:53"
+  },
+  "b3a_busq_lisa_rho100_s0_t5": {
+   "codigo": 0,
+   "segundos": 148.4,
+   "fin": "2026-11-15T09:19:21"
+  },
+  "b3a_busq_dfa_fuente_rho100_s0_t5": {
+   "codigo": 0,
+   "segundos": 237.5,
+   "fin": "2026-11-15T09:23:19"
+  },
+  "b3a_busq_dfr_rho100_s0_t5": {
+   "codigo": 0,
+   "segundos": 157.3,
+   "fin": "2026-11-15T09:25:56"
+  },
+  "b3a_busq_erm_mascara_rho100_s0_t5": {
+   "codigo": 0,
+   "segundos": 184.7,
+   "fin": "2026-11-15T09:29:01"
+  },
+  "b3a_busq_erm_cuotas_rho100_s0_t5": {
+   "codigo": 0,
+   "segundos": 156.2,
+   "fin": "2026-11-15T09:31:37"
+  },
+  "b3a_busq_erm_rho050_s0_t6": {
+   "codigo": 0,
+   "segundos": 203.5,
+   "fin": "2026-11-15T09:35:00"
+  },
+  "b3a_busq_groupdro_rho050_s0_t6": {
+   "codigo": 0,
+   "segundos": 217.1,
+   "fin": "2026-11-15T09:38:37"
+  },
+  "b3a_busq_dann_rho050_s0_t6": {
+   "codigo": 0,
+   "segundos": 237.9,
+   "fin": "2026-11-15T09:42:35"
+  },
+  "b3a_busq_coral_rho050_s0_t6": {
+   "codigo": 0,
+   "segundos": 246.7,
+   "fin": "2026-11-15T09:46:42"
+  },
+  "b3a_busq_mixstyle_rho050_s0_t6": {
+   "codigo": 0,
+   "segundos": 223.7,
+   "fin": "2026-11-15T09:50:26"
+  },
+  "b3a_busq_fourier_rho050_s0_t6": {
+   "codigo": 0,
+   "segundos": 341.3,
+   "fin": "2026-11-15T09:56:07"
+  },
+  "b3a_busq_lisa_rho050_s0_t6": {
+   "codigo": 0,
+   "segundos": 376.0,
+   "fin": "2026-11-15T10:02:23"
+  },
+  "b3a_busq_dfa_fuente_rho050_s0_t6": {
+   "codigo": 0,
+   "segundos": 236.6,
+   "fin": "2026-11-15T10:06:20"
+  },
+  "b3a_busq_dfr_rho050_s0_t6": {
+   "codigo": 0,
+   "segundos": 204.2,
+   "fin": "2026-11-15T10:09:44"
+  },
+  "b3a_busq_erm_mascara_rho050_s0_t6": {
+   "codigo": 0,
+   "segundos": 257.2,
+   "fin": "2026-11-15T10:14:01"
+  },
+  "b3a_busq_erm_cuotas_rho050_s0_t6": {
+   "codigo": 0,
+   "segundos": 284.7,
+   "fin": "2026-11-15T10:18:46"
+  },
+  "b3a_busq_erm_rho060_s0_t6": {
+   "codigo": 0,
+   "segundos": 234.5,
+   "fin": "2026-11-15T10:22:40"
+  },
+  "b3a_busq_groupdro_rho060_s0_t6": {
+   "codigo": 0,
+   "segundos": 283.3,
+   "fin": "2026-11-15T10:27:23"
+  },
+  "b3a_busq_dann_rho060_s0_t6": {
+   "codigo": 0,
+   "segundos": 252.9,
+   "fin": "2026-11-15T10:31:36"
+  },
+  "b3a_busq_coral_rho060_s0_t6": {
+   "codigo": 0,
+   "segundos": 229.1,
+   "fin": "2026-11-15T10:35:25"
+  },
+  "b3a_busq_mixstyle_rho060_s0_t6": {
+   "codigo": 0,
+   "segundos": 280.5,
+   "fin": "2026-11-15T10:40:06"
+  },
+  "b3a_busq_fourier_rho060_s0_t6": {
+   "codigo": 0,
+   "segundos": 331.6,
+   "fin": "2026-11-15T10:45:37"
+  },
+  "b3a_busq_lisa_rho060_s0_t6": {
+   "codigo": 0,
+   "segundos": 318.2,
+   "fin": "2026-11-15T10:50:56"
+  },
+  "b3a_busq_dfa_fuente_rho060_s0_t6": {
+   "codigo": 0,
+   "segundos": 236.4,
+   "fin": "2026-11-15T10:54:52"
+  },
+  "b3a_busq_dfr_rho060_s0_t6": {
+   "codigo": 0,
+   "segundos": 254.3,
+   "fin": "2026-11-15T10:59:06"
+  },
+  "b3a_busq_erm_mascara_rho060_s0_t6": {
+   "codigo": 0,
+   "segundos": 272.3,
+   "fin": "2026-11-15T11:03:39"
+  },
+  "b3a_busq_erm_cuotas_rho060_s0_t6": {
+   "codigo": 0,
+   "segundos": 207.8,
+   "fin": "2026-11-15T11:07:07"
+  },
+  "b3a_busq_erm_rho070_s0_t6": {
+   "codigo": 0,
+   "segundos": 195.4,
+   "fin": "2026-11-15T11:10:22"
+  },
+  "b3a_busq_groupdro_rho070_s0_t6": {
+   "codigo": 0,
+   "segundos": 255.0,
+   "fin": "2026-11-15T11:14:37"
+  },
+  "b3a_busq_dann_rho070_s0_t6": {
+   "codigo": 0,
+   "segundos": 295.6,
+   "fin": "2026-11-15T11:19:33"
+  }
+ }
+}

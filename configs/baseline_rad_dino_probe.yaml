@@ -1,0 +1,16 @@
+# Línea base rad_dino_probe: Sonda lineal sobre RAD-DINO congelado. Referencia: perezgarcia2025exploring. Estado: pendiente_servidor.
+# Deriva de configs/baseline_base.yaml (y esta de configs/nuevo_base.yaml): partición limpia, canal homogeneo con la
+# caché común con máscaras (data/cache_m), ConvNeXt-Tiny ImageNet con la cabeza del artículo 1, selección y
+# comparación en val_robust_sel, mismo presupuesto. Test BLOQUEADO en piloto y búsqueda; para los experimentos
+# finales, ver docs/06_lineas_base.md, Section 4 (protocol.congelado).
+# Lanzar: python -m src.baselines.run --config configs/baseline_rad_dino_probe.yaml --seed 42 [--trial T]
+base: baseline_base.yaml
+experiment: baseline_rad_dino_probe
+train:
+  augment: none           # sin aumento: los rasgos de train se calculan una vez y se guardan en memoria
+  phases:
+    - {name: P, epochs: 30, lr: 1.0e-3, warmup_frac: 0.05, min_lr: 1.0e-7, train_backbone: false, ema: false, early_stopping: true}
+eval: {tta: false, states: [last, best]}
+baseline:
+  method: rad_dino_probe
+  params: {}            # valores por defecto del registro: {'encoder': 'rad_dino', 'hf_id': 'microsoft/rad-dino', 'timm_name': 'vit_tiny_patch16_224', 'input_res': 518, 'cache_train': True, 'timm_kwargs': {}}

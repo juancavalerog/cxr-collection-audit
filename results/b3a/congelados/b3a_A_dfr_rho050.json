@@ -1,0 +1,13 @@
+{
+  "method": "dfr",
+  "params": {
+    "states": [
+      "best",
+      "bestdc"
+    ]
+  },
+  "lr_B": 2.722964894682427e-05,
+  "trial": 1,
+  "metrica_seleccion": 0.935425,
+  "corrida_busqueda": "results/train/b3a_A_dfr_rho050_t1/seed0"
+}

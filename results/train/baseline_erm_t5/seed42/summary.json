@@ -1,0 +1,282 @@
+{
+  "seed": 42,
+  "experiment": "baseline_erm_t5",
+  "history": [
+    {
+      "phase": "A",
+      "epoch": 0,
+      "loss": 0.061670267831695505,
+      "seconds": 35.0
+    },
+    {
+      "phase": "A",
+      "epoch": 1,
+      "loss": 0.051940611421556794,
+      "seconds": 29.7
+    },
+    {
+      "phase": "A",
+      "epoch": 2,
+      "loss": 0.04711981131055036,
+      "seconds": 29.9
+    },
+    {
+      "phase": "B",
+      "epoch": 0,
+      "loss": 0.03845133755896275,
+      "seconds": 72.8,
+      "val_auc_roc": 0.7452473452473453,
+      "val_auc_pr": 0.9689125435396508,
+      "val_n": 1615,
+      "selection": 0.7452473452473453,
+      "improved": true,
+      "wait": 0,
+      "ema_t": 531,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 1,
+      "loss": 0.028807753469030285,
+      "seconds": 68.3,
+      "val_auc_roc": 0.7373556073556073,
+      "val_auc_pr": 0.9690216688144524,
+      "val_n": 1615,
+      "selection": 0.7373556073556073,
+      "wait": 1,
+      "ema_t": 1062,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 2,
+      "loss": 0.023325414982626105,
+      "seconds": 68.4,
+      "val_auc_roc": 0.7410360010360011,
+      "val_auc_pr": 0.9698605255556911,
+      "val_n": 1615,
+      "selection": 0.7410360010360011,
+      "wait": 2,
+      "ema_t": 1593,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 3,
+      "loss": 0.018730188632233108,
+      "seconds": 68.5,
+      "val_auc_roc": 0.8505180005180006,
+      "val_auc_pr": 0.9834410140622151,
+      "val_n": 1615,
+      "selection": 0.8505180005180006,
+      "improved": true,
+      "wait": 0,
+      "ema_t": 2124,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 4,
+      "loss": 0.015074185097481346,
+      "seconds": 68.3,
+      "val_auc_roc": 0.8294535094535094,
+      "val_auc_pr": 0.9802261799076353,
+      "val_n": 1615,
+      "selection": 0.8294535094535094,
+      "wait": 1,
+      "ema_t": 2655,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 5,
+      "loss": 0.01244326808056645,
+      "seconds": 68.5,
+      "val_auc_roc": 0.849000259000259,
+      "val_auc_pr": 0.9835746064112244,
+      "val_n": 1615,
+      "selection": 0.849000259000259,
+      "wait": 2,
+      "ema_t": 3186,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 6,
+      "loss": 0.01051348398931556,
+      "seconds": 68.4,
+      "val_auc_roc": 0.8364206164206165,
+      "val_auc_pr": 0.9822257196998868,
+      "val_n": 1615,
+      "selection": 0.8364206164206165,
+      "wait": 3,
+      "ema_t": 3717,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 7,
+      "loss": 0.008798478907210973,
+      "seconds": 68.4,
+      "val_auc_roc": 0.8328774928774929,
+      "val_auc_pr": 0.9802491397147213,
+      "val_n": 1615,
+      "selection": 0.8328774928774929,
+      "wait": 4,
+      "ema_t": 4248,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 8,
+      "loss": 0.007360343578321554,
+      "seconds": 68.3,
+      "val_auc_roc": 0.6085366485366485,
+      "val_auc_pr": 0.9476644544156332,
+      "val_n": 1615,
+      "selection": 0.6085366485366485,
+      "wait": 5,
+      "ema_t": 4779,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 9,
+      "loss": 0.006270553466816575,
+      "seconds": 68.4,
+      "val_auc_roc": 0.831048951048951,
+      "val_auc_pr": 0.9812125939034425,
+      "val_n": 1615,
+      "selection": 0.831048951048951,
+      "wait": 6,
+      "ema_t": 5310,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 10,
+      "loss": 0.0052224606679065816,
+      "seconds": 68.2,
+      "val_auc_roc": 0.7386324786324786,
+      "val_auc_pr": 0.9683983732122592,
+      "val_n": 1615,
+      "selection": 0.7386324786324786,
+      "wait": 7,
+      "ema_t": 5841,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 11,
+      "loss": 0.004552034760954467,
+      "seconds": 68.2,
+      "val_auc_roc": 0.7609505309505309,
+      "val_auc_pr": 0.971690153269017,
+      "val_n": 1615,
+      "selection": 0.7609505309505309,
+      "wait": 8,
+      "ema_t": 6372,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 12,
+      "loss": 0.004074698575183034,
+      "seconds": 68.5,
+      "val_auc_roc": 0.727930587930588,
+      "val_auc_pr": 0.9676582893790433,
+      "val_n": 1615,
+      "selection": 0.727930587930588,
+      "wait": 9,
+      "ema_t": 6903,
+      "ema_init_weight": null
+    },
+    {
+      "phase": "B",
+      "epoch": 13,
+      "loss": 0.0033496762616829524,
+      "seconds": 68.4,
+      "val_auc_roc": 0.839033929033929,
+      "val_auc_pr": 0.9811851392076666,
+      "val_n": 1615,
+      "selection": 0.839033929033929,
+      "wait": 10,
+      "ema_t": 7434,
+      "ema_init_weight": null
+    }
+  ],
+  "early_stopping": {
+    "best": 0.8505180005180006,
+    "wait": 10,
+    "best_epoch": 3,
+    "stopped": true
+  },
+  "ema": {
+    "mode": "estandar",
+    "t": 7434,
+    "momentum": 0.9999
+  },
+  "results": {
+    "last/val": {
+      "n": 7664,
+      "auc_roc": 0.9847995145256567,
+      "auc_pr": 0.984989024632687
+    },
+    "last/val_robust": {
+      "n": 3407,
+      "auc_roc": 0.8316855042925082,
+      "auc_pr": 0.9817138545728208
+    },
+    "last/val_robust_sel": {
+      "n": 1615,
+      "auc_roc": 0.8458404558404559,
+      "auc_pr": 0.9821804881077432
+    },
+    "best/val": {
+      "n": 7664,
+      "auc_roc": 0.9825284341385999,
+      "auc_pr": 0.9835755311643486
+    },
+    "best/val_robust": {
+      "n": 3407,
+      "auc_roc": 0.8615774195540733,
+      "auc_pr": 0.9853635319039208
+    },
+    "best/val_robust_sel": {
+      "n": 1615,
+      "auc_roc": 0.8559233359233359,
+      "auc_pr": 0.9838988106209545
+    },
+    "ema/val": {
+      "n": 7664,
+      "auc_roc": 0.9829129975974255,
+      "auc_pr": 0.9835809343033526
+    },
+    "ema/val_robust": {
+      "n": 3407,
+      "auc_roc": 0.8017102093755791,
+      "auc_pr": 0.9793427203443159
+    },
+    "ema/val_robust_sel": {
+      "n": 1615,
+      "auc_roc": 0.8094897694897696,
+      "auc_pr": 0.979222317214118
+    }
+  },
+  "seleccion": "val_robust_sel",
+  "comparacion_entre_metodos": "val_robust_sel",
+  "no_comparables": {},
+  "almacenamiento": {
+    "estados_conservados": [],
+    "borrados": [
+      "best.pt",
+      "ema.pt",
+      "last.pt",
+      "checkpoint.pt"
+    ],
+    "politica": {
+      "states": [],
+      "keep_checkpoint": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+ "nombre": "inf_cadena_1",
+ "pasos": {
+  "inf_01_b3_best": {
+   "codigo": 0,
+   "segundos": 66.7,
+   "fin": "2026-11-20T03:32:01"
+  },
+  "inf_02_b3_bestdc": {
+   "codigo": 0,
+   "segundos": 68.0,
+   "fin": "2026-11-20T03:33:09"
+  },
+  "inf_03_c2c3": {
+   "codigo": 0,
+   "segundos": 335.9,
+   "fin": "2026-11-20T03:38:45"
+  },
+  "inf_04_b2": {
+   "codigo": 0,
+   "segundos": 26.7,
+   "fin": "2026-11-20T03:39:12"
+  }
+ }
+}

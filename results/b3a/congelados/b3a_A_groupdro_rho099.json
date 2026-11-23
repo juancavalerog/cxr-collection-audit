@@ -1,0 +1,8 @@
+{
+  "method": "groupdro",
+  "params": {},
+  "lr_B": 5e-05,
+  "trial": 0,
+  "metrica_seleccion": 0.9993093749999998,
+  "corrida_busqueda": "results/train/b3a_A_groupdro_rho099_t0/seed0"
+}

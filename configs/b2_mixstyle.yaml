@@ -1,0 +1,8 @@
+# Método mixstyle en el benchmark B2. Protocolo común de configs/baseline_mixstyle.yaml más la capa configs/b2_base.yaml.
+# Lanzar (lo hacen scripts/jobs/make_jobs_b2.py): python -m src.baselines.run --config configs/b2_mixstyle.yaml --seed <S>
+#   [--trial T] --experimento <nombre> --set data.bench=<manifiesto de la semilla S>
+base: [baseline_mixstyle.yaml, b2_base.yaml]
+experiment: b2_mixstyle
+baseline:
+  method: mixstyle
+  params: {}

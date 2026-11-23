@@ -1,0 +1,13 @@
+Método,Shenzhen: pérdida (IC95),Shenzhen: semillas a favor del oráculo,"Shenzhen: p, prueba t",Montgomery: pérdida (IC95),Montgomery: semillas a favor del oráculo,"Montgomery: p, prueba t"
+ERM,0.000 (0.000 a 0.000),0 de 5,1.000,0.000 (0.000 a 0.000),0 de 5,1.000
+Control de fuente,0.003 (−0.006 a 0.012),3 de 5,0.223,−0.028 (−0.050 a −0.007),0 de 5,0.975
+GroupDRO,−0.002 (−0.006 a 0.002),0 de 5,0.819,−0.011 (−0.029 a 0.006),0 de 5,0.858
+DANN,0.000 (0.000 a 0.000),0 de 5,1.000,0.000 (0.000 a 0.000),0 de 5,1.000
+CORAL,0.000 (0.000 a 0.000),0 de 5,1.000,0.000 (0.000 a 0.000),0 de 5,1.000
+MixStyle,0.000 (−0.001 a 0.001),1 de 5,0.187,−0.004 (−0.012 a 0.002),0 de 5,0.813
+Mezcla de amplitud de Fourier,0.009 (−0.003 a 0.028),1 de 5,0.187,0.012 (−0.005 a 0.038),1 de 5,0.187
+LISA,0.006 (−0.003 a 0.019),1 de 5,0.187,0.009 (−0.006 a 0.027),1 de 5,0.187
+DFA con fuente,0.000 (−0.002 a 0.002),1 de 5,0.657,−0.006 (−0.052 a 0.035),1 de 5,0.590
+DFR,no calculado (a),no calculado (a),no calculado (a),no calculado (a),no calculado (a),no calculado (a)
+ERM con máscara,0.004 (−0.002 a 0.012),1 de 5,0.187,−0.008 (−0.026 a 0.005),0 de 5,0.813
+ERM con cuotas,−0.007 (−0.016 a 0.001),0 de 5,0.905,−0.002 (−0.013 a 0.009),1 de 5,0.632

@@ -1,0 +1,50 @@
+# Réplica del artículo 1 (Puerta 2b), ConvNeXt-Tiny. Hiperparámetros de docs/00_inventario.md, Section 4.2,
+# y semántica de selección de la Section 4.3. Los ficheros de régimen y preentreno heredan de este.
+experiment: replica_base
+precision: auto            # bf16 en GPU (el artículo 1 usó mixed_bfloat16), fp32 en CPU
+deterministic: true
+data:
+  mode: oficial            # partición oficial: train = dataset - val - test (67 863 / 8 473 / 8 482)
+  train_sources: null      # null = ingenuo; [bimcv] = controlado (43 142)
+  channel: p1              # decode_image(channels=3) + resize bilineal 224 sin antialias, 0..255
+  res: 224
+  cache: auto              # data/cache/covidx_cxr4/p1_224 si existe; si no, al vuelo (mismo resultado)
+  num_workers: 12
+  eval_batch_size: 256
+  eval_sets: [val, test, val_robust]
+model:
+  name: paper1_convnext
+  backbone: convnext_tiny
+  init: {type: keras_h5, path: null}     # lo fija cada fichero hijo (preentreno NIH o CheXpert)
+  input_scale: 255.0       # PreStem de Keras dentro del modelo
+  dropout: 0.5
+  drop_path_rate: 0.0      # keras.applications ConvNeXtTiny por defecto
+  l2_hidden: 0.01          # Dense 128 con kernel_regularizer l2(1e-2)
+  freeze_backbone_norms: true   # las 18 LayerNorm de bloque y la final, como build_model
+  head_init: glorot
+train:
+  batch_size: 768          # lote global del artículo 1 (2 GPU x 384)
+  micro_batch: 256         # acumulación de gradiente en una GPU (3 x 256 = 768)
+  steps_per_epoch: null    # ceil(n_train / 768): 89 ingenuo, 57 controlado
+  sampler: bernoulli       # sample_from_datasets(weights=[0.5, 0.5]), flujo infinito
+  sampler_restart_each_phase: true
+  augment: p1              # flip, rotación 0.03, zoom 0.1, brillo 0.1, contraste 0.9-1.1, cutout 24, mixup 0.2
+  augment_params: {rotation: 0.03, zoom: 0.1, brightness: 0.1, contrast: [0.9, 1.1], cutout: 24, mixup_alpha: 0.2}
+  grad_clip: null
+  loss: {name: focal, alpha: 0.5, gamma: 2.0, apply_class_balancing: true, label_smoothing: 0.0}
+  optimizer: {name: tf_adamw, weight_decay: 1.0e-5, betas: [0.9, 0.999], eps: 1.0e-7,
+              lr_mult: {backbone: 1.0, head: 1.0}, no_decay_norm_bias: false}
+  phases:
+    - {name: A, epochs: 5, lr: 1.0e-3, warmup_frac: 0.1, min_lr: 1.0e-7, train_backbone: false, ema: false, early_stopping: false}
+    - {name: B, epochs: 100, lr: 2.5e-5, warmup_frac: 0.1, min_lr: 1.0e-7, train_backbone: true, ema: true, early_stopping: true}
+  log_every: 10
+ema: {mode: tfkeras_exacta, momentum: 0.9999}
+selection:
+  metric: auc_pr           # EarlyStopping(monitor="val_auc_pr", mode="max", patience=15, restore_best_weights=False)
+  subset: val              # validación oficial completa
+  impl: keras200           # tf.keras.metrics.AUC(curve="PR"), 200 umbrales, interpolación
+  patience: 15
+  tta: false               # la validación de fit no usaba TTA
+  drop_remainder_batch: 768   # val_ds_eval con drop_remainder=True: se evalúan 8 448 de 8 473
+eval: {tta: true, states: [last, best, ema]}   # el modelo del artículo 1 es "ema"
+thermal: {every: 50}
