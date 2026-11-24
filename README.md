@@ -7,8 +7,8 @@ Code, configurations, split manifests and result tables for the article
 Juan Carlos Valero Gómez, Juan Carlos Clares Perca, Alex Peter Zuñiga Incalla
 Universidad Nacional de Moquegua, Peru
 
-Repository: [repository URL]
-Archived version: [DOI to be added after the Zenodo deposit]
+Repository: https://github.com/juancavalerog/cxr-collection-audit
+Archived version: version 1.0.0 is archived on Zenodo at https://doi.org/10.5281/zenodo.24476117. This is version 1.0.1, which corrects the table numbering in this README (the article numbers its tables as the programs do); code, data and results are unchanged.
 
 The study is a retrospective evaluation on public chest radiography data, carried out under a prespecified, internally frozen analysis plan (the plan, the code, the configurations and the selected hyperparameters were frozen with their SHA-256 hashes before any test set was opened; the plan was not deposited in a public registry). It audits the internal evaluation of COVIDx CXR-4 with a reference that has never seen a class label (a collection detector), measures how eleven methods behave when the correlation between class and source is fixed by construction (pleural effusion benchmark built from NIH ChestX-ray14 and CheXpert, with a tuberculosis evaluation), and quantifies the cost of model selection with a validation set drawn from the training distribution.
 
@@ -40,7 +40,7 @@ One change was made to the analysis after the test sets were opened: the calibra
 | `data/manifests/` | Split manifests (file names, public identifiers, labels, split and subset flags, perceptual hashes). See `data/manifests/README.md` (Spanish). |
 | `results/` | Result tables (CSV, JSON, MD), frozen hyperparameters, run summaries, execution chain logs, figures. |
 | `predictions/` | Per-image predicted probabilities, compressed (see below). |
-| `manuscript/srep/correspondencia_tablas.csv` | Correspondence between the table numbers used by the programs and the Supplementary Table numbers of the article (see "Table numbering"). |
+| `manuscript/srep/correspondencia_tablas.csv` | Table numbers used by the programs and in the article, which are the same (see "Table numbering"). |
 | `MANIFEST.sha256` | SHA-256 hash, size in bytes and path of every file in this folder (one line per file: `hash size path`). Check with `awk '{print $1"  "$3}' MANIFEST.sha256 \| sha256sum -c --quiet`. |
 
 ### Results directories
@@ -58,9 +58,9 @@ One change was made to the analysis after the test sets were opened: the calibra
 | `results/sensibilidad`, `results/sensibilidad_v28`, `results/sensibilidad_intervalos` | Prespecified sensitivity analyses (search stability, second backbone, second label, audit variants, alternative intervals). |
 | `results/sens_tronco`, `results/sens_etiqueta`, `results/estabilidad_b3a` | Frozen configurations and run summaries of the ResNet-50, cardiomegaly and search-stability runs. |
 | `results/train/<experiment>/seed<k>/` | `config_resolved.json` (full resolved configuration) and `summary.json` (training history, early stopping, metrics) of every training run, except three runs of the abandoned architecture. |
-| `results/cadenas` | Execution chain logs with start and end times of each run (source of Supplementary Table S13); `corr_cadena.json` is the chain of the correction. |
+| `results/cadenas` | Execution chain logs with start and end times of each run (source of Supplementary Table S9); `corr_cadena.json` is the chain of the correction. |
 | `results/suplemento` | The 38 supplementary tables built by `scripts/suplemento/tablas.py`, as CSV with Spanish labels (`tabla_S01.csv` to `tabla_S38.csv`, numbered as in the programs; see "Table numbering"), and their cell-to-source traces (`trazas.json`). |
-| `results/suplemento_fuentes` | Source tables of the segmentation-overlap table (Supplementary Table S4), written by `scripts/suplemento/solape_segmentador.py`. |
+| `results/suplemento_fuentes` | Source tables of the segmentation-overlap table (Supplementary Table S1), written by `scripts/suplemento/solape_segmentador.py`. |
 | `results/figs`, `results/figs/en` | Figures (PDF, PNG, TIFF) and the CSV data behind each one; `en/` holds the English versions used in the article, and `en/correspondencia.csv` relates each English figure to its Spanish original. |
 | `results/gate6`, `results/gate7`, `results/audit`, `results/informe_plan_b` | Pilot table (Supplementary Fig. S1), freeze record, preliminary audit tables, Spanish summary report. |
 
@@ -169,82 +169,82 @@ No model was retrained, and no estimand, hypothesis family, margin, level, Holm 
 - **Code.** `scripts/correccion/`. `ec6.py` holds the corrected factor; it imports the frozen module `src/eval/jerarquico.py` and replaces two of its functions at run time, only inside an explicit context, so the frozen code is not modified. `lanzador.py` calls the frozen report functions twice for each affected table: with the original factor, as a control that must reproduce the published table exactly (it did, with a maximum difference of 0 in every numeric column), and with the corrected factor. `simulacion.py` checks the calibration by simulation with the seed structure of the benchmark, `impacto.py` builds the before-and-after table, and `complementos.py` computes three post hoc supplementary calculations (seed-and-patient interval for the primary reference of the audit, Holm correction with the alternative intervals, and the epoch-selection loss on the scale of the area). The execution chain is logged in `results/cadenas/corr_cadena.json`.
 - **Original tables.** In their original places: `results/b3/test_A_best/`, `results/b3/test_A_bestdc/`, `results/c2c3/` (`c3-epoca.csv`, `c3_epoca_por_metodo.csv`, `fuente.csv`, `orientacion.csv`, `orientacion_b_curva.csv`) and `results/sensibilidad/tronco/`, `results/sensibilidad/etiqueta/`.
 - **Corrected tables.** `results/correccion_ec6/`, with the same relative path, file name and columns as each original (for example `results/correccion_ec6/b3/test_A_best/comparacion_erm.csv`). Tables whose intervals use a single stratum (flipped test set, specificity gap, tuberculosis evaluation, the own curves of the reverse orientation, the second backbone and the second label) are bit-identical with either factor and have no corrected copy.
-- **Impact and checks.** `results/correccion_ec6/antes_despues_todas_las_filas.csv` gives, for the 786 rows, the estimate, the interval and the p values before and after, the ratio of widths and any change of decision (Supplementary Table S10); `antes_despues.csv` and `.md` list the rows that change. `results/correccion_ec6/simulacion/` holds the simulation (Supplementary Table S11), and `results/correccion_ec6/complementos/` the supplementary calculations, with their control files.
+- **Impact and checks.** `results/correccion_ec6/antes_despues_todas_las_filas.csv` gives, for the 786 rows, the estimate, the interval and the p values before and after, the ratio of widths and any change of decision (Supplementary Table S6); `antes_despues.csv` and `.md` list the rows that change. `results/correccion_ec6/simulacion/` holds the simulation (Supplementary Table S7), and `results/correccion_ec6/complementos/` the supplementary calculations, with their control files.
 
 The programs in `scripts/correccion/` read test predictions, so they first call the freeze check (`src/eval/desbloqueo.py`), which requires every hashed file of the original project, network checkpoints included. They therefore cannot be rerun from this folder; the tables they wrote can be checked against the predictions in `predictions/` with the functions of `src/eval/`.
 
 ## Table numbering
 
-The programs use their own table numbers: nine tables of the main text (Tables 1 to 9) and 38 supplementary tables (Tables S1 to S38, the numbers used by `scripts/suplemento/tablas.py`, by `results/suplemento/tabla_SNN.csv` and in the comments of the code). In the article all 47 tables are Supplementary Tables S1 to S47. `manuscript/srep/correspondencia_tablas.csv` gives the correspondence: column `antigua` is the number used by the programs, `nueva` the number in the article, `origen` whether the table was in the main text (`texto principal`) or in the supplementary material (`material suplementario`), and `primera_cita` the section of the article where it is first cited. Figures keep their numbers (Figures 1 to 7 and Supplementary Figures S1 to S8).
+The article and the programs use the same table numbers: Tables 1 to 9 in the main text and Supplementary Tables S1 to S38. The supplementary tables are the ones built by `scripts/suplemento/tablas.py`, with the same numbers in `results/suplemento/tabla_SNN.csv` and in the comments of the code. `manuscript/srep/correspondencia_tablas.csv` records this one-to-one correspondence: column `numero_en_fuentes` is the number used by the programs, `numero_en_articulo` the number in the article, `relacion` states that both are the same, `ubicacion` whether the table is in the main text (`texto principal`) or in the supplementary information (`información suplementaria`), and `primera_cita` the section of the article where it is first cited. Figures are numbered as Figures 1 to 7 and Supplementary Figures S1 to S8.
 
 ## Where each table and figure comes from
 
 Paths in the last column are relative to `results/` unless they start with `src/`, `data/`, `configs/` or `docs/`. A path that starts with `correccion_ec6/` is the version recomputed with the corrected calibration factor of the file with the same relative path, which is also included (see "Post hoc correction of the seed-term calibration factor").
 
-| Article (Supplementary Table or Figure) | Number in the programs | Script | Source files |
-|---|---|---|---|
-| S1 (compared methods) | Table 3 |  | `src/baselines/`, `configs/` |
-| S2 (datasets) | Table 1 | `scripts/data/build_*.py` | `data/manifests/` and their JSON sidecars |
-| S3 (shared preprocessing and training protocol) | Table 2 |  | `configs/`, `src/baselines/` |
-| S4 (overlap of the lung segmentation network's training set with the controlled benchmarks) | Table S1 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S01.csv`) | `suplemento_fuentes/solape_segmentador.csv`, `suplemento_fuentes/solape_segmentador_calidad.csv` |
-| S5 (hyperparameter search space) | Table S2 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S02.csv`) | `b1/busqueda_todas.csv`, `src/baselines/` (read as text) |
-| S6 (configurations selected in COVIDx CXR-4 and tuberculosis) | Table S3 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S03.csv`) | `b1/congelados/*.json`, `b2/congelados/*.json`, `src/baselines/` (read as text) |
-| S7 (configurations selected in the pleural effusion benchmark) | Table S4 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S04.csv`) | `b3a/congelados/*.json`, `src/baselines/` (read as text) |
-| S8 (validation of the final COVIDx runs) | Table S5 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S05.csv`) | `b1/finales_validacion.csv` |
-| S9 (hypothesis families) | Table 4 |  | `docs/08_evaluacion.md` |
-| S10 (effect of the correction of the seed-term calibration factor) | Table S6 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S06.csv`) | `correccion_ec6/antes_despues_todas_las_filas.csv` |
-| S11 (simulation check of the calibration factor) | Table S7 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S07.csv`) | `correccion_ec6/simulacion/simulacion.csv` |
-| S12 (software environment) | Table S8 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S08.csv`) | `gate7/congelacion.json`, `gate7/entorno_contenedor.json` |
-| S13 (number of training runs) | Table S9 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S09.csv`) | `cadenas/*.json` |
-| S14 (BIMCV part of the test set and COVIDGR) | Table 5 | `scripts/eval/auditoria_covidx.py` | `c1/test/f_c1.csv`, `c1/test/f_c1b.csv`, `c1/test/detectores.csv`, `c1/test/c1_vi_covidgr.csv` |
-| S15 (confirmatory family of the audit) | Table S10 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S10.csv`) | `c1/test/f_c1.csv` |
-| S16 (secondary family of the audit) | Table S11 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S11.csv`) | `c1/test/f_c1b.csv`, `sensibilidad_intervalos/c1b_jerarquico.csv` |
-| S17 (class-blind references, backbone by backbone) | Table S12 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S12.csv`) | `c1/test/detectores.csv` |
-| S18 (AP and PA strata) | Table S13 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S13.csv`) | `c1/test/c1_vii_estratos.csv`, `c1/test/f_c1.csv` |
-| S19 (AUC by collection of origin) | Table S14 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S14.csv`) | `c1/test/c1_iii_por_coleccion.csv` |
-| S20 (linear probes across collections) | Table S15 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S15.csv`) | `c1/test/c1_ii_reservado.csv` |
-| S21 (acquisition-only classifier and masked ERM) | Table S16 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S16.csv`) | `c1/test/c1_iv_adquisicion.csv`, `c1/test/c1_v_mascara.csv` |
-| S22 (external cohort COVIDGR) | Table S17 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S17.csv`) | `c1/test/c1_vi_covidgr.csv` |
-| S23 (sensitivity by radiological severity) | Table S18 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S18.csv`) | `c1/test/c1_vi_gravedad.csv` |
-| S24 (AUC by confounding level) | Table 6 | `scripts/eval/informe_b3.py` | `correccion_ec6/b3/test_A_best/curva.csv` |
-| S25 (dose-response curve, pleural effusion benchmark) | Table S19 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S19.csv`) | `correccion_ec6/b3/test_A_best/curva.csv` |
-| S26 (differences from ERM) | Table 7 | `scripts/eval/informe_b3.py` | `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
-| S27 (full comparison with ERM) | Table S20 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S20.csv`) | `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
-| S28 (flipped test set) | Table S21 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S21.csv`) | `c2c3/invertido.csv` |
-| S29 (AUC within each source) | Table S22 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S22.csv`) | `correccion_ec6/c2c3/fuente.csv` |
-| S30 (specificity gap) | Table S23 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S23.csv`) | `c2c3/brecha.csv` |
-| S31 (reverse orientation) | Table S24 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S24.csv`) | `correccion_ec6/c2c3/orientacion.csv`, `correccion_ec6/c2c3/orientacion_b_curva.csv` |
-| S32 (tuberculosis evaluation) | Table S25 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S25.csv`) | `b2/informe_test/comparacion_erm.csv`, `b2/informe_test/curva.csv` |
-| S33 (epoch-selection loss) | Table 8 | `scripts/eval/informe_c2_c3.py`; `scripts/figs/figB7_seleccion.py` writes `figs/figB7_seleccion.csv` | `correccion_ec6/c2c3/c3-epoca.csv`, `figs/figB7_seleccion.csv`, `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
-| S34 (epoch-selection loss by method) | Table S26 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S26.csv`) | `correccion_ec6/c2c3/c3-epoca.csv`, `correccion_ec6/c2c3/c3_epoca_por_metodo.csv` |
-| S35 (epoch-selection loss on the area scale) | Table S27 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S27.csv`) | `correccion_ec6/complementos/e2_diferencias_area_frente_erm.csv`, `correccion_ec6/complementos/e2_perdida_seleccion_area.csv` |
-| S36 (hyperparameter selection) | Table S28 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S28.csv`) | `c2c3/c3-hiper.csv` |
-| S37 (stability of the hyperparameter search) | Table S29 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S29.csv`) | `sensibilidad/estabilidad/estabilidad.csv` |
-| S38 (epoch-selection loss in tuberculosis) | Table S30 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S30.csv`) | `b2/informe_test/seleccion_epoca.csv` |
-| S39 (agreement of the sensitivity analyses) | Table 9 | `scripts/eval/informe_sensibilidad.py` | `correccion_ec6/sensibilidad/tronco/concordancia.csv`, `correccion_ec6/sensibilidad/etiqueta/concordancia.csv`, `correccion_ec6/b3/test_A_bestdc/comparacion_erm.csv`, `correccion_ec6/b3/test_A_bestdc/resumen.csv` |
-| S40 (second backbone and second label: AUC) | Table S31 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S31.csv`) | `correccion_ec6/sensibilidad/etiqueta/curva.csv`, `correccion_ec6/sensibilidad/tronco/curva.csv` |
-| S41 (second backbone and second label: differences from ERM) | Table S32 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S32.csv`) | `correccion_ec6/sensibilidad/etiqueta/comparacion_erm.csv`, `correccion_ec6/sensibilidad/etiqueta/resumen.csv`, `correccion_ec6/sensibilidad/tronco/comparacion_erm.csv`, `correccion_ec6/sensibilidad/tronco/resumen.csv` |
-| S42 (oracle selection: curve) | Table S33 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S33.csv`) | `correccion_ec6/b3/test_A_bestdc/curva.csv` |
-| S43 (oracle selection: comparison with ERM) | Table S34 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S34.csv`) | `correccion_ec6/b3/test_A_bestdc/comparacion_erm.csv` |
-| S44 (sensitivity analyses of the audit) | Table S35 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S35.csv`) | `c1/test/detectores.csv`, `c1/test/f_c1.csv`, `sensibilidad_v28/resumen_familias.csv`, `sensibilidad_v28/s7_composicion.csv` |
-| S45 (alternative intervals for the area) | Table S36 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S36.csv`) | `correccion_ec6/b3/test_A_best/comparacion_erm.csv`, `correccion_ec6/complementos/e3_area_alternativos.csv` |
-| S46 (alternative intervals for the epoch-selection loss) | Table S37 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S37.csv`) | `correccion_ec6/c2c3/c3-epoca.csv`, `correccion_ec6/c2c3/c3_epoca_por_metodo.csv`, `correccion_ec6/complementos/e3_seleccion_alternativos.csv`, `sensibilidad_intervalos/c3_epoca_media_alternativos.csv`, `sensibilidad_intervalos/c3_epoca_por_metodo_alternativos.csv` |
-| S47 (audit with the seed-and-patient interval) | Table S38 | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S38.csv`) | `correccion_ec6/complementos/e1_c1_din_jerarquico.csv` |
-| Fig. 1 (BIMCV collections by split) | | `scripts/figs/en/figs_principales_en.py 1` | `figs/figB1_colecciones.csv` (written by `scripts/figs/figB1_colecciones.py` from the manifests) |
-| Fig. 2 (audit forest plot) | | `... figs_principales_en.py 2` | `c1/test/f_c1.csv`, `c1/test/f_c1b.csv` |
-| Fig. 3 (collection signal) | | `... figs_principales_en.py 3` | `c1/test/c1_iii_resumen.csv`, `c1/test/c1_ii_reservado.csv` |
-| Fig. 4 (COVIDGR) | | `... figs_principales_en.py 4` | `c1/test/c1_vi_covidgr.csv`, `c1/test/c1_iii_resumen.csv` |
-| Fig. 5 (dose-response curves) | | `... figs_principales_en.py 5` | `correccion_ec6/b3/test_A_best/curva.csv`, `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
-| Fig. 6 (area and cost without confounding) | | `... figs_principales_en.py 6` | `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
-| Fig. 7 (model selection) | | `... figs_principales_en.py 7` | `correccion_ec6/c2c3/c3-epoca.csv`, `correccion_ec6/c2c3/c3_epoca_por_metodo.csv`, `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
-| Fig. S1 (pilot) | | `scripts/figs/en/figs_suplementarias_en.py 1` | `gate6/tabla_supervisor.csv` (written by `scripts/eval/puerta6.py`) |
-| Fig. S2 (AP and PA strata) | | `... figs_suplementarias_en.py 2` | `c1/test/c1_vii_estratos.csv` |
-| Fig. S3 (acquisition-only and masked) | | `... figs_suplementarias_en.py 3` | `c1/test/c1_iii_resumen.csv`, `c1/test/c1_iv_adquisicion.csv`, `c1/test/c1_v_mascara.csv` |
-| Fig. S4 (flipped test set) | | `... figs_suplementarias_en.py 4` | `c2c3/invertido.csv`, `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
-| Fig. S5 (reverse orientation) | | `... figs_suplementarias_en.py 5` | `correccion_ec6/b3/test_A_best/curva.csv`, `correccion_ec6/c2c3/orientacion_b_curva.csv`, `correccion_ec6/c2c3/orientacion.csv` |
-| Fig. S6 (tuberculosis evaluation) | | `... figs_suplementarias_en.py 6` | `b2/informe_test/comparacion_erm.csv`, `b2/informe_test/curva.csv` |
-| Fig. S7 (epoch selection by method) | | `... figs_suplementarias_en.py 7` | `correccion_ec6/c2c3/c3_epoca_por_metodo.csv` |
-| Fig. S8 (hyperparameter selection) | | `... figs_suplementarias_en.py 8` | `c2c3/c3-hiper.csv` |
+| Table or figure in the article | Script | Source files |
+|---|---|---|
+| Table 1 (datasets) | `scripts/data/build_*.py` | `data/manifests/` and their JSON sidecars |
+| Table 2 (shared preprocessing and training protocol) |  | `configs/`, `src/baselines/` |
+| Table 3 (compared methods) |  | `src/baselines/`, `configs/` |
+| Table 4 (hypothesis families) |  | `docs/08_evaluacion.md` |
+| Table 5 (BIMCV part of the test set and COVIDGR) | `scripts/eval/auditoria_covidx.py` | `c1/test/f_c1.csv`, `c1/test/f_c1b.csv`, `c1/test/detectores.csv`, `c1/test/c1_vi_covidgr.csv` |
+| Table 6 (AUC by confounding level) | `scripts/eval/informe_b3.py` | `correccion_ec6/b3/test_A_best/curva.csv` |
+| Table 7 (differences from ERM) | `scripts/eval/informe_b3.py` | `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
+| Table 8 (epoch-selection loss) | `scripts/eval/informe_c2_c3.py`; `scripts/figs/figB7_seleccion.py` writes `figs/figB7_seleccion.csv` | `correccion_ec6/c2c3/c3-epoca.csv`, `figs/figB7_seleccion.csv`, `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
+| Table 9 (agreement of the sensitivity analyses) | `scripts/eval/informe_sensibilidad.py` | `correccion_ec6/sensibilidad/tronco/concordancia.csv`, `correccion_ec6/sensibilidad/etiqueta/concordancia.csv`, `correccion_ec6/b3/test_A_bestdc/comparacion_erm.csv`, `correccion_ec6/b3/test_A_bestdc/resumen.csv` |
+| Supplementary Table S1 (overlap of the lung segmentation network's training set with the controlled benchmarks) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S01.csv`) | `suplemento_fuentes/solape_segmentador.csv`, `suplemento_fuentes/solape_segmentador_calidad.csv` |
+| Supplementary Table S2 (hyperparameter search space) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S02.csv`) | `b1/busqueda_todas.csv`, `src/baselines/` (read as text) |
+| Supplementary Table S3 (configurations selected in COVIDx CXR-4 and tuberculosis) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S03.csv`) | `b1/congelados/*.json`, `b2/congelados/*.json`, `src/baselines/` (read as text) |
+| Supplementary Table S4 (configurations selected in the pleural effusion benchmark) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S04.csv`) | `b3a/congelados/*.json`, `src/baselines/` (read as text) |
+| Supplementary Table S5 (validation of the final COVIDx runs) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S05.csv`) | `b1/finales_validacion.csv` |
+| Supplementary Table S6 (effect of the correction of the seed-term calibration factor) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S06.csv`) | `correccion_ec6/antes_despues_todas_las_filas.csv` |
+| Supplementary Table S7 (simulation check of the calibration factor) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S07.csv`) | `correccion_ec6/simulacion/simulacion.csv` |
+| Supplementary Table S8 (software environment) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S08.csv`) | `gate7/congelacion.json`, `gate7/entorno_contenedor.json` |
+| Supplementary Table S9 (number of training runs) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S09.csv`) | `cadenas/*.json` |
+| Supplementary Table S10 (confirmatory family of the audit) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S10.csv`) | `c1/test/f_c1.csv` |
+| Supplementary Table S11 (secondary family of the audit) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S11.csv`) | `c1/test/f_c1b.csv`, `sensibilidad_intervalos/c1b_jerarquico.csv` |
+| Supplementary Table S12 (class-blind references, backbone by backbone) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S12.csv`) | `c1/test/detectores.csv` |
+| Supplementary Table S13 (AP and PA strata) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S13.csv`) | `c1/test/c1_vii_estratos.csv`, `c1/test/f_c1.csv` |
+| Supplementary Table S14 (AUC by collection of origin) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S14.csv`) | `c1/test/c1_iii_por_coleccion.csv` |
+| Supplementary Table S15 (linear probes across collections) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S15.csv`) | `c1/test/c1_ii_reservado.csv` |
+| Supplementary Table S16 (acquisition-only classifier and masked ERM) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S16.csv`) | `c1/test/c1_iv_adquisicion.csv`, `c1/test/c1_v_mascara.csv` |
+| Supplementary Table S17 (external cohort COVIDGR) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S17.csv`) | `c1/test/c1_vi_covidgr.csv` |
+| Supplementary Table S18 (sensitivity by radiological severity) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S18.csv`) | `c1/test/c1_vi_gravedad.csv` |
+| Supplementary Table S19 (dose-response curve, pleural effusion benchmark) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S19.csv`) | `correccion_ec6/b3/test_A_best/curva.csv` |
+| Supplementary Table S20 (full comparison with ERM) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S20.csv`) | `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
+| Supplementary Table S21 (flipped test set) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S21.csv`) | `c2c3/invertido.csv` |
+| Supplementary Table S22 (AUC within each source) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S22.csv`) | `correccion_ec6/c2c3/fuente.csv` |
+| Supplementary Table S23 (specificity gap) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S23.csv`) | `c2c3/brecha.csv` |
+| Supplementary Table S24 (reverse orientation) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S24.csv`) | `correccion_ec6/c2c3/orientacion.csv`, `correccion_ec6/c2c3/orientacion_b_curva.csv` |
+| Supplementary Table S25 (tuberculosis evaluation) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S25.csv`) | `b2/informe_test/comparacion_erm.csv`, `b2/informe_test/curva.csv` |
+| Supplementary Table S26 (epoch-selection loss by method) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S26.csv`) | `correccion_ec6/c2c3/c3-epoca.csv`, `correccion_ec6/c2c3/c3_epoca_por_metodo.csv` |
+| Supplementary Table S27 (epoch-selection loss on the area scale) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S27.csv`) | `correccion_ec6/complementos/e2_diferencias_area_frente_erm.csv`, `correccion_ec6/complementos/e2_perdida_seleccion_area.csv` |
+| Supplementary Table S28 (hyperparameter selection) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S28.csv`) | `c2c3/c3-hiper.csv` |
+| Supplementary Table S29 (stability of the hyperparameter search) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S29.csv`) | `sensibilidad/estabilidad/estabilidad.csv` |
+| Supplementary Table S30 (epoch-selection loss in tuberculosis) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S30.csv`) | `b2/informe_test/seleccion_epoca.csv` |
+| Supplementary Table S31 (second backbone and second label: AUC) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S31.csv`) | `correccion_ec6/sensibilidad/etiqueta/curva.csv`, `correccion_ec6/sensibilidad/tronco/curva.csv` |
+| Supplementary Table S32 (second backbone and second label: differences from ERM) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S32.csv`) | `correccion_ec6/sensibilidad/etiqueta/comparacion_erm.csv`, `correccion_ec6/sensibilidad/etiqueta/resumen.csv`, `correccion_ec6/sensibilidad/tronco/comparacion_erm.csv`, `correccion_ec6/sensibilidad/tronco/resumen.csv` |
+| Supplementary Table S33 (oracle selection: curve) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S33.csv`) | `correccion_ec6/b3/test_A_bestdc/curva.csv` |
+| Supplementary Table S34 (oracle selection: comparison with ERM) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S34.csv`) | `correccion_ec6/b3/test_A_bestdc/comparacion_erm.csv` |
+| Supplementary Table S35 (sensitivity analyses of the audit) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S35.csv`) | `c1/test/detectores.csv`, `c1/test/f_c1.csv`, `sensibilidad_v28/resumen_familias.csv`, `sensibilidad_v28/s7_composicion.csv` |
+| Supplementary Table S36 (alternative intervals for the area) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S36.csv`) | `correccion_ec6/b3/test_A_best/comparacion_erm.csv`, `correccion_ec6/complementos/e3_area_alternativos.csv` |
+| Supplementary Table S37 (alternative intervals for the epoch-selection loss) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S37.csv`) | `correccion_ec6/c2c3/c3-epoca.csv`, `correccion_ec6/c2c3/c3_epoca_por_metodo.csv`, `correccion_ec6/complementos/e3_seleccion_alternativos.csv`, `sensibilidad_intervalos/c3_epoca_media_alternativos.csv`, `sensibilidad_intervalos/c3_epoca_por_metodo_alternativos.csv` |
+| Supplementary Table S38 (audit with the seed-and-patient interval) | `scripts/suplemento/tablas.py` (`results/suplemento/tabla_S38.csv`) | `correccion_ec6/complementos/e1_c1_din_jerarquico.csv` |
+| Fig. 1 (BIMCV collections by split) | `scripts/figs/en/figs_principales_en.py 1` | `figs/figB1_colecciones.csv` (written by `scripts/figs/figB1_colecciones.py` from the manifests) |
+| Fig. 2 (audit forest plot) | `... figs_principales_en.py 2` | `c1/test/f_c1.csv`, `c1/test/f_c1b.csv` |
+| Fig. 3 (collection signal) | `... figs_principales_en.py 3` | `c1/test/c1_iii_resumen.csv`, `c1/test/c1_ii_reservado.csv` |
+| Fig. 4 (COVIDGR) | `... figs_principales_en.py 4` | `c1/test/c1_vi_covidgr.csv`, `c1/test/c1_iii_resumen.csv` |
+| Fig. 5 (dose-response curves) | `... figs_principales_en.py 5` | `correccion_ec6/b3/test_A_best/curva.csv`, `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
+| Fig. 6 (area and cost without confounding) | `... figs_principales_en.py 6` | `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
+| Fig. 7 (model selection) | `... figs_principales_en.py 7` | `correccion_ec6/c2c3/c3-epoca.csv`, `correccion_ec6/c2c3/c3_epoca_por_metodo.csv`, `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
+| Supplementary Fig. S1 (pilot) | `scripts/figs/en/figs_suplementarias_en.py 1` | `gate6/tabla_supervisor.csv` (written by `scripts/eval/puerta6.py`) |
+| Supplementary Fig. S2 (AP and PA strata) | `... figs_suplementarias_en.py 2` | `c1/test/c1_vii_estratos.csv` |
+| Supplementary Fig. S3 (acquisition-only and masked) | `... figs_suplementarias_en.py 3` | `c1/test/c1_iii_resumen.csv`, `c1/test/c1_iv_adquisicion.csv`, `c1/test/c1_v_mascara.csv` |
+| Supplementary Fig. S4 (flipped test set) | `... figs_suplementarias_en.py 4` | `c2c3/invertido.csv`, `correccion_ec6/b3/test_A_best/comparacion_erm.csv` |
+| Supplementary Fig. S5 (reverse orientation) | `... figs_suplementarias_en.py 5` | `correccion_ec6/b3/test_A_best/curva.csv`, `correccion_ec6/c2c3/orientacion_b_curva.csv`, `correccion_ec6/c2c3/orientacion.csv` |
+| Supplementary Fig. S6 (tuberculosis evaluation) | `... figs_suplementarias_en.py 6` | `b2/informe_test/comparacion_erm.csv`, `b2/informe_test/curva.csv` |
+| Supplementary Fig. S7 (epoch selection by method) | `... figs_suplementarias_en.py 7` | `correccion_ec6/c2c3/c3_epoca_por_metodo.csv` |
+| Supplementary Fig. S8 (hyperparameter selection) | `... figs_suplementarias_en.py 8` | `c2c3/c3-hiper.csv` |
 
 Each figure is also saved with the CSV of the values it plots (`results/figs/en/Fig*.csv`). The Spanish figure scripts in `scripts/figs/` produce `results/figs/figB*` and `figSB*` (same data, Spanish labels). The tables under `results/` were produced from the per-image predictions by the evaluation programs in `scripts/eval/`, `scripts/sensibilidad/` and `scripts/correccion/`, using the statistics in `src/eval/` (`stats.py`, `jerarquico.py`, `dosis.py`, `c1_auditoria.py`, `c2.py`, `c3.py`).
 
@@ -319,7 +319,7 @@ The code, comments, documentation inside the code, column names and directory na
 | `correccion`, `ec6`, `factor`, `antes`, `despues` | correction (of the seed-term calibration factor), before, after |
 | `registrado`, `registrada` (in comments and file names) | prespecified in the frozen plan |
 
-Internal codes used in file and directory names: `gate6`, `puerta6` and "Puerta 6" = pilot of the pleural effusion benchmark; `gate7` and "Puerta 7" = freeze of the analysis plan (both names remain in file names and in messages of the code); "Puerta 2a", "Puerta 2b", "Puerta 3" = checkpoints of the pilot of the abandoned architecture; `b1` = COVIDx CXR-4; `b2` = tuberculosis evaluation; `b3a` = pleural effusion benchmark (`A` or `apos`: NIH as positive source; `B` or `bpos`: reverse orientation); `b3c` = cardiomegaly benchmark; `c1` = audit; `c2` and `c3` = controlled-confounding and model-selection questions; `s0` to `s7` in `results/sensibilidad_v28` = the prespecified audit variants of Supplementary Table S44.
+Internal codes used in file and directory names: `gate6`, `puerta6` and "Puerta 6" = pilot of the pleural effusion benchmark; `gate7` and "Puerta 7" = freeze of the analysis plan (both names remain in file names and in messages of the code); "Puerta 2a", "Puerta 2b", "Puerta 3" = checkpoints of the pilot of the abandoned architecture; `b1` = COVIDx CXR-4; `b2` = tuberculosis evaluation; `b3a` = pleural effusion benchmark (`A` or `apos`: NIH as positive source; `B` or `bpos`: reverse orientation); `b3c` = cardiomegaly benchmark; `c1` = audit; `c2` and `c3` = controlled-confounding and model-selection questions; `s0` to `s7` in `results/sensibilidad_v28` = the prespecified audit variants of Supplementary Table S35.
 
 ## Licence
 
@@ -329,4 +329,4 @@ Code: MIT License (`LICENSE`). Result tables, split manifests, predictions and f
 
 Please cite the article and this archive. Citation metadata is in `CITATION.cff`.
 
-Valero Gómez JC, Clares Perca JC, Zuñiga Incalla AP. A Class-Blind Collection Detector Matches Nearly All Methods in the Internal Evaluation of COVIDx CXR-4. Code and data: [repository URL], archived at [DOI to be added after the Zenodo deposit].
+Valero Gómez JC, Clares Perca JC, Zuñiga Incalla AP. A Class-Blind Collection Detector Matches Nearly All Methods in the Internal Evaluation of COVIDx CXR-4. Code and data: https://github.com/juancavalerog/cxr-collection-audit, version 1.0.0 archived at https://doi.org/10.5281/zenodo.24476117 (this is version 1.0.1).

@@ -3,7 +3,7 @@
   "description": "Code, configurations, split manifests, result tables, per-image predictions and figures of a retrospective evaluation study of chest radiograph classification under class-source confounding, carried out under a prespecified, internally frozen analysis plan: an audit of the internal evaluation of COVIDx CXR-4 with a class-blind collection detector, a controlled confounding benchmark (pleural effusion, NIH ChestX-ray14 and CheXpert) with a tuberculosis evaluation, and an analysis of model selection. The freeze record (SHA-256 hashes) is included, together with the original and the corrected tables of the one post hoc change to the analysis (the calibration factor of the seed term of the hierarchical intervals, which changes no decision). No image is redistributed; the images must be obtained from their original public sources under their own licences.",
   "upload_type": "software",
   "language": "eng",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "mit",
   "creators": [
     {
